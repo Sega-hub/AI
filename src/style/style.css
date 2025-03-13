@@ -1,0 +1,1298 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Hauora";
+  src: url("../../public/fonts/hauora_sans/Hauora.eot");
+  src: url("../../public/fonts/hauora_sans/Hauora.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/hauora_sans/Hauora.woff2") format("woff2"), url("../../public/fonts/hauora_sans/Hauora.woff") format("woff"), url("../../public/fonts/hauora_sans/Hauora.ttf") format("truetype");
+}
+@keyframes mainTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container .header {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  z-index: 1000;
+}
+.container .header.hidden {
+  transform: translateY(-100%);
+}
+.container .header.scrolled {
+  background: linear-gradient(180deg, #000000 20.98%, rgba(0, 0, 0, 0) 100%);
+}
+.container .header .header__container {
+  max-width: 1120px;
+  width: 77.7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 41px;
+  animation: mainTitle 1s ease 0s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.container .header .header__container a img {
+  width: 137px;
+  height: 22.94px;
+}
+.container .header .header__container .header__nav {
+  display: flex;
+  align-items: center;
+}
+.container .header .header__container .header__nav .header__nav-link {
+  padding: 0 10px;
+  margin-left: 10px;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: left;
+  color: rgb(112, 111, 146);
+}
+.container .header .header__container .header__nav .header__nav-link:nth-child(1) {
+  margin-left: 0;
+}
+.container .header .header__container .header__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .header .header__container .header__buttons .header__buttons-search {
+  margin-left: 10px;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: left;
+  color: rgb(112, 111, 146);
+}
+.container .header .header__container .header__buttons .header__buttons-enter {
+  margin-left: 38.5px;
+  width: 72px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: rgba(23, 19, 147, 0.4);
+  border: 1px solid rgb(23, 19, 147);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+  height: 30px;
+}
+.container .header .header__container .header__buttons .header__buttons-enter:hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .header .header__container .header__buttons .header__buttons-menu {
+  display: none;
+}
+.container .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-width: 100%;
+}
+.container .main .offer {
+  padding-top: 285px;
+  width: 100%;
+  background: linear-gradient(#0b0945 20%, #04041a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .main .offer .offer__container {
+  width: 77.7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .main .offer .offer__container .offer__container__title {
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: "center";
+  color: rgb(255, 255, 255);
+  animation: mainTitle 1s ease 0.2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.container .main .offer .offer__container .offer__discription {
+  max-width: 594px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: mainTitle 1s ease 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.container .main .offer .offer__container .offer__discription .offer__discription-bottom {
+  width: 736px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0;
+  text-align: center;
+  color: rgb(112, 111, 146);
+}
+.container .main .offer .offer__container .offer__button {
+  margin: 133px 0 100px 0;
+  width: 356px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: rgb(7, 4, 51);
+  border: 1px solid rgb(17, 14, 104);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+  animation: mainTitle 1s ease 0.7s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.container .main .offer .offer__container .offer__button:hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .API {
+  padding-bottom: 100px;
+  padding-top: 106px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(4, 4, 26), rgb(0, 0, 0));
+}
+.container .main .API .API__container {
+  width: 77.7%;
+}
+.container .main .API .API__container .API__unservice {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .API .API__container .API__unservice .API__unservice__button {
+  width: 173px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: rgb(7, 6, 45);
+  border: 1px solid rgb(17, 14, 104);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+  height: 30px;
+}
+.container .main .API .API__container .API__unservice .API__unservice__button:hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .API .API__container .API__title {
+  margin-top: 30px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.container .main .API .API__container .API__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.container .main .API .API__container .API__buttons .API__buttons__button {
+  margin-left: 14px;
+}
+.container .main .API .API__container .API__buttons .API__buttons__button:nth-child(1) {
+  width: 165px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: rgb(7, 6, 45);
+  border: 1px solid rgb(17, 14, 104);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.container .main .API .API__container .API__buttons .API__buttons__button:nth-child(1):hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .API .API__container .API__buttons .API__buttons__button:nth-child(2) {
+  width: 177px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: rgb(7, 6, 45);
+  border: 1px solid rgb(17, 14, 104);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.container .main .API .API__container .API__buttons .API__buttons__button:nth-child(2):hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .API .API__container .API__buttons .API__buttons__button:nth-child(3) {
+  width: 214px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: rgb(7, 6, 45);
+  border: 1px solid rgb(17, 14, 104);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.container .main .API .API__container .API__buttons .API__buttons__button:nth-child(3):hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .API .API__container .API__buttons .API__buttons__button:nth-child(4) {
+  width: 184px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: rgb(7, 6, 45);
+  border: 1px solid rgb(17, 14, 104);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.container .main .API .API__container .API__buttons .API__buttons__button:nth-child(4):hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .API .API__container .API__buttons .API__buttons__button:nth-child(5) {
+  width: 129px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: rgb(7, 6, 45);
+  border: 1px solid rgb(17, 14, 104);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.container .main .API .API__container .API__buttons .API__buttons__button:nth-child(5):hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .API .API__container .slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+.container .main .API .API__container .slider-container .API__slider {
+  max-width: 1120px;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  scrollbar-width: none; /* Скрытие стандартного скролла */
+  margin-top: 60px;
+  gap: 20px;
+}
+.container .main .API .API__container .slider-container .API__slider .API__slider__item {
+  display: flex;
+  min-width: 261px;
+  height: 86px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(73, 73, 73);
+}
+.container .main .API .API__container .slider-container .API__slider .API__slider__item .slider__img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 17px 0 0 12px;
+}
+.container .main .API .API__container .slider-container .API__slider .API__slider__item .slider__data {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 25px;
+}
+.container .main .API .API__container .slider-container .API__slider .API__slider__item .slider__data .slider__data__title {
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgb(255, 255, 255);
+}
+.container .main .API .API__container .slider-container .API__slider .API__slider__item .slider__data .slider__data__discription {
+  margin-top: 8px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgb(120, 119, 146);
+}
+.container .main .API .API__container .API__example {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .API .API__container .API__example .API__example__container {
+  display: flex;
+  margin-top: 30px;
+  width: 1120px;
+  height: 600px;
+  border-radius: 20px;
+  background-color: rgb(1, 1, 1);
+  border: 1px solid rgb(73, 73, 73);
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move {
+  display: flex;
+  flex-direction: column;
+  width: 536px;
+  height: 580px;
+  border-radius: 10px;
+  margin: 10px 12px 10px 10px;
+  background-color: rgb(6, 6, 6);
+  border: 1px solid rgb(73, 73, 73);
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__title {
+  text-align: center;
+  margin-top: 36px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgb(255, 255, 255);
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__input__container {
+  display: flex;
+  max-width: 476px;
+  margin: 42px 37px 0px 23px;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__input__container .move__input__input {
+  width: 340px;
+  max-height: 42px;
+  background-color: #000000;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid rgb(3, 16, 180);
+  font-family: "Hauora";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: white;
+  padding-left: 15px;
+  outline: none;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__input__container .move__input__input::-moz-placeholder {
+  font-family: "Hauora";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: white;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__input__container .move__input__input::placeholder {
+  font-family: "Hauora";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: white;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__input__container .move__input__button {
+  width: 137px;
+  height: 42px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(23, 19, 147, 0.4);
+  border: 1px solid rgb(3, 16, 180);
+  font-family: "Hauora";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: white;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages {
+  margin-left: 79px;
+  margin-top: 53px;
+  width: 355px;
+  display: flex;
+  gap: 63px;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__python {
+  padding-bottom: 6px;
+  display: flex;
+  border-bottom: 2px solid rgb(23, 58, 215);
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__python img {
+  border-radius: 20px;
+  width: 15px;
+  height: 14px;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__python p {
+  margin-left: 10px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: white;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__js {
+  display: flex;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__js img {
+  border-radius: 20px;
+  width: 16px;
+  height: 16px;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__js p {
+  margin-left: 10px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: white;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__language {
+  display: flex;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__language img {
+  border-radius: 20px;
+  width: 16px;
+  height: 16px;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__language p {
+  margin-left: 10px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: white;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__img {
+  margin-left: 23px;
+  width: 475px;
+  height: 296px;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__img img {
+  width: 100%;
+  height: 100%;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__link {
+  margin-left: 169px;
+  margin-top: 37.5px;
+  display: flex;
+  align-items: center;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__link .move__link__text {
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 5.5%;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: rgb(255, 255, 255);
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__link .move__link__img {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__result {
+  width: 536px;
+  height: 580px;
+  border-radius: 10px;
+  margin: 10px 10px 10px 12px;
+  background-color: rgb(6, 6, 6);
+  border: 1px solid rgb(73, 73, 73);
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__result .result__title {
+  text-align: center;
+  margin-top: 36px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgb(255, 255, 255);
+}
+.container .main .project {
+  padding-top: 286.5px;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .project .project__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 77.7%;
+  max-width: 1120px;
+}
+.container .main .project .project__container .project__button {
+  width: 161px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: rgb(7, 6, 45);
+  border: 1px solid rgb(17, 14, 104);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+  height: 30px;
+}
+.container .main .project .project__container .project__button:hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .project .project__container .project__title {
+  margin-top: 30px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.container .main .project .project__container .project__box {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container .main .project .project__container .project__box .project__box__top {
+  gap: 24px;
+  display: flex;
+  width: 100%;
+}
+.container .main .project .project__container .project__box .project__box__top .project__box__freelance {
+  display: flex;
+  flex-direction: column;
+  width: 548px;
+  height: 666px;
+  border-radius: 20px;
+  border: 1px solid rgb(73, 73, 73);
+  overflow: hidden; /* Чтобы видео не выходило за границы блока */
+  background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
+}
+.container .main .project .project__container .project__box .project__box__top .project__box__freelance .video-background {
+  mix-blend-mode: screen;
+  margin: 94px 0px 0px 84px;
+  width: 380px;
+  height: 380px;
+}
+.container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info {
+  position: relative; /* Чтобы текст был поверх видео */
+  z-index: 1; /* Чтобы текст был поверх видео */
+  max-width: 383px;
+  padding: 80px 0 0 95px;
+}
+.container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info .freelance__title {
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info .freelance__title.appearance {
+  opacity: 1;
+}
+.container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info .freelance__discription {
+  margin-top: 15px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0;
+  color: rgb(112, 111, 146);
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+.container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info .freelance__discription.appearance {
+  opacity: 1;
+}
+.container .main .project .project__container .project__box .project__box__top .project__box__plans {
+  position: relative;
+  width: 548px;
+  height: 666px;
+  border-radius: 20px;
+  border: 1px solid rgb(73, 73, 73);
+  overflow: hidden; /* Чтобы видео не выходило за границы блока */
+  background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
+}
+.container .main .project .project__container .project__box .project__box__top .project__box__plans .video-background {
+  mix-blend-mode: screen;
+  margin: 105px 0px 0px 119px;
+  width: 310px;
+  height: 310px;
+}
+.container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info {
+  position: relative; /* Чтобы текст был поверх видео */
+  z-index: 1; /* Чтобы текст был поверх видео */
+  max-width: 383px;
+  padding: 80px 0 0 95px;
+}
+.container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__title {
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__title.appearance {
+  opacity: 1;
+}
+.container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__discription-top {
+  margin-top: 15px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0;
+  color: rgb(112, 111, 146);
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+.container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__discription-bottom {
+  margin-top: 5px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0;
+  color: rgb(112, 111, 146);
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+.container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__discription.appearance {
+  opacity: 1;
+}
+.container .main .project .project__container .project__box .project__box__bottom {
+  margin-top: 24px;
+  gap: 24px;
+  display: flex;
+  width: 100%;
+}
+.container .main .project .project__container .project__box .project__box__bottom .project__box__freelance {
+  position: relative;
+  width: 548px;
+  height: 666px;
+  border-radius: 20px;
+  border: 1px solid rgb(73, 73, 73);
+  overflow: hidden; /* Чтобы видео не выходило за границы блока */
+  background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
+}
+.container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .video-background {
+  mix-blend-mode: screen;
+  margin: 60px 0px 0px 84px;
+  width: 380px;
+  height: 380px;
+}
+.container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info {
+  position: relative; /* Чтобы текст был поверх видео */
+  z-index: 1; /* Чтобы текст был поверх видео */
+  max-width: 383px;
+  padding: 80px 0 0 95px;
+}
+.container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .freelance__title {
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .freelance__title.appearance {
+  opacity: 1;
+}
+.container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-top {
+  margin-top: 15px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0;
+  color: rgb(112, 111, 146);
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+.container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-bottom {
+  margin-top: 5px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0;
+  color: rgb(112, 111, 146);
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+.container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .freelance__discription.appearance {
+  opacity: 1;
+}
+.container .main .project .project__container .project__box .project__box__bottom .project__box__plans {
+  position: relative;
+  width: 548px;
+  height: 666px;
+  border-radius: 20px;
+  border: 1px solid rgb(73, 73, 73);
+  overflow: hidden; /* Чтобы видео не выходило за границы блока */
+  background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
+}
+.container .main .project .project__container .project__box .project__box__bottom .project__box__plans .video-background {
+  mix-blend-mode: screen;
+  margin: 0px 0px 0px 64px;
+  width: 421px;
+  height: 421px;
+}
+.container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info {
+  z-index: 1; /* Чтобы текст был поверх видео */
+  max-width: 383px;
+  padding: 80px 0 0 95px;
+}
+.container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__title {
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__title.appearance {
+  opacity: 1;
+}
+.container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-top {
+  margin-top: 15px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0;
+  color: rgb(112, 111, 146);
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+.container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-bottom {
+  margin-top: 5px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0;
+  color: rgb(112, 111, 146);
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+.container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription.appearance {
+  opacity: 1;
+}
+.container .main .trend {
+  padding-top: 371px;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .trend .trend__container {
+  width: 77.7%;
+  max-width: 1120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .main .trend .trend__container .trend__button {
+  width: 111px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: rgb(7, 6, 45);
+  border: 1px solid rgb(17, 14, 104);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+  height: 30px;
+}
+.container .main .trend .trend__container .trend__button:hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .trend .trend__container .trend__title {
+  margin-top: 30px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: "center";
+  color: rgb(255, 255, 255);
+}
+.container .main .trend .trend__container .trend__buttons {
+  display: flex;
+  margin-top: 71px;
+  gap: 14px;
+}
+.container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(1) {
+  width: 97px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: rgb(7, 6, 45);
+  border: 1px solid rgb(17, 14, 104);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(1):hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(2) {
+  width: 150px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: rgb(7, 6, 45);
+  border: 1px solid rgb(17, 14, 104);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(2):hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(3) {
+  width: 129px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: rgb(7, 6, 45);
+  border: 1px solid rgb(17, 14, 104);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(3):hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .trend .trend__container .trend__box {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.container .main .trend .trend__container .trend__box .trend__box__model {
+  max-width: 355px;
+  width: 356px;
+  height: 132px;
+  background-color: rgb(6, 6, 6);
+  border-radius: 20px;
+  border: 1px solid rgb(73, 73, 73);
+}
+.container .main .trend .trend__container .trend__box .trend__box__model .model__top {
+  margin-top: 20.5px;
+  margin-left: 19px;
+  display: flex;
+  align-items: center;
+}
+.container .main .trend .trend__container .trend__box .trend__box__model .model__top .model__top__img {
+  width: 25px;
+  height: 25px;
+}
+.container .main .trend .trend__container .trend__box .trend__box__model .model__top .model__top__name {
+  margin-left: 19px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgb(255, 255, 255);
+}
+.container .main .trend .trend__container .trend__box .trend__box__model .model__slider {
+  margin-top: 11px;
+  margin-left: 60px;
+  display: flex;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.container .main .trend .trend__container .trend__box .trend__box__model .model__slider .model__slider__container {
+  max-width: 296px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  scrollbar-width: none;
+  gap: 10px;
+}
+.container .main .trend .trend__container .trend__box .trend__box__model .model__slider .model__slider__container .model__slider__item {
+  width: 109px;
+  height: 21px;
+  background-color: rgb(20, 20, 20);
+  border-radius: 10px;
+  border: 1px solid rgb(52, 59, 67);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .main .trend .trend__container .trend__box .trend__box__model .model__slider .model__slider__container .model__slider__item .model__slider__text {
+  padding: 11px 7px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: rgb(153, 153, 153);
+}
+.container .main .trend .trend__container .trend__box .trend__box__model .model__bottom {
+  margin-left: 21px;
+  margin-top: 23px;
+  display: flex;
+  align-items: center;
+}
+.container .main .trend .trend__container .trend__box .trend__box__model .model__bottom .model__bottom__img {
+  width: 21px;
+  height: 21px;
+}
+.container .main .trend .trend__container .trend__box .trend__box__model .model__bottom .model__bottom__name {
+  margin-left: 21px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgb(255, 255, 255);
+}
+.container .main .trend .trend__container .trend__box .trend__box__model .model__bottom .model__bottom__time {
+  margin-left: 38px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgb(120, 119, 146);
+}
+.container .main .trend .trend__container .trend__box .trend__box__model .model__bottom .model__bottom__downloads {
+  margin-left: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .trend .trend__container .trend__box .trend__box__model .model__bottom .model__bottom__downloads .model__bottom__downloads-img {
+  width: 20px;
+  height: 20px;
+}
+.container .main .trend .trend__container .trend__box .trend__box__model .model__bottom .model__bottom__downloads .model__bottom__downloads-text {
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgb(120, 119, 146);
+}
+.container .main .trend .trend__container .trend__box .trend__box__model .model__bottom .model__bottom__likes {
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .trend .trend__container .trend__box .trend__box__model .model__bottom .model__bottom__likes .model__bottom__likes-img {
+  width: 11px;
+  height: 10px;
+}
+.container .main .trend .trend__container .trend__box .trend__box__model .model__bottom .model__bottom__likes .model__bottom__likes-text {
+  margin-left: 4.5px;
+  font-family: Hauora;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgb(120, 119, 146);
+}
+.container .main .development {
+  padding-top: 400px;
+  padding-bottom: 161.5px;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .development .development__container {
+  width: 77.7%;
+  max-width: 1120px;
+  display: flex;
+  flex-direction: column;
+}
+.container .main .development .development__container .development_title {
+  font-family: Hauora;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  color: rgb(255, 255, 255);
+}
+.container .main .development .development__container .development_discription {
+  margin-top: 30px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: rgb(120, 119, 146);
+}
+.container .main .development .development__container .development__buttons {
+  margin-top: 80px;
+  display: flex;
+}
+.container .main .development .development__container .development__buttons .develompent__button:nth-child(1) {
+  width: 138px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: rgba(23, 19, 147, 0.4);
+  border: 1px solid rgb(3, 16, 180);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.container .main .development .development__container .development__buttons .develompent__button:nth-child(1):hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .development .development__container .development__buttons .develompent__button:nth-child(2) {
+  margin-left: 20px;
+  width: 138px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid rgb(3, 16, 180);
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.container .main .development .development__container .development__buttons .develompent__button:nth-child(2):hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .footer {
+  background: rgb(0, 0, 0);
+  padding-bottom: 109.46px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .footer .footer__container {
+  max-width: 1116px;
+  width: 77.7%;
+  max-width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.container .footer .footer__container .footer__top {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container .footer .footer__container .footer__top .footer__logo {
+  width: 137px;
+  height: 22.94px;
+}
+.container .footer .footer__container .footer__top .footer__newsletter {
+  margin-top: 97.06px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid rgb(52, 59, 67);
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Hauora";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 16.8px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.container .footer .footer__container .footer__top .footer__newsletter:hover {
+  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .footer .footer__container .footer__menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 54px;
+}
+.container .footer .footer__container .footer__menu .footer__column {
+  display: flex;
+  flex-direction: column;
+}
+.container .footer .footer__container .footer__menu .footer__column .footer__column__title {
+  font-family: "Hauora";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.6px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  padding-bottom: 42.54px;
+}
+.container .footer .footer__container .footer__menu .footer__column .footer__column__item {
+  margin-top: 8px;
+  font-family: "Hauora";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.6px;
+  text-align: left;
+  color: rgb(112, 111, 146);
+}/*# sourceMappingURL=style.css.map */
