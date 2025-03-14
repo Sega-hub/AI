@@ -198,7 +198,7 @@ a {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
 }
 .container .main .API {
-  padding-bottom: 100px;
+  padding-bottom: 377px;
   padding-top: 200px;
   width: 100%;
   display: flex;
@@ -208,6 +208,7 @@ a {
 }
 .container .main .API .API__container {
   width: 77.7%;
+  position: relative;
 }
 .container .main .API .API__container .API__unservice {
   width: 100%;
@@ -231,9 +232,14 @@ a {
   color: rgb(255, 255, 255);
   transition: 0.5s;
   height: 30px;
+  opacity: 0;
+  transition: 0.5s;
 }
 .container .main .API .API__container .API__unservice .API__unservice__button:hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .API .API__container .API__unservice .API__unservice__button.appearance {
+  opacity: 1;
 }
 .container .main .API .API__container .API__title {
   margin-top: 30px;
@@ -244,12 +250,19 @@ a {
   letter-spacing: 0%;
   text-align: center;
   color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 0.5s;
+}
+.container .main .API .API__container .API__title.appearance {
+  opacity: 1;
 }
 .container .main .API .API__container .API__buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 80px;
+  opacity: 0;
+  transition: 0.5s;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button {
   margin-left: 14px;
@@ -349,6 +362,9 @@ a {
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(5):hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
 }
+.container .main .API .API__container .API__buttons.appearance {
+  opacity: 1;
+}
 .container .main .API .API__container .slider-container {
   display: flex;
   justify-content: center;
@@ -356,8 +372,15 @@ a {
   position: relative;
   max-width: 100%;
   overflow: hidden;
+  opacity: 0;
+  transition: 0.5s;
 }
-.container .main .API .API__container .slider-container .API__slider {
+.container .main .API .API__container .slider-container .slider__slider {
+  display: flex;
+  justify-content: start;
+  max-width: 1120px;
+}
+.container .main .API .API__container .slider-container .slider__slider .API__slider {
   max-width: 1120px;
   display: flex;
   gap: 20px;
@@ -368,7 +391,7 @@ a {
   margin-top: 60px;
   gap: 20px;
 }
-.container .main .API .API__container .slider-container .API__slider .API__slider__item {
+.container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item {
   display: flex;
   min-width: 261px;
   height: 86px;
@@ -376,18 +399,18 @@ a {
   background-color: rgb(0, 0, 0);
   border: 1px solid rgb(73, 73, 73);
 }
-.container .main .API .API__container .slider-container .API__slider .API__slider__item .slider__img img {
+.container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item .slider__img img {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   margin: 17px 0 0 12px;
 }
-.container .main .API .API__container .slider-container .API__slider .API__slider__item .slider__data {
+.container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item .slider__data {
   display: flex;
   flex-direction: column;
   margin: 20px 0 0 25px;
 }
-.container .main .API .API__container .slider-container .API__slider .API__slider__item .slider__data .slider__data__title {
+.container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item .slider__data .slider__data__title {
   font-family: "Hauora";
   font-weight: 500;
   font-size: 14px;
@@ -395,7 +418,7 @@ a {
   letter-spacing: 0%;
   color: rgb(255, 255, 255);
 }
-.container .main .API .API__container .slider-container .API__slider .API__slider__item .slider__data .slider__data__discription {
+.container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item .slider__data .slider__data__discription {
   margin-top: 8px;
   font-family: "Hauora";
   font-weight: 500;
@@ -404,11 +427,16 @@ a {
   letter-spacing: 0%;
   color: rgb(120, 119, 146);
 }
+.container .main .API .API__container .slider-container.appearance {
+  opacity: 1;
+}
 .container .main .API .API__container .API__example {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: 0.5s;
 }
 .container .main .API .API__container .API__example .API__example__container {
   display: flex;
@@ -428,6 +456,8 @@ a {
   margin: 10px 12px 10px 10px;
   background-color: rgb(6, 6, 6);
   border: 1px solid rgb(73, 73, 73);
+  opacity: 0;
+  transition: 0.5s 0.2s;
 }
 .container .main .API .API__container .API__example .API__example__container .API__example__move .move__title {
   text-align: center;
@@ -498,6 +528,8 @@ a {
   gap: 63px;
 }
 .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__python {
+  background-color: transparent;
+  border: none;
   padding-bottom: 6px;
   display: flex;
   border-bottom: 2px solid rgb(23, 58, 215);
@@ -517,7 +549,10 @@ a {
   color: white;
 }
 .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__js {
+  background-color: transparent;
+  border: none;
   display: flex;
+  padding-bottom: 6px;
 }
 .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__js img {
   border-radius: 20px;
@@ -534,7 +569,10 @@ a {
   color: white;
 }
 .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__language {
+  background-color: transparent;
+  border: none;
   display: flex;
+  padding-bottom: 6px;
 }
 .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__language img {
   border-radius: 20px;
@@ -610,6 +648,9 @@ a {
   width: 20px;
   height: 20px;
 }
+.container .main .API .API__container .API__example .API__example__container .API__example__move.appearance {
+  opacity: 1;
+}
 .container .main .API .API__container .API__example .API__example__container .API__example__result {
   width: 536px;
   height: 580px;
@@ -617,6 +658,8 @@ a {
   margin: 10px 10px 10px 12px;
   background-color: rgb(6, 6, 6);
   border: 1px solid rgb(73, 73, 73);
+  opacity: 0;
+  transition: 0.5s 0.4s;
 }
 .container .main .API .API__container .API__example .API__example__container .API__example__result .result__title {
   text-align: center;
@@ -628,8 +671,28 @@ a {
   letter-spacing: 0%;
   color: rgb(255, 255, 255);
 }
+.container .main .API .API__container .API__example .API__example__container .API__example__result.appearance {
+  opacity: 1;
+}
+.container .main .API .API__container .API__example.appearance {
+  opacity: 1;
+}
+.container .main .API .API__container::after {
+  content: "";
+  position: absolute;
+  margin: 0 49.75%;
+  width: 3px;
+  height: 0;
+  background-image: url("../../public/images/straightLine.png");
+  background-repeat: no-repeat;
+  background-size: 6px 357px;
+  transition: all 1s ease 0s;
+  z-index: 1000;
+}
+.container .main .API .API__container.line.play::after {
+  height: 357px;
+}
 .container .main .project {
-  padding-top: 286.5px;
   background-color: rgb(0, 0, 0);
   width: 100%;
   display: flex;
@@ -637,6 +700,7 @@ a {
   align-items: center;
 }
 .container .main .project .project__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -659,9 +723,14 @@ a {
   color: rgb(255, 255, 255);
   transition: 0.5s;
   height: 30px;
+  opacity: 0;
+  transition: 0.5s;
 }
 .container .main .project .project__container .project__button:hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .project .project__container .project__button.appearance {
+  opacity: 1;
 }
 .container .main .project .project__container .project__title {
   margin-top: 30px;
@@ -672,6 +741,11 @@ a {
   letter-spacing: 0%;
   text-align: center;
   color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 0.5s;
+}
+.container .main .project .project__container .project__title.appearance {
+  opacity: 1;
 }
 .container .main .project .project__container .project__box {
   margin-top: 100px;
@@ -693,6 +767,8 @@ a {
   border: 1px solid rgb(73, 73, 73);
   overflow: hidden; /* Чтобы видео не выходило за границы блока */
   background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
+  opacity: 0;
+  transition: 0.5s;
 }
 .container .main .project .project__container .project__box .project__box__top .project__box__freelance .video-background {
   mix-blend-mode: screen;
@@ -735,6 +811,9 @@ a {
 .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info .freelance__discription.appearance {
   opacity: 1;
 }
+.container .main .project .project__container .project__box .project__box__top .project__box__freelance.appearance {
+  opacity: 1;
+}
 .container .main .project .project__container .project__box .project__box__top .project__box__plans {
   position: relative;
   width: 548px;
@@ -743,6 +822,8 @@ a {
   border: 1px solid rgb(73, 73, 73);
   overflow: hidden; /* Чтобы видео не выходило за границы блока */
   background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
+  opacity: 0;
+  transition: 0.5s 0.2s;
 }
 .container .main .project .project__container .project__box .project__box__top .project__box__plans .video-background {
   mix-blend-mode: screen;
@@ -797,6 +878,9 @@ a {
 .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__discription.appearance {
   opacity: 1;
 }
+.container .main .project .project__container .project__box .project__box__top .project__box__plans.appearance {
+  opacity: 1;
+}
 .container .main .project .project__container .project__box .project__box__bottom {
   margin-top: 24px;
   gap: 24px;
@@ -811,6 +895,8 @@ a {
   border: 1px solid rgb(73, 73, 73);
   overflow: hidden; /* Чтобы видео не выходило за границы блока */
   background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
+  opacity: 0;
+  transition: 0.5s;
 }
 .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .video-background {
   mix-blend-mode: screen;
@@ -865,6 +951,9 @@ a {
 .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .freelance__discription.appearance {
   opacity: 1;
 }
+.container .main .project .project__container .project__box .project__box__bottom .project__box__freelance.appearance {
+  opacity: 1;
+}
 .container .main .project .project__container .project__box .project__box__bottom .project__box__plans {
   position: relative;
   width: 548px;
@@ -873,6 +962,8 @@ a {
   border: 1px solid rgb(73, 73, 73);
   overflow: hidden; /* Чтобы видео не выходило за границы блока */
   background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
+  opacity: 0;
+  transition: 0.5s 0.2s;
 }
 .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .video-background {
   mix-blend-mode: screen;
@@ -923,11 +1014,30 @@ a {
   transition: 0.5s;
   transition-delay: 0.3s;
 }
-.container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription.appearance {
+.container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info.appearance {
   opacity: 1;
+}
+.container .main .project .project__container .project__box .project__box__bottom .project__box__plans.appearance {
+  opacity: 1;
+}
+.container .main .project .project__container::after {
+  content: "";
+  position: absolute;
+  margin: 1520px 50% 0 50%;
+  width: 540px;
+  height: 0;
+  background-image: url("../../public/images/secondLine.png");
+  background-repeat: no-repeat;
+  background-size: 540px 350px;
+  transition: all 1s ease 0s;
+  z-index: 1000;
+}
+.container .main .project .project__container.line.play::after {
+  height: 350px;
 }
 .container .main .trend {
   padding-top: 371px;
+  padding-bottom: 400px;
   background-color: rgb(0, 0, 0);
   width: 100%;
   display: flex;
@@ -935,6 +1045,7 @@ a {
   align-items: center;
 }
 .container .main .trend .trend__container {
+  position: relative;
   width: 77.7%;
   max-width: 1120px;
   display: flex;
@@ -958,9 +1069,14 @@ a {
   color: rgb(255, 255, 255);
   transition: 0.5s;
   height: 30px;
+  opacity: 0;
+  transition: 0.5s;
 }
 .container .main .trend .trend__container .trend__button:hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .trend .trend__container .trend__button.appearance {
+  opacity: 1;
 }
 .container .main .trend .trend__container .trend__title {
   margin-top: 30px;
@@ -971,6 +1087,11 @@ a {
   letter-spacing: 0%;
   text-align: "center";
   color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 0.5s;
+}
+.container .main .trend .trend__container .trend__title.appearance {
+  opacity: 1;
 }
 .container .main .trend .trend__container .trend__buttons {
   display: flex;
@@ -992,9 +1113,14 @@ a {
   text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s;
+  opacity: 0;
+  transition: 0.5s;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(1):hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(1).appearance {
+  opacity: 1;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(2) {
   width: 150px;
@@ -1011,9 +1137,14 @@ a {
   text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s;
+  opacity: 0;
+  transition: 0.5s 0.2s;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(2):hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(2).appearance {
+  opacity: 1;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(3) {
   width: 129px;
@@ -1030,13 +1161,19 @@ a {
   text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s;
+  opacity: 0;
+  transition: 0.5s 0.4s;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(3):hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
 }
+.container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(3).appearance {
+  opacity: 1;
+}
 .container .main .trend .trend__container .trend__box {
   margin-top: 80px;
   width: 100%;
+  min-width: 1120px;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -1048,6 +1185,8 @@ a {
   background-color: rgb(6, 6, 6);
   border-radius: 20px;
   border: 1px solid rgb(73, 73, 73);
+  opacity: 0;
+  transition: 0.5s;
 }
 .container .main .trend .trend__container .trend__box .trend__box__model .model__top {
   margin-top: 20.5px;
@@ -1077,7 +1216,7 @@ a {
   overflow: hidden;
 }
 .container .main .trend .trend__container .trend__box .trend__box__model .model__slider .model__slider__container {
-  max-width: 296px;
+  max-width: 294px;
   display: flex;
   overflow-x: auto;
   overflow-y: hidden;
@@ -1172,8 +1311,27 @@ a {
   letter-spacing: 0%;
   color: rgb(120, 119, 146);
 }
+.container .main .trend .trend__container .trend__box .trend__box__model.appearance {
+  opacity: 1;
+}
+.container .main .trend .trend__container::after {
+  content: "";
+  top: 750px;
+  left: 36px;
+  position: absolute;
+  width: 739px;
+  height: 0;
+  background-image: url("../../public/images/treeLine.png");
+  background-repeat: no-repeat;
+  background-size: 739px 350px;
+  transition: all 1s ease 0s;
+  z-index: 1000;
+}
+.container .main .trend .trend__container.line.play::after {
+  height: 350px;
+}
 .container .main .development {
-  padding-top: 400px;
+  padding-top: 0;
   padding-bottom: 161.5px;
   background-color: rgb(0, 0, 0);
   width: 100%;
@@ -1195,6 +1353,11 @@ a {
   letter-spacing: 0px;
   vertical-align: middle;
   color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 0.5s;
+}
+.container .main .development .development__container .development_title.appearance {
+  opacity: 1;
 }
 .container .main .development .development__container .development_discription {
   margin-top: 30px;
@@ -1204,6 +1367,11 @@ a {
   line-height: 130%;
   letter-spacing: 0%;
   color: rgb(120, 119, 146);
+  opacity: 0;
+  transition: 0.5s;
+}
+.container .main .development .development__container .development_discription.appearance {
+  opacity: 1;
 }
 .container .main .development .development__container .development__buttons {
   margin-top: 80px;
@@ -1224,9 +1392,14 @@ a {
   text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s;
+  opacity: 0;
+  transition: 0.5s;
 }
 .container .main .development .development__container .development__buttons .develompent__button:nth-child(1):hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .development .development__container .development__buttons .develompent__button:nth-child(1).appearance {
+  opacity: 1;
 }
 .container .main .development .development__container .development__buttons .develompent__button:nth-child(2) {
   margin-left: 20px;
@@ -1244,9 +1417,14 @@ a {
   text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s;
+  opacity: 0;
+  transition: 0.5s;
 }
 .container .main .development .development__container .development__buttons .develompent__button:nth-child(2):hover {
   box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+}
+.container .main .development .development__container .development__buttons .develompent__button:nth-child(2).appearance {
+  opacity: 1;
 }
 .container .footer {
   background: rgb(0, 0, 0);
