@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
     <title>AI</title>
 </head>
 <body>
@@ -154,8 +155,20 @@
                                         <p class="python__title">cURL</p>
                                     </div>
                                 </div>
-                                <div class="move__img">
-                                    <img src="./public/images/code.png" alt="code img">
+                                <div class="move__code">
+                                    <div class="move__code__button">                                        
+                                        <button onclick="copyCode()"><img src="./public/images/copy.svg" alt="copy img"></button>
+                                    </div>
+                                    <pre>
+                                        <code class="move__code__txt" id="highlightedCode">
+                                            function offset(el) {
+                                                const rect = el.getBoundingClientRect(), 
+                                                    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+                                                    scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
+                                                return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+                                            }
+                                        </code>
+                                    </pre>
                                 </div>
                                 <a class="move__link" href="#">
                                     <p class="move__link__text">Изучите Больше Параметров</p>
@@ -651,6 +664,8 @@
         </footer>  
     </div>
 
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="./src/js/script.js"></script>
 </body>
 </html>

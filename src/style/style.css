@@ -550,14 +550,42 @@ a {
   letter-spacing: 0%;
   color: white;
 }
-.container .main .API .API__container .API__example .API__example__container .API__example__move .move__img {
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__code {
+  position: relative;
   margin-left: 23px;
   width: 475px;
   height: 296px;
+  border-radius: 15px;
+  background-color: #1d2125;
+  border: 1px solid rgb(52, 59, 67);
 }
-.container .main .API .API__container .API__example .API__example__container .API__example__move .move__img img {
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__code .move__code__button {
+  margin: 11px 22.12px 0 22.12px;
+  width: 430.7676391602px;
+  display: flex;
+  justify-content: end;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__code .move__code__button button {
+  background-color: transparent;
+  border: none;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__code pre {
+  padding: 0;
+  margin: 1.84px 22.12px 65.67px 22.12px;
+  width: 430.7676391602px;
+  height: 197.4817962646px;
+  overflow-x: auto;
+  white-space: pre-line;
+  word-wrap: break-word;
+  background-color: #1a1f2b;
+  scrollbar-width: none;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__code pre .move__code__txt {
+  display: flex;
   width: 100%;
   height: 100%;
+  background-color: #1a1f2b;
+  scrollbar-width: none;
 }
 .container .main .API .API__container .API__example .API__example__container .API__example__move .move__link {
   margin: 28px 169px 24px 169px;
