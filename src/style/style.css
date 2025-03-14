@@ -483,7 +483,7 @@ a {
   border-bottom-left-radius: 10px;
   border: 1px solid #110E68;
   font-family: "Hauora";
-  font-weight: 600;
+  font-weight: 100;
   font-size: 14px;
   line-height: 140%;
   letter-spacing: 0%;
@@ -493,7 +493,7 @@ a {
 }
 .container .main .API .API__container .API__example .API__example__container .API__example__move .move__input__container .move__input__input::-moz-placeholder {
   font-family: "Hauora";
-  font-weight: 600;
+  font-weight: 100;
   font-size: 14px;
   line-height: 140%;
   letter-spacing: 0%;
@@ -501,7 +501,7 @@ a {
 }
 .container .main .API .API__container .API__example .API__example__container .API__example__move .move__input__container .move__input__input::placeholder {
   font-family: "Hauora";
-  font-weight: 600;
+  font-weight: 100;
   font-size: 14px;
   line-height: 140%;
   letter-spacing: 0%;
@@ -515,7 +515,7 @@ a {
   background-color: rgba(23, 19, 147, 0.4);
   border: 1px solid #110E68;
   font-family: "Hauora";
-  font-weight: 600;
+  font-weight: 100;
   font-size: 14px;
   line-height: 140%;
   letter-spacing: 0%;
