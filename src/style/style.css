@@ -112,7 +112,7 @@ a {
   height: 30px;
 }
 .container .header .header__container .header__buttons .header__buttons-enter:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 26.39px 0px #110E68;
 }
 .container .header .header__container .header__buttons .header__buttons-menu {
   display: none;
@@ -126,7 +126,7 @@ a {
   max-width: 100%;
 }
 .container .main .offer {
-  padding-top: 300px;
+  height: 70vw;
   width: 100%;
   background: linear-gradient(#0b0945 20%, #04041a);
   display: flex;
@@ -140,6 +140,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100%;
 }
 .container .main .offer .offer__container .offer__container__title {
   font-family: "Hauora";
@@ -180,7 +181,7 @@ a {
   height: 42px;
   border-radius: 10px;
   background-color: rgb(7, 4, 51);
-  border: 1px solid rgb(17, 14, 104);
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -195,11 +196,10 @@ a {
   opacity: 0;
 }
 .container .main .offer .offer__container .offer__button:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 26.39px 0px #110E68;
 }
 .container .main .API {
   padding-bottom: 377px;
-  padding-top: 200px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -221,7 +221,7 @@ a {
   height: 42px;
   border-radius: 10px;
   background-color: rgb(7, 6, 45);
-  border: 1px solid rgb(17, 14, 104);
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -236,7 +236,7 @@ a {
   transition: 0.5s;
 }
 .container .main .API .API__container .API__unservice .API__unservice__button:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 26.39px 0px #110E68;
 }
 .container .main .API .API__container .API__unservice .API__unservice__button.appearance {
   opacity: 1;
@@ -272,7 +272,7 @@ a {
   height: 42px;
   border-radius: 10px;
   background-color: #04041a;
-  border: 1px solid rgb(17, 14, 104);
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -282,16 +282,17 @@ a {
   text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s;
+  box-shadow: 0px 0px 26.39px 0px #110E68;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(1):hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 26.39px 0px #110E68;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(2) {
   width: 177px;
   height: 42px;
   border-radius: 10px;
   background-color: #04041a;
-  border: 1px solid rgb(17, 14, 104);
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -303,14 +304,14 @@ a {
   transition: 0.5s;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(2):hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 26.39px 0px #110E68;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(3) {
   width: 214px;
   height: 42px;
   border-radius: 10px;
   background-color: #04041a;
-  border: 1px solid rgb(17, 14, 104);
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -322,14 +323,14 @@ a {
   transition: 0.5s;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(3):hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 26.39px 0px #110E68;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(4) {
   width: 184px;
   height: 42px;
   border-radius: 10px;
   background-color: #04041a;
-  border: 1px solid rgb(17, 14, 104);
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -341,14 +342,14 @@ a {
   transition: 0.5s;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(4):hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 26.39px 0px #110E68;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(5) {
   width: 129px;
   height: 42px;
   border-radius: 10px;
   background-color: #04041a;
-  border: 1px solid rgb(17, 14, 104);
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -360,7 +361,7 @@ a {
   transition: 0.5s;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(5):hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 26.39px 0px #110E68;
 }
 .container .main .API .API__container .API__buttons.appearance {
   opacity: 1;
@@ -480,7 +481,7 @@ a {
   background-color: transparent;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  border: 1px solid rgb(3, 16, 180);
+  border: 1px solid #110E68;
   font-family: "Hauora";
   font-weight: 600;
   font-size: 14px;
@@ -512,7 +513,7 @@ a {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: rgba(23, 19, 147, 0.4);
-  border: 1px solid rgb(3, 16, 180);
+  border: 1px solid #110E68;
   font-family: "Hauora";
   font-weight: 600;
   font-size: 14px;
@@ -594,7 +595,7 @@ a {
   width: 475px;
   height: 296px;
   border-radius: 15px;
-  background-color: #1d2125;
+  background-color: rgb(29, 33, 37);
   border: 1px solid rgb(52, 59, 67);
 }
 .container .main .API .API__container .API__example .API__example__container .API__example__move .move__code .move__code__button {
@@ -712,7 +713,7 @@ a {
   height: 42px;
   border-radius: 10px;
   background-color: rgb(7, 6, 45);
-  border: 1px solid rgb(17, 14, 104);
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -727,7 +728,7 @@ a {
   transition: 0.5s;
 }
 .container .main .project .project__container .project__button:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 26.39px 0px #110E68;
 }
 .container .main .project .project__container .project__button.appearance {
   opacity: 1;
@@ -1058,7 +1059,7 @@ a {
   height: 42px;
   border-radius: 10px;
   background-color: rgb(7, 6, 45);
-  border: 1px solid rgb(17, 14, 104);
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -1073,7 +1074,7 @@ a {
   transition: 0.5s;
 }
 .container .main .trend .trend__container .trend__button:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 26.39px 0px #110E68;
 }
 .container .main .trend .trend__container .trend__button.appearance {
   opacity: 1;
@@ -1099,11 +1100,12 @@ a {
   gap: 14px;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(1) {
+  box-shadow: 0px 0px 26.39px 0px #110E68;
   width: 97px;
   height: 42px;
   border-radius: 10px;
   background-color: rgb(7, 6, 45);
-  border: 1px solid rgb(17, 14, 104);
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -1117,7 +1119,7 @@ a {
   transition: 0.5s;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(1):hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 26.39px 0px #110E68;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(1).appearance {
   opacity: 1;
@@ -1127,7 +1129,7 @@ a {
   height: 42px;
   border-radius: 10px;
   background-color: rgb(7, 6, 45);
-  border: 1px solid rgb(17, 14, 104);
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -1141,7 +1143,7 @@ a {
   transition: 0.5s 0.2s;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(2):hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 26.39px 0px #110E68;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(2).appearance {
   opacity: 1;
@@ -1151,7 +1153,7 @@ a {
   height: 42px;
   border-radius: 10px;
   background-color: rgb(7, 6, 45);
-  border: 1px solid rgb(17, 14, 104);
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -1165,7 +1167,7 @@ a {
   transition: 0.5s 0.4s;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(3):hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 26.39px 0px #110E68;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(3).appearance {
   opacity: 1;
@@ -1382,7 +1384,7 @@ a {
   height: 42px;
   border-radius: 10px;
   background-color: rgba(23, 19, 147, 0.4);
-  border: 1px solid rgb(3, 16, 180);
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -1396,7 +1398,7 @@ a {
   transition: 0.5s;
 }
 .container .main .development .development__container .development__buttons .develompent__button:nth-child(1):hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 26.39px 0px #110E68;
 }
 .container .main .development .development__container .development__buttons .develompent__button:nth-child(1).appearance {
   opacity: 1;
@@ -1407,7 +1409,7 @@ a {
   height: 42px;
   border-radius: 10px;
   background-color: transparent;
-  border: 1px solid rgb(3, 16, 180);
+  border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
   font-size: 14px;
@@ -1421,7 +1423,7 @@ a {
   transition: 0.5s;
 }
 .container .main .development .development__container .development__buttons .develompent__button:nth-child(2):hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 26.39px 0px #110E68;
 }
 .container .main .development .development__container .development__buttons .develompent__button:nth-child(2).appearance {
   opacity: 1;
@@ -1471,7 +1473,7 @@ a {
   color: rgb(255, 255, 255);
 }
 .container .footer .footer__container .footer__top .footer__newsletter:hover {
-  box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  box-shadow: 0px 0px 26.39px 0px #110E68;
 }
 .container .footer .footer__container .footer__menu {
   display: flex;
