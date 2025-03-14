@@ -178,7 +178,7 @@ $width: 77.7%;
         max-width: 100%;
 
         .offer {
-           padding-top: 285px;  
+           padding-top: 300px;  
            width: 100%;
            background: linear-gradient(#0b0945 20%, #04041a);
            @include center();
@@ -241,7 +241,7 @@ $width: 77.7%;
             ///sdfsdfsdf
             padding-bottom: 100px;
 
-            padding-top: 106px;
+            padding-top: 200px;
             width: 100%;
             @include center();
             background: linear-gradient(rgb(4, 4, 26), rgb(0, 0, 0));
@@ -271,19 +271,19 @@ $width: 77.7%;
                     .API__buttons__button {
                         margin-left: 14px;
                         &:nth-child(1) {
-                            @include button(165px, rgba(7, 6, 45, 1), rgba(17, 14, 104, 1));
+                            @include button(165px, #04041a, rgba(17, 14, 104, 1));
                         }
                         &:nth-child(2) {
-                            @include button(177px, rgba(7, 6, 45, 1), rgba(17, 14, 104, 1));
+                            @include button(177px, #04041a, rgba(17, 14, 104, 1));
                         }
                         &:nth-child(3) {
-                            @include button(214px, rgba(7, 6, 45, 1), rgba(17, 14, 104, 1));
+                            @include button(214px, #04041a, rgba(17, 14, 104, 1));
                         }
                         &:nth-child(4) {
-                            @include button(184px, rgba(7, 6, 45, 1), rgba(17, 14, 104, 1));
+                            @include button(184px, #04041a, rgba(17, 14, 104, 1));
                         }
                         &:nth-child(5) {
-                            @include button(129px, rgba(7, 6, 45, 1), rgba(17, 14, 104, 1));
+                            @include button(129px, #04041a, rgba(17, 14, 104, 1));
                         }
                     }
                 }
@@ -389,7 +389,7 @@ $width: 77.7%;
                                 .move__input__input {
                                     width: 340px;
                                     max-height: 42px;
-                                    background-color: #000000;   
+                                    background-color: transparent;   
                                     border-top-left-radius: 10px;
                                     border-bottom-left-radius: 10px;   
                                     border: 1px solid rgba(3, 16, 180, 1);
@@ -460,8 +460,7 @@ $width: 77.7%;
                                 }
                             }
                             .move__link {
-                                margin-left: 169px;
-                                margin-top: 37.5px;
+                                margin: 28px 169px 24px 169px;
                                 display: flex;
                                 align-items: center;
                                 .move__link__text {
@@ -650,7 +649,7 @@ $width: 77.7%;
                                 
                                 
                                 .plans__discription-top {
-                                    margin-top: 15px;
+                                    margin-top: 23px;
                                     font-family: "Hauora";
                                     font-weight: 500;
                                     font-size: 18px;
@@ -663,7 +662,7 @@ $width: 77.7%;
                                 }
 
                                 .plans__discription-bottom {
-                                    margin-top: 5px;
+                                    margin-top: 14px;
                                     font-family: "Hauora";
                                     font-weight: 500;
                                     font-size: 18px;
@@ -729,7 +728,7 @@ $width: 77.7%;
                                 }
                                 
                                 .plans__discription-top {
-                                    margin-top: 15px;
+                                    margin-top: 23px;
                                     font-family: "Hauora";
                                     font-weight: 500;
                                     font-size: 18px;
@@ -742,7 +741,7 @@ $width: 77.7%;
                                 }
 
                                 .plans__discription-bottom {
-                                    margin-top: 5px;
+                                    margin-top: 14px;
                                     font-family: "Hauora";
                                     font-weight: 500;
                                     font-size: 18px;
@@ -803,7 +802,7 @@ $width: 77.7%;
                                 
                                 
                                 .plans__discription-top {
-                                    margin-top: 15px;
+                                    margin-top: 23px;
                                     font-family: "Hauora";
                                     font-weight: 500;
                                     font-size: 18px;
@@ -816,7 +815,7 @@ $width: 77.7%;
                                 }
 
                                 .plans__discription-bottom {
-                                    margin-top: 5px;
+                                    margin-top: 14px;
                                     font-family: "Hauora";
                                     font-weight: 500;
                                     font-size: 18px;
@@ -1145,3 +1144,4 @@ $width: 77.7%;
     }  
    
 }
+

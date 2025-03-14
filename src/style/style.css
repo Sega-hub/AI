@@ -126,7 +126,7 @@ a {
   max-width: 100%;
 }
 .container .main .offer {
-  padding-top: 285px;
+  padding-top: 300px;
   width: 100%;
   background: linear-gradient(#0b0945 20%, #04041a);
   display: flex;
@@ -199,7 +199,7 @@ a {
 }
 .container .main .API {
   padding-bottom: 100px;
-  padding-top: 106px;
+  padding-top: 200px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -258,7 +258,7 @@ a {
   width: 165px;
   height: 42px;
   border-radius: 10px;
-  background-color: rgb(7, 6, 45);
+  background-color: #04041a;
   border: 1px solid rgb(17, 14, 104);
   cursor: pointer;
   font-family: "Hauora";
@@ -277,7 +277,7 @@ a {
   width: 177px;
   height: 42px;
   border-radius: 10px;
-  background-color: rgb(7, 6, 45);
+  background-color: #04041a;
   border: 1px solid rgb(17, 14, 104);
   cursor: pointer;
   font-family: "Hauora";
@@ -296,7 +296,7 @@ a {
   width: 214px;
   height: 42px;
   border-radius: 10px;
-  background-color: rgb(7, 6, 45);
+  background-color: #04041a;
   border: 1px solid rgb(17, 14, 104);
   cursor: pointer;
   font-family: "Hauora";
@@ -315,7 +315,7 @@ a {
   width: 184px;
   height: 42px;
   border-radius: 10px;
-  background-color: rgb(7, 6, 45);
+  background-color: #04041a;
   border: 1px solid rgb(17, 14, 104);
   cursor: pointer;
   font-family: "Hauora";
@@ -334,7 +334,7 @@ a {
   width: 129px;
   height: 42px;
   border-radius: 10px;
-  background-color: rgb(7, 6, 45);
+  background-color: #04041a;
   border: 1px solid rgb(17, 14, 104);
   cursor: pointer;
   font-family: "Hauora";
@@ -447,7 +447,7 @@ a {
 .container .main .API .API__container .API__example .API__example__container .API__example__move .move__input__container .move__input__input {
   width: 340px;
   max-height: 42px;
-  background-color: #000000;
+  background-color: transparent;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border: 1px solid rgb(3, 16, 180);
@@ -560,8 +560,7 @@ a {
   height: 100%;
 }
 .container .main .API .API__container .API__example .API__example__container .API__example__move .move__link {
-  margin-left: 169px;
-  margin-top: 37.5px;
+  margin: 28px 169px 24px 169px;
   display: flex;
   align-items: center;
 }
@@ -744,7 +743,7 @@ a {
   opacity: 1;
 }
 .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__discription-top {
-  margin-top: 15px;
+  margin-top: 23px;
   font-family: "Hauora";
   font-weight: 500;
   font-size: 18px;
@@ -756,7 +755,7 @@ a {
   transition-delay: 0.3s;
 }
 .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__discription-bottom {
-  margin-top: 5px;
+  margin-top: 14px;
   font-family: "Hauora";
   font-weight: 500;
   font-size: 18px;
@@ -812,7 +811,7 @@ a {
   opacity: 1;
 }
 .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-top {
-  margin-top: 15px;
+  margin-top: 23px;
   font-family: "Hauora";
   font-weight: 500;
   font-size: 18px;
@@ -824,7 +823,7 @@ a {
   transition-delay: 0.3s;
 }
 .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-bottom {
-  margin-top: 5px;
+  margin-top: 14px;
   font-family: "Hauora";
   font-weight: 500;
   font-size: 18px;
@@ -873,7 +872,7 @@ a {
   opacity: 1;
 }
 .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-top {
-  margin-top: 15px;
+  margin-top: 23px;
   font-family: "Hauora";
   font-weight: 500;
   font-size: 18px;
@@ -885,7 +884,7 @@ a {
   transition-delay: 0.3s;
 }
 .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-bottom {
-  margin-top: 5px;
+  margin-top: 14px;
   font-family: "Hauora";
   font-weight: 500;
   font-size: 18px;
