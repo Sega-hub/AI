@@ -21,6 +21,16 @@ a {
     opacity: 1;
   }
 }
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -616,14 +626,14 @@ a {
   overflow-x: auto;
   white-space: pre-line;
   word-wrap: break-word;
-  background-color: #1a1f2b;
+  background-color: transparent;
   scrollbar-width: none;
 }
 .container .main .API .API__container .API__example .API__example__container .API__example__move .move__code pre .move__code__txt {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: #1a1f2b;
+  background-color: transparent;
   scrollbar-width: none;
 }
 .container .main .API .API__container .API__example .API__example__container .API__example__move .move__link {
@@ -768,8 +778,6 @@ a {
   border: 1px solid rgb(73, 73, 73);
   overflow: hidden; /* Чтобы видео не выходило за границы блока */
   background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
-  opacity: 0;
-  transition: 0.5s;
 }
 .container .main .project .project__container .project__box .project__box__top .project__box__freelance .video-background {
   mix-blend-mode: screen;
@@ -790,7 +798,7 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(255, 255, 255);
-  opacity: 1;
+  opacity: 0;
   transition: 0.5s;
   transition-delay: 0s;
 }
@@ -805,14 +813,11 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(112, 111, 146);
-  opacity: 1;
+  opacity: 0;
   transition: 0.5s;
-  transition-delay: 0.3s;
+  transition-delay: 0.1s;
 }
 .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info .freelance__discription.appearance {
-  opacity: 1;
-}
-.container .main .project .project__container .project__box .project__box__top .project__box__freelance.appearance {
   opacity: 1;
 }
 .container .main .project .project__container .project__box .project__box__top .project__box__plans {
@@ -823,8 +828,6 @@ a {
   border: 1px solid rgb(73, 73, 73);
   overflow: hidden; /* Чтобы видео не выходило за границы блока */
   background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
-  opacity: 0;
-  transition: 0.5s 0.2s;
 }
 .container .main .project .project__container .project__box .project__box__top .project__box__plans .video-background {
   mix-blend-mode: screen;
@@ -845,9 +848,9 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(255, 255, 255);
-  opacity: 1;
+  opacity: 0;
   transition: 0.5s;
-  transition-delay: 0s;
+  transition-delay: 0.2s;
 }
 .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__title.appearance {
   opacity: 1;
@@ -860,9 +863,12 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(112, 111, 146);
-  opacity: 1;
+  opacity: 0;
   transition: 0.5s;
   transition-delay: 0.3s;
+}
+.container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__discription-top.appearance {
+  opacity: 1;
 }
 .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__discription-bottom {
   margin-top: 14px;
@@ -872,14 +878,14 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(112, 111, 146);
-  opacity: 1;
+  opacity: 0;
   transition: 0.5s;
   transition-delay: 0.3s;
 }
-.container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__discription.appearance {
+.container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__discription-bottom.appearance {
   opacity: 1;
 }
-.container .main .project .project__container .project__box .project__box__top .project__box__plans.appearance {
+.container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info.appearance {
   opacity: 1;
 }
 .container .main .project .project__container .project__box .project__box__bottom {
@@ -896,7 +902,6 @@ a {
   border: 1px solid rgb(73, 73, 73);
   overflow: hidden; /* Чтобы видео не выходило за границы блока */
   background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
-  opacity: 0;
   transition: 0.5s;
 }
 .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .video-background {
@@ -918,7 +923,7 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(255, 255, 255);
-  opacity: 1;
+  opacity: 0;
   transition: 0.5s;
   transition-delay: 0s;
 }
@@ -935,7 +940,10 @@ a {
   color: rgb(112, 111, 146);
   opacity: 1;
   transition: 0.5s;
-  transition-delay: 0.3s;
+  transition-delay: 0.1s;
+}
+.container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-top.appearance {
+  opacity: 1;
 }
 .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-bottom {
   margin-top: 14px;
@@ -947,12 +955,9 @@ a {
   color: rgb(112, 111, 146);
   opacity: 1;
   transition: 0.5s;
-  transition-delay: 0.3s;
+  transition-delay: 0.1s;
 }
-.container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .freelance__discription.appearance {
-  opacity: 1;
-}
-.container .main .project .project__container .project__box .project__box__bottom .project__box__freelance.appearance {
+.container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-bottom.appearance {
   opacity: 1;
 }
 .container .main .project .project__container .project__box .project__box__bottom .project__box__plans {
@@ -963,8 +968,6 @@ a {
   border: 1px solid rgb(73, 73, 73);
   overflow: hidden; /* Чтобы видео не выходило за границы блока */
   background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
-  opacity: 0;
-  transition: 0.5s 0.2s;
 }
 .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .video-background {
   mix-blend-mode: screen;
@@ -984,9 +987,9 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(255, 255, 255);
-  opacity: 1;
+  opacity: 0;
   transition: 0.5s;
-  transition-delay: 0s;
+  transition-delay: 0.2s;
 }
 .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__title.appearance {
   opacity: 1;
@@ -999,9 +1002,12 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(112, 111, 146);
-  opacity: 1;
+  opacity: 0;
   transition: 0.5s;
   transition-delay: 0.3s;
+}
+.container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-top.appearance {
+  opacity: 1;
 }
 .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-bottom {
   margin-top: 14px;
@@ -1011,14 +1017,14 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(112, 111, 146);
-  opacity: 1;
+  opacity: 0;
   transition: 0.5s;
   transition-delay: 0.3s;
 }
-.container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info.appearance {
+.container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-bottom.appearance {
   opacity: 1;
 }
-.container .main .project .project__container .project__box .project__box__bottom .project__box__plans.appearance {
+.container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info.appearance {
   opacity: 1;
 }
 .container .main .project .project__container::after {
@@ -1099,7 +1105,7 @@ a {
   margin-top: 71px;
   gap: 14px;
 }
-.container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(1) {
+.container .main .trend .trend__container .trend__buttons .trend__buttons__models {
   box-shadow: 0px 0px 26.39px 0px #110E68;
   width: 97px;
   height: 42px;
@@ -1118,13 +1124,13 @@ a {
   opacity: 0;
   transition: 0.5s;
 }
-.container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(1):hover {
+.container .main .trend .trend__container .trend__buttons .trend__buttons__models:hover {
   box-shadow: 0px 0px 26.39px 0px #110E68;
 }
-.container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(1).appearance {
+.container .main .trend .trend__container .trend__buttons .trend__buttons__models.appearance {
   opacity: 1;
 }
-.container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(2) {
+.container .main .trend .trend__container .trend__buttons .trend__buttons__data {
   width: 150px;
   height: 42px;
   border-radius: 10px;
@@ -1142,14 +1148,14 @@ a {
   opacity: 0;
   transition: 0.5s 0.2s;
 }
-.container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(2):hover {
+.container .main .trend .trend__container .trend__buttons .trend__buttons__data:hover {
   box-shadow: 0px 0px 26.39px 0px #110E68;
 }
-.container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(2).appearance {
+.container .main .trend .trend__container .trend__buttons .trend__buttons__data.appearance {
   opacity: 1;
 }
-.container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(3) {
-  width: 129px;
+.container .main .trend .trend__container .trend__buttons .trend__buttons__app {
+  width: 150px;
   height: 42px;
   border-radius: 10px;
   background-color: rgb(7, 6, 45);
@@ -1164,15 +1170,15 @@ a {
   color: rgb(255, 255, 255);
   transition: 0.5s;
   opacity: 0;
-  transition: 0.5s 0.4s;
+  transition: 0.5s 0.2s;
 }
-.container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(3):hover {
+.container .main .trend .trend__container .trend__buttons .trend__buttons__app:hover {
   box-shadow: 0px 0px 26.39px 0px #110E68;
 }
-.container .main .trend .trend__container .trend__buttons .trend__buttons__button:nth-child(3).appearance {
+.container .main .trend .trend__container .trend__buttons .trend__buttons__app.appearance {
   opacity: 1;
 }
-.container .main .trend .trend__container .trend__box {
+.container .main .trend .trend__container .trend__box__models {
   margin-top: 80px;
   width: 100%;
   min-width: 1120px;
@@ -1180,7 +1186,7 @@ a {
   flex-wrap: wrap;
   gap: 24px;
 }
-.container .main .trend .trend__container .trend__box .trend__box__model {
+.container .main .trend .trend__container .trend__box__models .trend__box__model {
   max-width: 355px;
   width: 356px;
   height: 132px;
@@ -1188,19 +1194,22 @@ a {
   border-radius: 20px;
   border: 1px solid rgb(73, 73, 73);
   opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 0.5s ease-out forwards;
+  opacity: 0;
   transition: 0.5s;
 }
-.container .main .trend .trend__container .trend__box .trend__box__model .model__top {
+.container .main .trend .trend__container .trend__box__models .trend__box__model .model__top {
   margin-top: 20.5px;
   margin-left: 19px;
   display: flex;
   align-items: center;
 }
-.container .main .trend .trend__container .trend__box .trend__box__model .model__top .model__top__img {
+.container .main .trend .trend__container .trend__box__models .trend__box__model .model__top .model__top__img {
   width: 25px;
   height: 25px;
 }
-.container .main .trend .trend__container .trend__box .trend__box__model .model__top .model__top__name {
+.container .main .trend .trend__container .trend__box__models .trend__box__model .model__top .model__top__name {
   margin-left: 19px;
   font-family: "Hauora";
   font-weight: 500;
@@ -1209,7 +1218,7 @@ a {
   letter-spacing: 0%;
   color: rgb(255, 255, 255);
 }
-.container .main .trend .trend__container .trend__box .trend__box__model .model__slider {
+.container .main .trend .trend__container .trend__box__models .trend__box__model .model__slider {
   margin-top: 11px;
   margin-left: 60px;
   display: flex;
@@ -1217,7 +1226,7 @@ a {
   position: relative;
   overflow: hidden;
 }
-.container .main .trend .trend__container .trend__box .trend__box__model .model__slider .model__slider__container {
+.container .main .trend .trend__container .trend__box__models .trend__box__model .model__slider .model__slider__container {
   max-width: 294px;
   display: flex;
   overflow-x: auto;
@@ -1227,7 +1236,7 @@ a {
   scrollbar-width: none;
   gap: 10px;
 }
-.container .main .trend .trend__container .trend__box .trend__box__model .model__slider .model__slider__container .model__slider__item {
+.container .main .trend .trend__container .trend__box__models .trend__box__model .model__slider .model__slider__container .model__slider__item {
   width: 109px;
   height: 21px;
   background-color: rgb(20, 20, 20);
@@ -1237,7 +1246,7 @@ a {
   align-items: center;
   justify-content: center;
 }
-.container .main .trend .trend__container .trend__box .trend__box__model .model__slider .model__slider__container .model__slider__item .model__slider__text {
+.container .main .trend .trend__container .trend__box__models .trend__box__model .model__slider .model__slider__container .model__slider__item .model__slider__text {
   padding: 11px 7px;
   font-family: "Hauora";
   font-weight: 500;
@@ -1248,17 +1257,17 @@ a {
   vertical-align: middle;
   color: rgb(153, 153, 153);
 }
-.container .main .trend .trend__container .trend__box .trend__box__model .model__bottom {
+.container .main .trend .trend__container .trend__box__models .trend__box__model .model__bottom {
   margin-left: 21px;
   margin-top: 23px;
   display: flex;
   align-items: center;
 }
-.container .main .trend .trend__container .trend__box .trend__box__model .model__bottom .model__bottom__img {
+.container .main .trend .trend__container .trend__box__models .trend__box__model .model__bottom .model__bottom__img {
   width: 21px;
   height: 21px;
 }
-.container .main .trend .trend__container .trend__box .trend__box__model .model__bottom .model__bottom__name {
+.container .main .trend .trend__container .trend__box__models .trend__box__model .model__bottom .model__bottom__name {
   margin-left: 21px;
   font-family: "Hauora";
   font-weight: 500;
@@ -1267,7 +1276,7 @@ a {
   letter-spacing: 0%;
   color: rgb(255, 255, 255);
 }
-.container .main .trend .trend__container .trend__box .trend__box__model .model__bottom .model__bottom__time {
+.container .main .trend .trend__container .trend__box__models .trend__box__model .model__bottom .model__bottom__time {
   margin-left: 38px;
   font-family: "Hauora";
   font-weight: 500;
@@ -1276,17 +1285,17 @@ a {
   letter-spacing: 0%;
   color: rgb(120, 119, 146);
 }
-.container .main .trend .trend__container .trend__box .trend__box__model .model__bottom .model__bottom__downloads {
+.container .main .trend .trend__container .trend__box__models .trend__box__model .model__bottom .model__bottom__downloads {
   margin-left: 19px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container .main .trend .trend__container .trend__box .trend__box__model .model__bottom .model__bottom__downloads .model__bottom__downloads-img {
+.container .main .trend .trend__container .trend__box__models .trend__box__model .model__bottom .model__bottom__downloads .model__bottom__downloads-img {
   width: 20px;
   height: 20px;
 }
-.container .main .trend .trend__container .trend__box .trend__box__model .model__bottom .model__bottom__downloads .model__bottom__downloads-text {
+.container .main .trend .trend__container .trend__box__models .trend__box__model .model__bottom .model__bottom__downloads .model__bottom__downloads-text {
   font-family: "Hauora";
   font-weight: 500;
   font-size: 12px;
@@ -1294,17 +1303,17 @@ a {
   letter-spacing: 0%;
   color: rgb(120, 119, 146);
 }
-.container .main .trend .trend__container .trend__box .trend__box__model .model__bottom .model__bottom__likes {
+.container .main .trend .trend__container .trend__box__models .trend__box__model .model__bottom .model__bottom__likes {
   margin-left: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container .main .trend .trend__container .trend__box .trend__box__model .model__bottom .model__bottom__likes .model__bottom__likes-img {
+.container .main .trend .trend__container .trend__box__models .trend__box__model .model__bottom .model__bottom__likes .model__bottom__likes-img {
   width: 11px;
   height: 10px;
 }
-.container .main .trend .trend__container .trend__box .trend__box__model .model__bottom .model__bottom__likes .model__bottom__likes-text {
+.container .main .trend .trend__container .trend__box__models .trend__box__model .model__bottom .model__bottom__likes .model__bottom__likes-text {
   margin-left: 4.5px;
   font-family: Hauora;
   font-weight: 500;
@@ -1313,8 +1322,292 @@ a {
   letter-spacing: 0%;
   color: rgb(120, 119, 146);
 }
-.container .main .trend .trend__container .trend__box .trend__box__model.appearance {
+.container .main .trend .trend__container .trend__box__models .trend__box__model.appearance {
   opacity: 1;
+}
+.container .main .trend .trend__container .trend__box__app {
+  display: none;
+  margin-top: 80px;
+  width: 100%;
+  min-width: 1120px;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.container .main .trend .trend__container .trend__box__app .trend__box__model {
+  max-width: 355px;
+  width: 356px;
+  height: 132px;
+  background-color: rgb(6, 6, 6);
+  border-radius: 20px;
+  border: 1px solid rgb(73, 73, 73);
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 0.5s ease-out forwards;
+}
+.container .main .trend .trend__container .trend__box__app .trend__box__model .model__top {
+  margin-top: 20.5px;
+  margin-left: 19px;
+  display: flex;
+  align-items: center;
+}
+.container .main .trend .trend__container .trend__box__app .trend__box__model .model__top .model__top__img {
+  width: 25px;
+  height: 25px;
+}
+.container .main .trend .trend__container .trend__box__app .trend__box__model .model__top .model__top__name {
+  margin-left: 19px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgb(255, 255, 255);
+}
+.container .main .trend .trend__container .trend__box__app .trend__box__model .model__slider {
+  margin-top: 11px;
+  margin-left: 60px;
+  display: flex;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.container .main .trend .trend__container .trend__box__app .trend__box__model .model__slider .model__slider__container {
+  max-width: 294px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  scrollbar-width: none;
+  gap: 10px;
+}
+.container .main .trend .trend__container .trend__box__app .trend__box__model .model__slider .model__slider__container .model__slider__item {
+  width: 109px;
+  height: 21px;
+  background-color: rgb(20, 20, 20);
+  border-radius: 10px;
+  border: 1px solid rgb(52, 59, 67);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .main .trend .trend__container .trend__box__app .trend__box__model .model__slider .model__slider__container .model__slider__item .model__slider__text {
+  padding: 11px 7px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: rgb(153, 153, 153);
+}
+.container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom {
+  margin-left: 21px;
+  margin-top: 23px;
+  display: flex;
+  align-items: center;
+}
+.container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom .model__bottom__img {
+  width: 21px;
+  height: 21px;
+}
+.container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom .model__bottom__name {
+  margin-left: 21px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgb(255, 255, 255);
+}
+.container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom .model__bottom__time {
+  margin-left: 38px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgb(120, 119, 146);
+}
+.container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom .model__bottom__downloads {
+  margin-left: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom .model__bottom__downloads .model__bottom__downloads-img {
+  width: 20px;
+  height: 20px;
+}
+.container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom .model__bottom__downloads .model__bottom__downloads-text {
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgb(120, 119, 146);
+}
+.container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom .model__bottom__likes {
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom .model__bottom__likes .model__bottom__likes-img {
+  width: 11px;
+  height: 10px;
+}
+.container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom .model__bottom__likes .model__bottom__likes-text {
+  margin-left: 4.5px;
+  font-family: Hauora;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgb(120, 119, 146);
+}
+.container .main .trend .trend__container .trend__box__data {
+  display: none;
+  margin-top: 80px;
+  width: 100%;
+  min-width: 1120px;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.container .main .trend .trend__container .trend__box__data .trend__box__model {
+  max-width: 355px;
+  width: 356px;
+  height: 132px;
+  background-color: rgb(6, 6, 6);
+  border-radius: 20px;
+  border: 1px solid rgb(73, 73, 73);
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 0.5s ease-out forwards;
+}
+.container .main .trend .trend__container .trend__box__data .trend__box__model .model__top {
+  margin-top: 20.5px;
+  margin-left: 19px;
+  display: flex;
+  align-items: center;
+}
+.container .main .trend .trend__container .trend__box__data .trend__box__model .model__top .model__top__img {
+  width: 25px;
+  height: 25px;
+}
+.container .main .trend .trend__container .trend__box__data .trend__box__model .model__top .model__top__name {
+  margin-left: 19px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgb(255, 255, 255);
+}
+.container .main .trend .trend__container .trend__box__data .trend__box__model .model__slider {
+  margin-top: 11px;
+  margin-left: 60px;
+  display: flex;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.container .main .trend .trend__container .trend__box__data .trend__box__model .model__slider .model__slider__container {
+  max-width: 294px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  scrollbar-width: none;
+  gap: 10px;
+}
+.container .main .trend .trend__container .trend__box__data .trend__box__model .model__slider .model__slider__container .model__slider__item {
+  width: 109px;
+  height: 21px;
+  background-color: rgb(20, 20, 20);
+  border-radius: 10px;
+  border: 1px solid rgb(52, 59, 67);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .main .trend .trend__container .trend__box__data .trend__box__model .model__slider .model__slider__container .model__slider__item .model__slider__text {
+  padding: 11px 7px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: rgb(153, 153, 153);
+}
+.container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom {
+  margin-left: 21px;
+  margin-top: 23px;
+  display: flex;
+  align-items: center;
+}
+.container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom .model__bottom__img {
+  width: 21px;
+  height: 21px;
+}
+.container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom .model__bottom__name {
+  margin-left: 21px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgb(255, 255, 255);
+}
+.container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom .model__bottom__time {
+  margin-left: 38px;
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgb(120, 119, 146);
+}
+.container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom .model__bottom__downloads {
+  margin-left: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom .model__bottom__downloads .model__bottom__downloads-img {
+  width: 20px;
+  height: 20px;
+}
+.container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom .model__bottom__downloads .model__bottom__downloads-text {
+  font-family: "Hauora";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgb(120, 119, 146);
+}
+.container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom .model__bottom__likes {
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom .model__bottom__likes .model__bottom__likes-img {
+  width: 11px;
+  height: 10px;
+}
+.container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom .model__bottom__likes .model__bottom__likes-text {
+  margin-left: 4.5px;
+  font-family: Hauora;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: rgb(120, 119, 146);
 }
 .container .main .trend .trend__container::after {
   content: "";

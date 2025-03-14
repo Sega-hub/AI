@@ -129,8 +129,41 @@ print(response.json())`,
             scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
             scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
         return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
-    }
+    } 
+    
 });
 
 
+const button1 = document.querySelector(".trend__buttons__models");
+const button2 = document.querySelector(".trend__buttons__data");
+const button3 = document.querySelector(".trend__buttons__app");
 
+const box1 = document.querySelector(".trend__box__models");
+const box2 = document.querySelector(".trend__box__data");
+const box3 = document.querySelector(".trend__box__app");
+
+// Назначаем обработчики кликов
+button1.addEventListener("click", () => {
+    box1.style.display = "flex";
+    box2.style.display = "none";
+    box3.style.display = "none";
+    button1.style.boxShadow = "0px 0px 26.39px 0px #110E68";
+    button2.style.boxShadow = "none";
+    button3.style.boxShadow = "none";
+});
+button2.addEventListener("click", () => {
+    box1.style.display = "none";
+    box2.style.display = "flex";
+    box3.style.display = "none";
+    button1.style.boxShadow = "none";
+    button2.style.boxShadow = "0px 0px 26.39px 0px #110E68";
+    button3.style.boxShadow = "none";
+});
+button3.addEventListener("click", () => {
+    box1.style.display = "none";
+    box2.style.display = "none";
+    box3.style.display = "flex";
+    button1.style.boxShadow = "none";
+    button2.style.boxShadow = "none";
+    button3.style.boxShadow = "0px 0px 26.39px 0px #110E68";
+});
