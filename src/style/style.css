@@ -781,7 +781,7 @@ a {
 }
 .container .main .project .project__container .project__box .project__box__top .project__box__freelance .video-background {
   mix-blend-mode: screen;
-  margin: 94px 0px 0px 84px;
+  margin: 64.5px 0px 0px 69px;
   width: 380px;
   height: 380px;
 }
@@ -831,9 +831,9 @@ a {
 }
 .container .main .project .project__container .project__box .project__box__top .project__box__plans .video-background {
   mix-blend-mode: screen;
-  margin: 105px 0px 0px 119px;
-  width: 310px;
-  height: 310px;
+  margin: 29.5px 0px 0px 69px;
+  width: 410px;
+  height: 410px;
 }
 .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info {
   position: relative; /* Чтобы текст был поверх видео */
@@ -906,9 +906,9 @@ a {
 }
 .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .video-background {
   mix-blend-mode: screen;
-  margin: 60px 0px 0px 84px;
-  width: 380px;
-  height: 380px;
+  margin: 29.5px 0px 0px 69px;
+  width: 410px;
+  height: 410px;
 }
 .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info {
   position: relative; /* Чтобы текст был поверх видео */
@@ -971,9 +971,9 @@ a {
 }
 .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .video-background {
   mix-blend-mode: screen;
-  margin: 0px 0px 0px 64px;
-  width: 421px;
-  height: 421px;
+  margin: 6.5px 0px 0px 69px;
+  width: 410px;
+  height: 410px;
 }
 .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info {
   z-index: 1; /* Чтобы текст был поверх видео */
