@@ -938,7 +938,7 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(112, 111, 146);
-  opacity: 1;
+  opacity: 0;
   transition: 0.5s;
   transition-delay: 0.1s;
 }
@@ -953,7 +953,7 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   color: rgb(112, 111, 146);
-  opacity: 1;
+  opacity: 0;
   transition: 0.5s;
   transition-delay: 0.1s;
 }
@@ -1382,7 +1382,9 @@ a {
   gap: 10px;
 }
 .container .main .trend .trend__container .trend__box__app .trend__box__model .model__slider .model__slider__container .model__slider__item {
-  width: 109px;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 35px;
   height: 21px;
   background-color: rgb(20, 20, 20);
   border-radius: 10px;
@@ -1414,6 +1416,7 @@ a {
 }
 .container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom .model__bottom__name {
   margin-left: 21px;
+  width: 96px;
   font-family: "Hauora";
   font-weight: 500;
   font-size: 12px;
@@ -1524,7 +1527,9 @@ a {
   gap: 10px;
 }
 .container .main .trend .trend__container .trend__box__data .trend__box__model .model__slider .model__slider__container .model__slider__item {
-  width: 109px;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 31px;
   height: 21px;
   background-color: rgb(20, 20, 20);
   border-radius: 10px;
@@ -1556,6 +1561,7 @@ a {
 }
 .container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom .model__bottom__name {
   margin-left: 21px;
+  width: 96px;
   font-family: "Hauora";
   font-weight: 500;
   font-size: 12px;
