@@ -160,7 +160,10 @@ document.addEventListener("DOMContentLoaded", function () {
     let selectedLanguage = "Python"; // Язык по умолчанию
     let selectedIndex = 0; // Индекс выбранного API
 
-
+    buttons[0].classList.add("selected");
+    sliders[0].classList.add("selected");
+    codeText.textContent = "# Код для DeepSeek-R1\nprint(\"DeepSeek-R1 activated\")";
+    Prism.highlightElement(codeText);
     // Функция обновления кода
     function updateCode() {
         const apiNames = ["DeepSeek-R1", "Qwen2.5-72B-Instruct", "Qwen2.5-VL-72B-Instruct", "Kolors", "Whisper-large-v3-turbo", "Fish Speech 1.5"];
