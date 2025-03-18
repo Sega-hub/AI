@@ -7,6 +7,10 @@ a {
     text-decoration: none;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 @font-face {
     font-family: "Hauora";
     src: url("../../public/fonts/hauora_sans/Hauora.eot");
@@ -195,15 +199,15 @@ $width: 77.7%;
             @include center();
             flex-direction: column;
             aspect-ratio: 16/9;
-           .offer__video__back {         
-                position: absolute;                
-                left: 0;
-                width: 100%;
-                height: 80%;
-                object-fit: cover; /* Чтобы видео заполнило весь блок */
+           .offer__video__back {      
+                margin-bottom: 15%;   
+                position: absolute;  
+                width: 95%;
+                height: 95%;
+                object-fit: contain; /* Чтобы видео заполнило весь блок */
                 z-index: 1; /* Чтобы видео было на заднем плане */
                 mix-blend-mode: screen;
-                filter: brightness(30%);
+                filter: brightness(35%);
             }
             
            .offer__container {
@@ -211,7 +215,7 @@ $width: 77.7%;
                 @include center();
                 flex-direction: column;
                 height: 100%;
-
+                z-index: 100;
                 .offer__container__title {
                     font-family: "Hauora";
                     font-weight: 500;
@@ -244,7 +248,7 @@ $width: 77.7%;
                         line-height: 23.4px;
                         letter-spacing: 0;
                         text-align: center;
-                        color: $COLOR_GRAY;
+                        color: rgba(222, 222, 222, 1);
                     }
                 }
            
@@ -270,6 +274,9 @@ $width: 77.7%;
             .API__container {
                 width: $width;
                 position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 .API__unservice {
                     width: 100%;
                     @include center();
@@ -305,8 +312,7 @@ $width: 77.7%;
                     .API__buttons__button {
                         margin-left: 14px;
                         &:nth-child(1) {
-                            @include button(165px, #04041a, #110E68);
-                            box-shadow: 0px 0px 26.39px 0px #110E68;
+                            @include button(165px, #04041a, #110E68);                            
                         }
                         &:nth-child(2) {
                             @include button(177px, #04041a, #110E68);
@@ -319,6 +325,10 @@ $width: 77.7%;
                         }
                         &:nth-child(5) {
                             @include button(129px, #04041a, #110E68);
+                        }
+
+                        &.selected {
+                            box-shadow: 0px 0px 26.39px 0px #110E68;
                         }
                     }
 
@@ -333,15 +343,20 @@ $width: 77.7%;
                     justify-content: center;
                     align-items: center;
                     position: relative;
-                    max-width: 100%;
-                    overflow: hidden;
+                    max-width: 1686px;
+                    overflow-x: auto; 
+                    scroll-behavior: smooth;
+                    white-space: nowrap; 
 
                     .slider__slider {
                         display: flex;
-                        justify-content: start;
-                        max-width: 1120px;
+                        justify-content: center;
+                        max-width: 1550px;
+                        overflow-x: auto; 
+                        scroll-behavior: smooth;
+                        white-space: nowrap;
                         .API__slider {
-                            max-width: 1120px;
+                            max-width: 1520px;
                             display: flex;
                             gap: 20px;
                             overflow-x: auto;
@@ -391,6 +406,9 @@ $width: 77.7%;
                                     }
                                 }
         
+                                &.selected {
+                                    border: 1px solid #110E68;
+                                }
                             }
                         }
                     }
@@ -494,7 +512,10 @@ $width: 77.7%;
                                     border: none;
                                     padding-bottom: 6px;
                                     @include language(15px, 14px);
-                                    border-bottom: 2px solid rgba(23, 58, 215, 1);
+
+                                    &.selected {
+                                        border-bottom: 2px solid rgba(23, 58, 215, 1);
+                                    }
                                 }
 
                                 .move__languages__js {
@@ -502,6 +523,10 @@ $width: 77.7%;
                                     border: none;
                                     @include language(16px, 16px);
                                     padding-bottom: 6px;
+
+                                    &.selected {
+                                        border-bottom: 2px solid rgba(23, 58, 215, 1);
+                                    }
                                 }
 
                                 .move__languages__language {
@@ -509,6 +534,10 @@ $width: 77.7%;
                                     border: none;
                                     @include language(16px, 16px);
                                     padding-bottom: 6px;
+
+                                    &.selected {
+                                        border-bottom: 2px solid rgba(23, 58, 215, 1);
+                                    }
                                 }
                             }
                             .move__code {
@@ -622,6 +651,7 @@ $width: 77.7%;
                     content: "";
                     position: absolute;
                     margin: 0 49.75%;
+                    top: 1030px;
                     width: 3px;
                     height: 0;
                     background-image: url("../../public/images/straightLine.png");
@@ -1633,7 +1663,6 @@ $width: 77.7%;
         width: 100%;
         @include center();
         .footer__container {
-            max-width: 1116px;
             width: $width;
             max-width: 1120px;
             display: flex;
@@ -1641,7 +1670,7 @@ $width: 77.7%;
             color: white;
             .footer__top {
                 display: flex;
-                align-items: center;
+                align-items: start;
                 flex-direction: column;
                 .footer__logo {
                     width: 137px;
@@ -1708,3 +1737,350 @@ $width: 77.7%;
    
 }
 
+@media (min-width: 1686px) {
+    .container {
+        .main {
+            .API {
+                ///sdfsdfsdf
+                padding-bottom: 377px;
+                width: 100%;
+                @include center();
+                background: linear-gradient(rgb(4, 4, 26), rgb(0, 0, 0));
+                .API__container {
+                    width: $width;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .slider-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        max-width: 1686px;
+                        overflow-x: auto; 
+                        scroll-behavior: smooth;
+                        white-space: nowrap; 
+    
+                        .slider__slider {
+                            display: flex;
+                            justify-content: center;
+                            max-width: 1686px;
+                            overflow-x: auto; 
+                            scroll-behavior: smooth;
+                            white-space: nowrap;
+                            .API__slider {
+                                max-width: 1686px;
+                                display: flex;
+                                gap: 20px;
+                                overflow-x: auto;
+                                scroll-behavior: smooth;
+                                white-space: nowrap;
+                                scrollbar-width: none; /* Скрытие стандартного скролла */
+                                margin-top: 60px;
+                                gap: 20px;
+                                .API__slider__item {
+                                    display: flex;
+                                    min-width: 261px;
+                                    height: 86px;
+                                    border-radius: 20px;
+                                    background-color: rgba(0, 0, 0, 1);
+                                    border: 1px solid rgba(73, 73, 73, 1);
+            
+                                    .slider__img {
+                                        img {
+                                            width: 40px;
+                                            height: 40px;
+                                            border-radius: 20px;
+                                            margin: 17px 0 0 12px;
+                                        }
+                                    }
+                                    .slider__data {
+                                        display: flex;
+                                        flex-direction: column;
+                                        margin: 20px 0 0 25px;
+            
+                                        .slider__data__title {
+                                            font-family: "Hauora";
+                                            font-weight: 500;
+                                            font-size: 14px;
+                                            line-height: 120%;
+                                            letter-spacing: 0%;    
+                                            color: $COLOR_WHITE;                            
+                                        }
+            
+                                        .slider__data__discription {
+                                            margin-top: 8px;
+                                            font-family: "Hauora";
+                                            font-weight: 500;
+                                            font-size: 12px;
+                                            line-height: 120%;
+                                            letter-spacing: 0%;                                    
+                                            color: rgba(120, 119, 146, 1);
+                                        }
+                                    }
+            
+                                    &.selected {
+                                        border: 1px solid #110E68;
+                                    }
+                                }
+                            }
+                        }
+    
+                        opacity: 0;
+                        transition: 0.5s;
+                        &.appearance {
+                            opacity: 1;
+                        }
+                    }
+    
+                    .API__example {
+                        width: 100%;
+                        @include center();
+                        .API__example__container {
+                            display: flex;
+                            margin-top: 30px;
+                            width: 1120px;
+                            height: 600px;
+                            border-radius: 20px;
+                            background-color: rgba(1, 1, 1, 1);
+                            border: 1px solid rgba(73, 73, 73, 1);
+    
+                            .API__example__move {
+                                display: flex;
+                                flex-direction: column;
+                                width: 536px;
+                                height: 580px;
+                                border-radius: 10px;
+                                margin: 10px 12px 10px 10px;
+                                background-color: rgba(6, 6, 6, 1);
+                                border: 1px solid rgba(73, 73, 73, 1);
+                                .move__title {   
+                                    text-align: center;                             
+                                    margin-top: 36px;
+                                    font-family: "Hauora";
+                                    font-weight: 500;
+                                    font-size: 18px;
+                                    // leading-trim: Cap height;
+                                    line-height: 120%;
+                                    letter-spacing: 0%;
+                                    color: $COLOR_WHITE;
+                                    
+                                }
+                                .move__input__container {
+                                    display: flex;
+                                    max-width: 476px;
+                                    margin: 42px 37px 0px 23px;
+                                    .move__input__input {
+                                        width: 340px;
+                                        max-height: 42px;
+                                        background-color: transparent;   
+                                        border-top-left-radius: 10px;
+                                        border-bottom-left-radius: 10px;   
+                                        border: 1px solid #110E68;
+                                        
+                                        font-family: "Hauora";
+                                        font-weight: 100;
+                                        font-size: 14px;                                    
+                                        line-height: 140%;
+                                        letter-spacing: 0%;                                    
+                                        color: white;                                    
+                                        padding-left: 15px;
+    
+                                        outline: none;
+    
+                                        &::placeholder {
+                                            font-family: "Hauora";
+                                            font-weight: 100;
+                                            font-size: 14px;                                    
+                                            line-height: 140%;
+                                            letter-spacing: 0%;                                    
+                                            color: white;     
+                                        }
+                                    }
+                                    .move__input__button {
+                                        width: 137px;
+                                        height: 42px;
+                                        border-top-right-radius: 10px;
+                                        border-bottom-right-radius: 10px;
+                                        background-color: rgba(23, 19, 147, 0.4);
+                                        border: 1px solid #110E68;
+                                       
+                                        font-family: "Hauora";
+                                        font-weight: 100;
+                                        font-size: 14px;                                    
+                                        line-height: 140%;
+                                        letter-spacing: 0%;                                    
+                                        color: white;
+                                    }
+                                }
+                                .move__languages {
+                                    margin-left: 79px;
+                                    margin-top: 53px;
+                                    width: 355px;
+                                    display: flex;
+                                    gap: 63px;
+    
+                                    .move__languages__python {
+                                        background-color: transparent;
+                                        border: none;
+                                        padding-bottom: 6px;
+                                        @include language(15px, 14px);
+    
+                                        &.selected {
+                                            border-bottom: 2px solid rgba(23, 58, 215, 1);
+                                        }
+                                    }
+    
+                                    .move__languages__js {
+                                        background-color: transparent;
+                                        border: none;
+                                        @include language(16px, 16px);
+                                        padding-bottom: 6px;
+    
+                                        &.selected {
+                                            border-bottom: 2px solid rgba(23, 58, 215, 1);
+                                        }
+                                    }
+    
+                                    .move__languages__language {
+                                        background-color: transparent;
+                                        border: none;
+                                        @include language(16px, 16px);
+                                        padding-bottom: 6px;
+    
+                                        &.selected {
+                                            border-bottom: 2px solid rgba(23, 58, 215, 1);
+                                        }
+                                    }
+                                }
+                                .move__code {
+                                    position: relative;
+                                    margin-left: 23px;
+                                    width: 475px;
+                                    height: 296px;
+                                    border-radius: 15px;
+                                    background-color: rgba(29, 33, 37, 1);
+                                    border: 1px solid rgba(52, 59, 67, 1);
+                                    
+                                    .move__code__button {
+                                        margin:11px 22.12px 0 22.12px;
+                                        width: 430.76763916015625px;
+                                        display: flex;
+                                        justify-content: end;
+                                        button {
+                                            background-color: transparent;
+                                            border: none;
+                                        }
+                                    }
+    
+                                    pre {
+                                        padding: 0;
+                                        margin: 1.84px 22.12px 65.67px 22.12px;
+                                        width: 430.76763916015625px;
+                                        height: 197.48179626464844px;
+    
+                                        overflow-x: auto;
+                                        white-space: pre-line;
+                                        word-wrap: break-word;
+                                        background-color: transparent;
+                                        scrollbar-width: none;
+                                        
+                                        .move__code__txt {
+                                            display: flex;
+                                            width: 100%;
+                                            height: 100%;
+                                            background-color: transparent;
+                                            scrollbar-width: none;
+                                        }
+                                    }
+                                   
+                                   
+                                }
+                                .move__link {
+                                    margin: 28px 169px 24px 169px;
+                                    display: flex;
+                                    align-items: center;
+                                    .move__link__text {
+                                        font-family: "Hauora";
+                                        font-weight: 500;
+                                        font-size: 12px;
+                                        line-height: 120%;
+                                        letter-spacing: 0%;
+                                        text-decoration: underline;
+                                        text-decoration-style: solid;
+                                        text-decoration-thickness: 5.5%;
+                                        text-decoration-skip-ink: auto;
+                                        color: $COLOR_WHITE;                                    
+                                    }
+                                    .move__link__img {
+                                        margin-left: 10px;
+                                        width: 20px;
+                                        height: 20px;
+                                    }
+                                }
+    
+                                opacity: 0;
+                                transition: 0.5s 0.2s;
+                                &.appearance {
+                                    opacity: 1;
+                                }
+                            }
+    
+                            .API__example__result {
+                                width: 536px;
+                                height: 580px;
+                                border-radius: 10px;
+                                margin: 10px 10px 10px 12px;
+                                background-color: rgba(6, 6, 6, 1);
+                                border: 1px solid rgba(73, 73, 73, 1);
+                                .result__title {
+                                    text-align: center;
+                                    margin-top: 36px;
+                                    font-family: "Hauora";
+                                    font-weight: 500;
+                                    font-size: 18px;
+                                    // leading-trim: Cap height;
+                                    line-height: 120%;
+                                    letter-spacing: 0%;
+                                    color: $COLOR_WHITE;
+                                }
+    
+                                opacity: 0;
+                                transition: 0.5s 0.4s;
+                                &.appearance {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+    
+                        opacity: 0;
+                        transition: 0.5s;
+                        &.appearance {
+                            opacity: 1;
+                        }
+                    }
+    
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        margin: 0 49.75%;
+                        top: 1030px;
+                        width: 3px;
+                        height: 0;
+                        background-image: url("../../public/images/straightLine.png");
+                        background-repeat: no-repeat;
+                        background-size: 6px 357px;
+                        transition: all 1s ease 0s;
+                        z-index: 1000;
+                    }
+    
+                    &.line.play::after{                   
+                        height: 357px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}

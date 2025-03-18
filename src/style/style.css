@@ -8,6 +8,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: "Hauora";
   src: url("../../public/fonts/hauora_sans/Hauora.eot");
@@ -146,15 +150,15 @@ a {
   aspect-ratio: 16/9;
 }
 .container .main .offer .offer__video__back {
+  margin-bottom: 15%;
   position: absolute;
-  left: 0;
-  width: 100%;
-  height: 80%;
-  -o-object-fit: cover;
-     object-fit: cover; /* Чтобы видео заполнило весь блок */
+  width: 95%;
+  height: 95%;
+  -o-object-fit: contain;
+     object-fit: contain; /* Чтобы видео заполнило весь блок */
   z-index: 1; /* Чтобы видео было на заднем плане */
   mix-blend-mode: screen;
-  filter: brightness(30%);
+  filter: brightness(35%);
 }
 .container .main .offer .offer__container {
   width: 77.7%;
@@ -163,6 +167,7 @@ a {
   align-items: center;
   flex-direction: column;
   height: 100%;
+  z-index: 100;
 }
 .container .main .offer .offer__container .offer__container__title {
   font-family: "Hauora";
@@ -195,7 +200,7 @@ a {
   line-height: 23.4px;
   letter-spacing: 0;
   text-align: center;
-  color: rgb(112, 111, 146);
+  color: rgb(222, 222, 222);
 }
 .container .main .offer .offer__container .offer__button {
   margin: 133px 0 100px 0;
@@ -231,6 +236,9 @@ a {
 .container .main .API .API__container {
   width: 77.7%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .container .main .API .API__container .API__unservice {
   width: 100%;
@@ -304,7 +312,6 @@ a {
   text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s;
-  box-shadow: 0px 0px 26.39px 0px #110E68;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(1):hover {
   box-shadow: 0px 0px 26.39px 0px #110E68;
@@ -385,6 +392,9 @@ a {
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(5):hover {
   box-shadow: 0px 0px 26.39px 0px #110E68;
 }
+.container .main .API .API__container .API__buttons .API__buttons__button.selected {
+  box-shadow: 0px 0px 26.39px 0px #110E68;
+}
 .container .main .API .API__container .API__buttons.appearance {
   opacity: 1;
 }
@@ -393,18 +403,23 @@ a {
   justify-content: center;
   align-items: center;
   position: relative;
-  max-width: 100%;
-  overflow: hidden;
+  max-width: 1686px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
   opacity: 0;
   transition: 0.5s;
 }
 .container .main .API .API__container .slider-container .slider__slider {
   display: flex;
-  justify-content: start;
-  max-width: 1120px;
+  justify-content: center;
+  max-width: 1550px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
 }
 .container .main .API .API__container .slider-container .slider__slider .API__slider {
-  max-width: 1120px;
+  max-width: 1520px;
   display: flex;
   gap: 20px;
   overflow-x: auto;
@@ -449,6 +464,9 @@ a {
   line-height: 120%;
   letter-spacing: 0%;
   color: rgb(120, 119, 146);
+}
+.container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item.selected {
+  border: 1px solid #110E68;
 }
 .container .main .API .API__container .slider-container.appearance {
   opacity: 1;
@@ -555,7 +573,6 @@ a {
   border: none;
   padding-bottom: 6px;
   display: flex;
-  border-bottom: 2px solid rgb(23, 58, 215);
 }
 .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__python img {
   border-radius: 20px;
@@ -570,6 +587,9 @@ a {
   line-height: 120%;
   letter-spacing: 0%;
   color: white;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__python.selected {
+  border-bottom: 2px solid rgb(23, 58, 215);
 }
 .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__js {
   background-color: transparent;
@@ -591,6 +611,9 @@ a {
   letter-spacing: 0%;
   color: white;
 }
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__js.selected {
+  border-bottom: 2px solid rgb(23, 58, 215);
+}
 .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__language {
   background-color: transparent;
   border: none;
@@ -610,6 +633,9 @@ a {
   line-height: 120%;
   letter-spacing: 0%;
   color: white;
+}
+.container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__language.selected {
+  border-bottom: 2px solid rgb(23, 58, 215);
 }
 .container .main .API .API__container .API__example .API__example__container .API__example__move .move__code {
   position: relative;
@@ -704,6 +730,7 @@ a {
   content: "";
   position: absolute;
   margin: 0 49.75%;
+  top: 1030px;
   width: 3px;
   height: 0;
   background-image: url("../../public/images/straightLine.png");
@@ -1748,7 +1775,6 @@ a {
   align-items: center;
 }
 .container .footer .footer__container {
-  max-width: 1116px;
   width: 77.7%;
   max-width: 1120px;
   display: flex;
@@ -1757,7 +1783,7 @@ a {
 }
 .container .footer .footer__container .footer__top {
   display: flex;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
 }
 .container .footer .footer__container .footer__top .footer__logo {
@@ -1813,4 +1839,366 @@ a {
   line-height: 15.6px;
   text-align: left;
   color: rgb(112, 111, 146);
+}
+
+@media (min-width: 1686px) {
+  .container .main .API {
+    padding-bottom: 377px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(4, 4, 26), rgb(0, 0, 0));
+  }
+  .container .main .API .API__container {
+    width: 77.7%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .main .API .API__container .slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 1686px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .container .main .API .API__container .slider-container .slider__slider {
+    display: flex;
+    justify-content: center;
+    max-width: 1686px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+  }
+  .container .main .API .API__container .slider-container .slider__slider .API__slider {
+    max-width: 1686px;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    scrollbar-width: none; /* Скрытие стандартного скролла */
+    margin-top: 60px;
+    gap: 20px;
+  }
+  .container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item {
+    display: flex;
+    min-width: 261px;
+    height: 86px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(73, 73, 73);
+  }
+  .container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item .slider__img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 17px 0 0 12px;
+  }
+  .container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item .slider__data {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 25px;
+  }
+  .container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item .slider__data .slider__data__title {
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(255, 255, 255);
+  }
+  .container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item .slider__data .slider__data__discription {
+    margin-top: 8px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(120, 119, 146);
+  }
+  .container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item.selected {
+    border: 1px solid #110E68;
+  }
+  .container .main .API .API__container .slider-container.appearance {
+    opacity: 1;
+  }
+  .container .main .API .API__container .API__example {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .container .main .API .API__container .API__example .API__example__container {
+    display: flex;
+    margin-top: 30px;
+    width: 1120px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: rgb(1, 1, 1);
+    border: 1px solid rgb(73, 73, 73);
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move {
+    display: flex;
+    flex-direction: column;
+    width: 536px;
+    height: 580px;
+    border-radius: 10px;
+    margin: 10px 12px 10px 10px;
+    background-color: rgb(6, 6, 6);
+    border: 1px solid rgb(73, 73, 73);
+    opacity: 0;
+    transition: 0.5s 0.2s;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__title {
+    text-align: center;
+    margin-top: 36px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(255, 255, 255);
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__input__container {
+    display: flex;
+    max-width: 476px;
+    margin: 42px 37px 0px 23px;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__input__container .move__input__input {
+    width: 340px;
+    max-height: 42px;
+    background-color: transparent;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #110E68;
+    font-family: "Hauora";
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: white;
+    padding-left: 15px;
+    outline: none;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__input__container .move__input__input::-moz-placeholder {
+    font-family: "Hauora";
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: white;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__input__container .move__input__input::placeholder {
+    font-family: "Hauora";
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: white;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__input__container .move__input__button {
+    width: 137px;
+    height: 42px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(23, 19, 147, 0.4);
+    border: 1px solid #110E68;
+    font-family: "Hauora";
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: white;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages {
+    margin-left: 79px;
+    margin-top: 53px;
+    width: 355px;
+    display: flex;
+    gap: 63px;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__python {
+    background-color: transparent;
+    border: none;
+    padding-bottom: 6px;
+    display: flex;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__python img {
+    border-radius: 20px;
+    width: 15px;
+    height: 14px;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__python p {
+    margin-left: 10px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: white;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__python.selected {
+    border-bottom: 2px solid rgb(23, 58, 215);
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__js {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    padding-bottom: 6px;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__js img {
+    border-radius: 20px;
+    width: 16px;
+    height: 16px;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__js p {
+    margin-left: 10px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: white;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__js.selected {
+    border-bottom: 2px solid rgb(23, 58, 215);
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__language {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    padding-bottom: 6px;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__language img {
+    border-radius: 20px;
+    width: 16px;
+    height: 16px;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__language p {
+    margin-left: 10px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: white;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages .move__languages__language.selected {
+    border-bottom: 2px solid rgb(23, 58, 215);
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__code {
+    position: relative;
+    margin-left: 23px;
+    width: 475px;
+    height: 296px;
+    border-radius: 15px;
+    background-color: rgb(29, 33, 37);
+    border: 1px solid rgb(52, 59, 67);
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__code .move__code__button {
+    margin: 11px 22.12px 0 22.12px;
+    width: 430.7676391602px;
+    display: flex;
+    justify-content: end;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__code .move__code__button button {
+    background-color: transparent;
+    border: none;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__code pre {
+    padding: 0;
+    margin: 1.84px 22.12px 65.67px 22.12px;
+    width: 430.7676391602px;
+    height: 197.4817962646px;
+    overflow-x: auto;
+    white-space: pre-line;
+    word-wrap: break-word;
+    background-color: transparent;
+    scrollbar-width: none;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__code pre .move__code__txt {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    scrollbar-width: none;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__link {
+    margin: 28px 169px 24px 169px;
+    display: flex;
+    align-items: center;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__link .move__link__text {
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 5.5%;
+    -webkit-text-decoration-skip: ink;
+            text-decoration-skip-ink: auto;
+    color: rgb(255, 255, 255);
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__link .move__link__img {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move.appearance {
+    opacity: 1;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__result {
+    width: 536px;
+    height: 580px;
+    border-radius: 10px;
+    margin: 10px 10px 10px 12px;
+    background-color: rgb(6, 6, 6);
+    border: 1px solid rgb(73, 73, 73);
+    opacity: 0;
+    transition: 0.5s 0.4s;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__result .result__title {
+    text-align: center;
+    margin-top: 36px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(255, 255, 255);
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__result.appearance {
+    opacity: 1;
+  }
+  .container .main .API .API__container .API__example.appearance {
+    opacity: 1;
+  }
+  .container .main .API .API__container::after {
+    content: "";
+    position: absolute;
+    margin: 0 49.75%;
+    top: 1030px;
+    width: 3px;
+    height: 0;
+    background-image: url("../../public/images/straightLine.png");
+    background-repeat: no-repeat;
+    background-size: 6px 357px;
+    transition: all 1s ease 0s;
+    z-index: 1000;
+  }
+  .container .main .API .API__container.line.play::after {
+    height: 357px;
+  }
 }/*# sourceMappingURL=style.css.map */
