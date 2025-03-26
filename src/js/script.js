@@ -55,51 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     } 
 
-//     const highlightedCode = document.getElementById("highlightedCode");
-//     const languageButtons = document.querySelectorAll(".move__languages div, .move__languages button");
-    
-//     const codeSnippets = {
-//         python: `import requests
-// url = "https://api.example.com/data"
-// response = requests.get(url)
-// print(response.json())`,
-//         javascript: `fetch("https://api.example.com/data")
-//   .then(response => response.json())
-//   .then(data => console.log(data));`,
-//         curl: `curl -X GET "https://api.example.com/data" -H "Accept: application/json"`
-//     };
-
-//     highlightedCode.textContent = codeSnippets.python;
-//     Prism.highlightElement(highlightedCode);
-
-//     function updateActiveButton(activeButton) {
-//         languageButtons.forEach(button => {
-//             button.style.borderBottom = "none";
-//         });
-//         activeButton.style.borderBottom = "2px solid rgba(23, 58, 215, 1)";
-//     }
-    
-//     updateActiveButton(document.querySelector(".move__languages__python"));
-
-//     languageButtons.forEach(button => {
-//         button.addEventListener("click", function () {
-//             let language = "";
-//             if (button.classList.contains("move__languages__python")) {
-//                 language = "python";
-//             } else if (button.classList.contains("move__languages__js")) {
-//                 language = "javascript";
-//             } else if (button.classList.contains("move__languages__language")) {
-//                 language = "curl";
-//             }
-
-//             if (language) {
-//                 highlightedCode.textContent = codeSnippets[language];
-//                 Prism.highlightElement(highlightedCode);
-//                 updateActiveButton(button);
-//             }
-//         });
-//     });
-
     let lastScrollTop = 0;
     const header = document.querySelector('.header');
     const SCROLL_THRESHOLD = 50;
@@ -252,36 +207,74 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-const button1 = document.querySelector(".trend__buttons__models");
-const button2 = document.querySelector(".trend__buttons__data");
-const button3 = document.querySelector(".trend__buttons__app");
+if (window.innerWidth > 1150) {
+    const button1 = document.querySelector(".trend__buttons__models");
+    const button2 = document.querySelector(".trend__buttons__data");
+    const button3 = document.querySelector(".trend__buttons__app");
 
-const box1 = document.querySelector(".trend__box__models");
-const box2 = document.querySelector(".trend__box__data");
-const box3 = document.querySelector(".trend__box__app");
+    const box1 = document.querySelector(".trend__box__models");
+    const box2 = document.querySelector(".trend__box__data");
+    const box3 = document.querySelector(".trend__box__app");
 
-// Назначаем обработчики кликов
-button1.addEventListener("click", () => {
-    box1.style.display = "flex";
-    box2.style.display = "none";
-    box3.style.display = "none";
-    button1.style.boxShadow = "0px 0px 26.39px 0px #110E68";
-    button2.style.boxShadow = "none";
-    button3.style.boxShadow = "none";
-});
-button2.addEventListener("click", () => {
-    box1.style.display = "none";
-    box2.style.display = "flex";
-    box3.style.display = "none";
-    button1.style.boxShadow = "none";
-    button2.style.boxShadow = "0px 0px 26.39px 0px #110E68";
-    button3.style.boxShadow = "none";
-});
-button3.addEventListener("click", () => {
-    box1.style.display = "none";
-    box2.style.display = "none";
-    box3.style.display = "flex";
-    button1.style.boxShadow = "none";
-    button2.style.boxShadow = "none";
-    button3.style.boxShadow = "0px 0px 26.39px 0px #110E68";
-});
+    // Назначаем обработчики кликов
+    button1.addEventListener("click", () => {
+        box1.style.display = "flex";
+        box2.style.display = "none";
+        box3.style.display = "none";
+        button1.style.boxShadow = "0px 0px 26.39px 0px #110E68";
+        button2.style.boxShadow = "none";
+        button3.style.boxShadow = "none";
+    });
+    button2.addEventListener("click", () => {
+        box1.style.display = "none";
+        box2.style.display = "flex";
+        box3.style.display = "none";
+        button1.style.boxShadow = "none";
+        button2.style.boxShadow = "0px 0px 26.39px 0px #110E68";
+        button3.style.boxShadow = "none";
+    });
+    button3.addEventListener("click", () => {
+        box1.style.display = "none";
+        box2.style.display = "none";
+        box3.style.display = "flex";
+        button1.style.boxShadow = "none";
+        button2.style.boxShadow = "none";
+        button3.style.boxShadow = "0px 0px 26.39px 0px #110E68";
+    });
+}
+
+if (window.innerWidth < 1150) {
+    const button1 = document.querySelector(".trend__buttons__models");
+    const button2 = document.querySelector(".trend__buttons__data");
+    const button3 = document.querySelector(".trend__buttons__app");
+
+    const box1 = document.querySelector(".trend__box__models");
+    const box2 = document.querySelector(".trend__box__data");
+    const box3 = document.querySelector(".trend__box__app");
+
+    // Назначаем обработчики кликов
+    button1.addEventListener("click", () => {
+        box1.style.display = "grid";
+        box2.style.display = "none";
+        box3.style.display = "none";
+        button1.style.boxShadow = "0px 0px 26.39px 0px #110E68";
+        button2.style.boxShadow = "none";
+        button3.style.boxShadow = "none";
+    });
+    button2.addEventListener("click", () => {
+        box1.style.display = "none";
+        box2.style.display = "grid";
+        box3.style.display = "none";
+        button1.style.boxShadow = "none";
+        button2.style.boxShadow = "0px 0px 26.39px 0px #110E68";
+        button3.style.boxShadow = "none";
+    });
+    button3.addEventListener("click", () => {
+        box1.style.display = "none";
+        box2.style.display = "none";
+        box3.style.display = "grid";
+        button1.style.boxShadow = "none";
+        button2.style.boxShadow = "none";
+        button3.style.boxShadow = "0px 0px 26.39px 0px #110E68";
+    });
+}
