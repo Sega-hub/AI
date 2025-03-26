@@ -2249,6 +2249,7 @@ $width: 77.7%;
                 background: linear-gradient(rgb(4, 4, 26), rgb(0, 0, 0));
                 .API__container {
                     width: $width;
+                    max-width: 684px;
                     position: relative;
                     display: flex;
                     flex-direction: column;
@@ -2397,7 +2398,6 @@ $width: 77.7%;
                             opacity: 1;
                         }
                     }
-    
                     .API__example {
                         width: 100%;
                         @include center();
@@ -2631,7 +2631,7 @@ $width: 77.7%;
                         content: "";
                         position: absolute;
                         margin: 0;
-                        left: 100px;
+                        left: 30px;
                         top: 1125px;
                         width: 3px;
                         height: 0;
@@ -3052,7 +3052,7 @@ $width: 77.7%;
                 .trend__container {
                     position: relative;
                     width: $width;
-                    max-width: 1120px;
+                    max-width: 684px;
                     @include center();
                     flex-direction: column;
                     .trend__button {
@@ -3554,7 +3554,7 @@ $width: 77.7%;
                     &::after {
                         content: "";
                         top: 1070px;
-                        left: 100px;
+                        margin-left: 0;
                         position: absolute;
                         width: 3px;
                         height: 0;

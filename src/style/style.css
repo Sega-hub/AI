@@ -2390,6 +2390,7 @@ body {
   }
   .container .main .API .API__container {
     width: 91.93%;
+    max-width: 684px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -2887,7 +2888,7 @@ body {
     content: "";
     position: absolute;
     margin: 0;
-    left: 100px;
+    left: 30px;
     top: 1125px;
     width: 3px;
     height: 0;
@@ -3255,7 +3256,7 @@ body {
   .container .main .trend .trend__container {
     position: relative;
     width: 91.93%;
-    max-width: 1120px;
+    max-width: 684px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3826,7 +3827,7 @@ body {
   .container .main .trend .trend__container::after {
     content: "";
     top: 1070px;
-    left: 100px;
+    margin-left: 0;
     position: absolute;
     width: 3px;
     height: 0;
