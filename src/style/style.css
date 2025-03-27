@@ -5488,7 +5488,7 @@ body {
     width: 100%;
     min-width: 0;
     max-width: 330px;
-    display: flex;
+    display: none;
     flex-direction: column;
   }
   .container .main .trend .trend__container .trend__box__app .trend__box__model {
@@ -5638,7 +5638,7 @@ body {
     width: 100%;
     min-width: 0;
     max-width: 330px;
-    display: flex;
+    display: none;
     flex-direction: column;
   }
   .container .main .trend .trend__container .trend__box__data .trend__box__model {
