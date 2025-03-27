@@ -35,6 +35,10 @@ body {
     transform: translateX(0);
   }
 }
+.popup {
+  display: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -1143,6 +1147,7 @@ body {
   display: flex;
   margin-top: 71px;
   gap: 14px;
+  max-width: 100%;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__models {
   box-shadow: 0px 0px 26.39px 0px #110E68;
@@ -2206,6 +2211,171 @@ body {
   }
 }
 @media (max-width: 1150px) {
+  .popup {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+    overflow-y: scroll;
+    position: fixed;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgb(10, 9, 67), rgb(0, 0, 0));
+  }
+  .popup .popup__container {
+    width: 84.6%;
+    display: flex;
+    flex-direction: column;
+  }
+  .popup .popup__container .header__container {
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .popup .popup__container .header__container a {
+    display: flex;
+    align-items: end;
+  }
+  .popup .popup__container .header__container a img {
+    width: 152px;
+    height: 22.38px;
+  }
+  .popup .popup__container .header__container .header__buttons {
+    display: flex;
+    align-items: end;
+  }
+  .popup .popup__container .header__container .header__buttons button {
+    width: 88px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: rgb(14, 12, 89);
+    border: 1px solid rgb(23, 19, 147);
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 16px;
+    text-align: center;
+    font-family: "Hauora";
+  }
+  .popup .popup__container .header__container .header__buttons button:hover {
+    box-shadow: 0px 0px 26.39px 0px #110E68;
+  }
+  .popup .popup__container .popup__menu {
+    margin-top: 103px;
+    display: flex;
+    flex-direction: column;
+  }
+  .popup .popup__container .popup__menu .popup__menu__item {
+    margin-top: 40px;
+    font-family: "Hauora";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 20.8px;
+    color: rgb(255, 255, 255);
+  }
+  .popup .popup__container .popup__menu .popup__menu__mail {
+    margin-top: 20px;
+    font-family: "Hauora";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 20.8px;
+    color: rgb(112, 111, 146);
+  }
+  .popup .popup__container .popup__menu .popup__menu__phone {
+    margin-top: 10px;
+    font-family: "Hauora";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 20.8px;
+    color: rgb(112, 111, 146);
+  }
+  .popup .popup__container .popup__menu .footer__xellon {
+    margin-top: 10px;
+    font-family: "Hauora";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 20.8px;
+    color: rgb(255, 255, 255);
+  }
+  .popup .popup__container .popup__button {
+    margin-top: 91px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .popup .popup__container .popup__button .header__buttons-menu {
+    width: 242px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: rgb(4, 4, 28);
+    border: 1px solid rgb(3, 16, 180);
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    height: 43px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 16px;
+    text-align: center;
+    font-family: "Hauora";
+  }
+  .popup .popup__container .popup__button .header__buttons-menu:hover {
+    box-shadow: 0px 0px 26.39px 0px #110E68;
+  }
+  .popup .popup__container .popup__button .header__buttons-search {
+    margin-left: 20px;
+    width: 68px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: rgb(4, 4, 28);
+    border: 1px solid rgb(3, 16, 180);
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    height: 43px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 16px;
+    text-align: center;
+    font-family: "Hauora";
+    color: rgb(112, 111, 146);
+    border: none;
+    background-color: transparent;
+  }
+  .popup .popup__container .popup__button .header__buttons-search:hover {
+    box-shadow: 0px 0px 26.39px 0px #110E68;
+  }
   .container {
     display: flex;
     flex-direction: column;
@@ -2453,7 +2623,16 @@ body {
     opacity: 0;
     transition: 0.5s;
   }
-  .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(1) {
+  .container .main .API .API__container .API__buttons .API__buttons__slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    max-width: 684px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(1) {
     width: 165px;
     height: 42px;
     border-radius: 10px;
@@ -2469,10 +2648,10 @@ body {
     color: rgb(255, 255, 255);
     transition: 0.5s;
   }
-  .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(1):hover {
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(1):hover {
     box-shadow: 0px 0px 26.39px 0px #110E68;
   }
-  .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(2) {
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(2) {
     width: 177px;
     height: 42px;
     border-radius: 10px;
@@ -2488,10 +2667,10 @@ body {
     color: rgb(255, 255, 255);
     transition: 0.5s;
   }
-  .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(2):hover {
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(2):hover {
     box-shadow: 0px 0px 26.39px 0px #110E68;
   }
-  .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(3) {
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(3) {
     width: 214px;
     height: 42px;
     border-radius: 10px;
@@ -2507,10 +2686,10 @@ body {
     color: rgb(255, 255, 255);
     transition: 0.5s;
   }
-  .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(3):hover {
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(3):hover {
     box-shadow: 0px 0px 26.39px 0px #110E68;
   }
-  .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(4) {
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(4) {
     width: 184px;
     height: 42px;
     border-radius: 10px;
@@ -2526,10 +2705,10 @@ body {
     color: rgb(255, 255, 255);
     transition: 0.5s;
   }
-  .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(4):hover {
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(4):hover {
     box-shadow: 0px 0px 26.39px 0px #110E68;
   }
-  .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(5) {
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(5) {
     width: 129px;
     height: 42px;
     border-radius: 10px;
@@ -2545,10 +2724,10 @@ body {
     color: rgb(255, 255, 255);
     transition: 0.5s;
   }
-  .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(5):hover {
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(5):hover {
     box-shadow: 0px 0px 26.39px 0px #110E68;
   }
-  .container .main .API .API__container .API__buttons .API__buttons__button.selected {
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button.selected {
     box-shadow: 0px 0px 26.39px 0px #110E68;
   }
   .container .main .API .API__container .API__buttons.appearance {
@@ -3381,12 +3560,11 @@ body {
     opacity: 1;
   }
   .container .main .trend .trend__container .trend__box__models {
-    flex-wrap: unset;
     margin-top: 80px;
     width: 100%;
     min-width: 0;
     max-width: 684px;
-    display: grid;
+    display: none;
     grid-template-columns: repeat(2, 332px);
     gap: 24px 20px;
   }
@@ -3986,6 +4164,1787 @@ body {
   .container .footer .footer__container .footer__menu {
     display: grid;
     grid-template-columns: repeat(4, 156px);
+    gap: 50px 20px;
+    margin-top: 60px;
+    margin-left: 0;
+  }
+  .container .footer .footer__container .footer__menu .footer__column {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .footer .footer__container .footer__menu .footer__column .footer__column__title {
+    font-family: "Hauora";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.6px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    padding-bottom: 42.54px;
+  }
+  .container .footer .footer__container .footer__menu .footer__column .footer__column__item {
+    margin-top: 8px;
+    font-family: "Hauora";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.6px;
+    text-align: left;
+    color: rgb(112, 111, 146);
+  }
+}
+@media (max-width: 744px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .header {
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+    z-index: 1000;
+  }
+  .container .header.hidden {
+    transform: translateY(-100%);
+  }
+  .container .header.scrolled {
+    background: linear-gradient(180deg, #000000 20.98%, rgba(0, 0, 0, 0) 100%);
+  }
+  .container .header .header__container {
+    max-width: 330px;
+    width: 94.87%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px;
+    animation: mainTitle 1s ease 0s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .container .header .header__container a img {
+    width: 155px;
+    height: 20px;
+  }
+  .container .header .header__container .header__nav {
+    display: flex;
+    align-items: center;
+  }
+  .container .header .header__container .header__nav .header__nav-link {
+    display: none;
+  }
+  .container .header .header__container .header__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .header .header__container .header__buttons .header__buttons-search {
+    display: none;
+  }
+  .container .header .header__container .header__buttons .header__buttons-enter {
+    display: none;
+  }
+  .container .header .header__container .header__buttons .header__buttons-menu {
+    width: 68px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: rgba(23, 19, 147, 0.4);
+    border: 1px solid rgb(23, 19, 147);
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .header .header__container .header__buttons .header__buttons-menu:hover {
+    box-shadow: 0px 0px 26.39px 0px #110E68;
+  }
+  .container .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 100%;
+  }
+  .container .main .offer {
+    height: auto;
+    width: 100%;
+    background: linear-gradient(#0b0945 20%, #04041a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    aspect-ratio: 16/9;
+  }
+  .container .main .offer .offer__video__back {
+    margin-bottom: 500px;
+    position: absolute;
+    width: 100%;
+    max-width: 400px;
+    height: 42%;
+    -o-object-fit: contain;
+    object-fit: cover;
+    z-index: 1;
+    mix-blend-mode: screen;
+    filter: brightness(35%);
+  }
+  .container .main .offer .offer__container {
+    margin-top: 281px;
+    width: 94.87%;
+    max-width: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    z-index: 100;
+  }
+  .container .main .offer .offer__container .offer__container__title {
+    max-width: 330px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    animation: mainTitle 1s ease 0.2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .container .main .offer .offer__container .offer__discription {
+    max-width: 330px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: mainTitle 1s ease 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .container .main .offer .offer__container .offer__discription .offer__discription-bottom {
+    width: 330px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0;
+    text-align: left;
+    color: rgb(120, 119, 146);
+  }
+  .container .main .offer .offer__container .offer__button {
+    margin: 53px 0 199px 0;
+    width: 330px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: rgb(7, 4, 51);
+    border: 1px solid #110E68;
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    max-width: 100%;
+    animation: mainTitle 1s ease 0.7s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .container .main .offer .offer__container .offer__button:hover {
+    box-shadow: 0px 0px 26.39px 0px #110E68;
+  }
+  .container .main .API {
+    padding-bottom: 251px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(4, 4, 26), rgb(0, 0, 0));
+  }
+  .container .main .API .API__container {
+    width: 94.87%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+  }
+  .container .main .API .API__container .API__unservice {
+    width: 100%;
+    max-width: 330px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: start;
+  }
+  .container .main .API .API__container .API__unservice .API__unservice__button {
+    width: 173px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: rgb(7, 6, 45);
+    border: 1px solid #110E68;
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    height: 30px;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .container .main .API .API__container .API__unservice .API__unservice__button:hover {
+    box-shadow: 0px 0px 26.39px 0px #110E68;
+  }
+  .container .main .API .API__container .API__unservice .API__unservice__button.appearance {
+    opacity: 1;
+  }
+  .container .main .API .API__container .API__title {
+    max-width: 330px;
+    margin-left: 0;
+    margin-top: 20px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .container .main .API .API__container .API__title.appearance {
+    opacity: 1;
+  }
+  .container .main .API .API__container .API__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 330px;
+    margin-left: 0;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    margin-top: 0;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .container .main .API .API__container .API__buttons .API__buttons__slider {
+    flex-wrap: unset;
+    display: flex;
+    justify-content: left;
+    max-width: 684px;
+    height: 80px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    scrollbar-width: none;
+    gap: 0;
+  }
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button {
+    flex-shrink: 0;
+  }
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(1) {
+    width: 165px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: #04041a;
+    border: 1px solid #110E68;
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    margin-left: 0;
+  }
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(1):hover {
+    box-shadow: 0px 0px 26.39px 0px #110E68;
+  }
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(2) {
+    width: 177px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: #04041a;
+    border: 1px solid #110E68;
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+  }
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(2):hover {
+    box-shadow: 0px 0px 26.39px 0px #110E68;
+  }
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(3) {
+    width: 214px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: #04041a;
+    border: 1px solid #110E68;
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+  }
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(3):hover {
+    box-shadow: 0px 0px 26.39px 0px #110E68;
+  }
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(4) {
+    width: 184px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: #04041a;
+    border: 1px solid #110E68;
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+  }
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(4):hover {
+    box-shadow: 0px 0px 26.39px 0px #110E68;
+  }
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(5) {
+    width: 129px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: #04041a;
+    border: 1px solid #110E68;
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+  }
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(5):hover {
+    box-shadow: 0px 0px 26.39px 0px #110E68;
+  }
+  .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button.selected {
+    box-shadow: 0px 0px 26.39px 0px #110E68;
+  }
+  .container .main .API .API__container .API__buttons.appearance {
+    opacity: 1;
+  }
+  .container .main .API .API__container .slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 330px;
+    margin-left: 0;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .container .main .API .API__container .slider-container .slider__slider {
+    display: flex;
+    justify-content: center;
+    max-width: 684px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+  }
+  .container .main .API .API__container .slider-container .slider__slider .API__slider {
+    max-width: 1120px;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    scrollbar-width: none; /* Скрытие стандартного скролла */
+    margin-top: 40px;
+    gap: 20px;
+  }
+  .container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item {
+    display: flex;
+    min-width: 261px;
+    height: 86px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(73, 73, 73);
+  }
+  .container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item .slider__img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 17px 0 0 12px;
+  }
+  .container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item .slider__data {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 25px;
+  }
+  .container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item .slider__data .slider__data__title {
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(255, 255, 255);
+  }
+  .container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item .slider__data .slider__data__discription {
+    margin-top: 8px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(120, 119, 146);
+  }
+  .container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item.selected {
+    border: 1px solid #110E68;
+  }
+  .container .main .API .API__container .slider-container.appearance {
+    opacity: 1;
+  }
+  .container .main .API .API__container .API__example {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .container .main .API .API__container .API__example .API__example__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 100%;
+    height: 641px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: none;
+    gap: 17px;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 207px;
+    border-radius: 10px;
+    margin: 0;
+    background-color: rgb(6, 6, 6);
+    border: 1px solid rgb(73, 73, 73);
+    opacity: 0;
+    transition: 0.5s 0.2s;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__title {
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(255, 255, 255);
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__input__container {
+    display: flex;
+    max-width: 330px;
+    margin: 49px 20px 0 20px;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__input__container .move__input__input {
+    width: 340px;
+    max-height: 42px;
+    background-color: transparent;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #110E68;
+    font-family: "Hauora";
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: white;
+    padding-left: 15px;
+    outline: none;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__input__container .move__input__input::-moz-placeholder {
+    font-family: "Hauora";
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: white;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__input__container .move__input__input::placeholder {
+    font-family: "Hauora";
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: white;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__input__container .move__input__button {
+    width: 137px;
+    height: 42px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(23, 19, 147, 0.4);
+    border: 1px solid #110E68;
+    font-family: "Hauora";
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: white;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__languages {
+    display: none;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__code {
+    display: none;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__link {
+    margin: 29px 85px 25px 86px;
+    display: flex;
+    align-items: center;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__link .move__link__text {
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 5.5%;
+    -webkit-text-decoration-skip: ink;
+            text-decoration-skip-ink: auto;
+    color: rgb(255, 255, 255);
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move .move__link .move__link__img {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__move.appearance {
+    opacity: 1;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__result {
+    width: 100%;
+    height: 417px;
+    min-height: 417px;
+    border-radius: 10px;
+    margin: 0;
+    background-color: rgb(6, 6, 6);
+    border: 1px solid rgb(73, 73, 73);
+    opacity: 0;
+    transition: 0.5s 0.4s;
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__result .result__title {
+    margin-left: 20px;
+    text-align: left;
+    margin-top: 30px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(255, 255, 255);
+  }
+  .container .main .API .API__container .API__example .API__example__container .API__example__result.appearance {
+    opacity: 1;
+  }
+  .container .main .API .API__container .API__example.appearance {
+    opacity: 1;
+  }
+  .container .main .API .API__container::after {
+    content: "";
+    position: absolute;
+    margin: 0;
+    left: 49px;
+    top: 1125px;
+    width: 3px;
+    height: 0;
+    background-image: url("../../public/images/straightLine.png");
+    background-repeat: no-repeat;
+    background-size: 6px 231px;
+    transition: all 1s ease 0s;
+    z-index: 1000;
+  }
+  .container .main .API .API__container.line.play::after {
+    height: 231px;
+  }
+  .container .main .project {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .project .project__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 94.87%;
+    max-width: 370px;
+  }
+  .container .main .project .project__container .project__characteristic {
+    width: 100%;
+    max-width: 330px;
+    display: flex;
+    justify-content: start;
+  }
+  .container .main .project .project__container .project__characteristic .project__button {
+    width: 161px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: rgb(7, 6, 45);
+    border: 1px solid #110E68;
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    height: 30px;
+    max-width: 330px;
+    margin-left: 0;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .container .main .project .project__container .project__characteristic .project__button:hover {
+    box-shadow: 0px 0px 26.39px 0px #110E68;
+  }
+  .container .main .project .project__container .project__characteristic .project__button.appearance {
+    opacity: 1;
+  }
+  .container .main .project .project__container .project__title {
+    max-width: 330px;
+    margin-left: 0;
+    margin-top: 20px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .container .main .project .project__container .project__title.appearance {
+    opacity: 1;
+  }
+  .container .main .project .project__container .project__box {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .container .main .project .project__container .project__box .project__box__top {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__freelance {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 510px;
+    border-radius: 20px;
+    border: 1px solid rgb(73, 73, 73);
+    overflow: hidden; /* Чтобы видео не выходило за границы блока */
+    background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .video-background {
+    mix-blend-mode: screen;
+    margin: 0px 35px 210px 35px;
+    width: 300px;
+    height: 300px;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info {
+    position: relative; /* Чтобы текст был поверх видео */
+    z-index: 1; /* Чтобы текст был поверх видео */
+    max-width: 420px;
+    padding: 60px 0 0 20px;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info .freelance__title {
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0s;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info .freelance__title.appearance {
+    opacity: 1;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info .freelance__discription {
+    margin-top: 15px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0;
+    color: rgb(112, 111, 146);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.1s;
+    max-width: 330px;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info .freelance__discription br {
+    display: none;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info .freelance__discription.appearance {
+    opacity: 1;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__plans {
+    position: relative;
+    width: 100%;
+    height: 510px;
+    border-radius: 20px;
+    border: 1px solid rgb(73, 73, 73);
+    overflow: hidden; /* Чтобы видео не выходило за границы блока */
+    background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__plans .video-background {
+    mix-blend-mode: screen;
+    margin: 16px 40px 0px 30px;
+    width: 300px;
+    height: 300px;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info {
+    position: relative; /* Чтобы текст был поверх видео */
+    z-index: 1; /* Чтобы текст был поверх видео */
+    max-width: 330px;
+    padding: 60px 0 0 20px;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__title {
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__title.appearance {
+    opacity: 1;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__discription-top {
+    margin-top: 23px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0;
+    color: rgb(112, 111, 146);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+    max-width: 330px;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__discription-top br {
+    display: none;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__discription-top.appearance {
+    opacity: 1;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__discription-bottom {
+    margin-top: 14px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0;
+    color: rgb(112, 111, 146);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+    max-width: 330px;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__discription-bottom br {
+    display: none;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__discription-bottom.appearance {
+    opacity: 1;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info.appearance {
+    opacity: 1;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom {
+    margin-top: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance {
+    position: relative;
+    width: 100%;
+    height: 510px;
+    border-radius: 20px;
+    border: 1px solid rgb(73, 73, 73);
+    overflow: hidden; /* Чтобы видео не выходило за границы блока */
+    background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
+    transition: 0.5s;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .video-background {
+    mix-blend-mode: screen;
+    margin: 16px 35px 0px 35px;
+    width: 300px;
+    height: 300px;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info {
+    position: relative; /* Чтобы текст был поверх видео */
+    z-index: 1; /* Чтобы текст был поверх видео */
+    max-width: 420px;
+    padding: 60px 0 0 20px;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .freelance__title {
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0s;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .freelance__title.appearance {
+    opacity: 1;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-top {
+    margin-top: 23px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0;
+    color: rgb(112, 111, 146);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.1s;
+    max-width: 330px;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-top br {
+    display: none;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-top.appearance {
+    opacity: 1;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-bottom {
+    margin-top: 14px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0;
+    color: rgb(112, 111, 146);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.1s;
+    max-width: 330px;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-bottom br {
+    display: none;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-bottom.appearance {
+    opacity: 1;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans {
+    position: relative;
+    width: 100%;
+    height: 510px;
+    border-radius: 20px;
+    border: 1px solid rgb(73, 73, 73);
+    overflow: hidden; /* Чтобы видео не выходило за границы блока */
+    background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .video-background {
+    mix-blend-mode: screen;
+    margin: 0 35px 0px 35px;
+    width: 300px;
+    height: 300px;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info {
+    z-index: 1; /* Чтобы текст был поверх видео */
+    max-width: 330px;
+    padding: 60px 0 0 20px;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__title {
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__title.appearance {
+    opacity: 1;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-top {
+    margin-top: 23px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0;
+    color: rgb(112, 111, 146);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+    max-width: 330px;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-top br {
+    display: none;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-top.appearance {
+    opacity: 1;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-bottom {
+    margin-top: 14px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0;
+    color: rgb(112, 111, 146);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+    max-width: 330px;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-bottom br {
+    display: none;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-bottom.appearance {
+    opacity: 1;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info.appearance {
+    opacity: 1;
+  }
+  .container .main .project .project__container::after {
+    content: "";
+    position: absolute;
+    margin: 0;
+    top: 2298px;
+    left: 49px;
+    width: 3px;
+    height: 0;
+    background-image: url("../../public/images/straightLine.png");
+    background-repeat: no-repeat;
+    background-size: 3px 220px;
+    transition: all 1s ease 0s;
+    z-index: 1000;
+  }
+  .container .main .project .project__container.line.play::after {
+    height: 220px;
+  }
+  .container .main .trend {
+    padding-top: 227px;
+    padding-bottom: 265px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .trend .trend__container {
+    position: relative;
+    width: 94.87%;
+    max-width: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: start;
+  }
+  .container .main .trend .trend__container .trend__button {
+    width: 111px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: rgb(7, 6, 45);
+    border: 1px solid #110E68;
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    height: 30px;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .container .main .trend .trend__container .trend__button:hover {
+    box-shadow: 0px 0px 26.39px 0px #110E68;
+  }
+  .container .main .trend .trend__container .trend__button.appearance {
+    opacity: 1;
+  }
+  .container .main .trend .trend__container .trend__title {
+    margin-top: 30px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: "center";
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .container .main .trend .trend__container .trend__title.appearance {
+    opacity: 1;
+  }
+  .container .main .trend .trend__container .trend__buttons {
+    display: flex;
+    margin-top: 60px;
+    gap: 14.5px;
+  }
+  .container .main .trend .trend__container .trend__buttons .trend__buttons__models {
+    box-shadow: 0px 0px 26.39px 0px #110E68;
+    width: 76px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: rgb(7, 6, 45);
+    border: 1px solid #110E68;
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .container .main .trend .trend__container .trend__buttons .trend__buttons__models:hover {
+    box-shadow: 0px 0px 26.39px 0px #110E68;
+  }
+  .container .main .trend .trend__container .trend__buttons .trend__buttons__models.appearance {
+    opacity: 1;
+  }
+  .container .main .trend .trend__container .trend__buttons .trend__buttons__data {
+    width: 121px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: rgb(7, 6, 45);
+    border: 1px solid #110E68;
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    opacity: 0;
+    transition: 0.5s 0.2s;
+  }
+  .container .main .trend .trend__container .trend__buttons .trend__buttons__data:hover {
+    box-shadow: 0px 0px 26.39px 0px #110E68;
+  }
+  .container .main .trend .trend__container .trend__buttons .trend__buttons__data.appearance {
+    opacity: 1;
+  }
+  .container .main .trend .trend__container .trend__buttons .trend__buttons__app {
+    width: 104px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: rgb(7, 6, 45);
+    border: 1px solid #110E68;
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    opacity: 0;
+    transition: 0.5s 0.2s;
+  }
+  .container .main .trend .trend__container .trend__buttons .trend__buttons__app:hover {
+    box-shadow: 0px 0px 26.39px 0px #110E68;
+  }
+  .container .main .trend .trend__container .trend__buttons .trend__buttons__app.appearance {
+    opacity: 1;
+  }
+  .container .main .trend .trend__container .trend__box__models {
+    flex-wrap: unset;
+    margin-top: 46px;
+    width: 100%;
+    min-width: 0;
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model {
+    max-width: 330px;
+    width: 330px;
+    height: 132px;
+    background-color: rgb(6, 6, 6);
+    border-radius: 20px;
+    border: 1px solid rgb(73, 73, 73);
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 0.5s ease-out forwards;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model .model__top {
+    overflow: hidden;
+    margin-top: 20.5px;
+    margin-left: 19px;
+    display: flex;
+    align-items: center;
+  }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model .model__top .model__top__img {
+    width: 25px;
+    height: 25px;
+  }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model .model__top .model__top__name {
+    margin-left: 19px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(255, 255, 255);
+  }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model .model__slider {
+    margin-top: 11px;
+    margin-left: 60px;
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model .model__slider .model__slider__container {
+    max-width: 294px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    scrollbar-width: none;
+    gap: 10px;
+  }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model .model__slider .model__slider__container .model__slider__item {
+    width: 109px;
+    height: 21px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+    border: 1px solid rgb(52, 59, 67);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model .model__slider .model__slider__container .model__slider__item .model__slider__text {
+    padding: 11px 7px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(153, 153, 153);
+  }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model .model__bottom {
+    margin-left: 21px;
+    margin-top: 23px;
+    display: flex;
+    align-items: center;
+  }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model .model__bottom .model__bottom__img {
+    width: 21px;
+    height: 21px;
+  }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model .model__bottom .model__bottom__name {
+    margin-left: 21px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(255, 255, 255);
+  }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model .model__bottom .model__bottom__time {
+    margin-left: 10px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(120, 119, 146);
+  }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model .model__bottom .model__bottom__downloads {
+    margin-left: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model .model__bottom .model__bottom__downloads .model__bottom__downloads-img {
+    width: 20px;
+    height: 20px;
+  }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model .model__bottom .model__bottom__downloads .model__bottom__downloads-text {
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(120, 119, 146);
+  }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model .model__bottom .model__bottom__likes {
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model .model__bottom .model__bottom__likes .model__bottom__likes-img {
+    width: 11px;
+    height: 10px;
+  }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model .model__bottom .model__bottom__likes .model__bottom__likes-text {
+    margin-left: 4.5px;
+    font-family: Hauora;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(120, 119, 146);
+  }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model.appearance {
+    opacity: 1;
+  }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model:nth-child(n+4) {
+    display: none;
+  }
+  .container .main .trend .trend__container .trend__box__app {
+    flex-wrap: unset;
+    margin-top: 46px;
+    width: 100%;
+    min-width: 0;
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .main .trend .trend__container .trend__box__app .trend__box__model {
+    max-width: 330px;
+    width: 332px;
+    height: 132px;
+    background-color: rgb(6, 6, 6);
+    border-radius: 20px;
+    border: 1px solid rgb(73, 73, 73);
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 0.5s ease-out forwards;
+  }
+  .container .main .trend .trend__container .trend__box__app .trend__box__model .model__top {
+    margin-top: 20.5px;
+    margin-left: 19px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .container .main .trend .trend__container .trend__box__app .trend__box__model .model__top .model__top__img {
+    width: 25px;
+    height: 25px;
+  }
+  .container .main .trend .trend__container .trend__box__app .trend__box__model .model__top .model__top__name {
+    margin-left: 19px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(255, 255, 255);
+  }
+  .container .main .trend .trend__container .trend__box__app .trend__box__model .model__slider {
+    margin-top: 11px;
+    margin-left: 60px;
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .container .main .trend .trend__container .trend__box__app .trend__box__model .model__slider .model__slider__container {
+    max-width: 294px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    scrollbar-width: none;
+    gap: 10px;
+  }
+  .container .main .trend .trend__container .trend__box__app .trend__box__model .model__slider .model__slider__container .model__slider__item {
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: 35px;
+    height: 21px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+    border: 1px solid rgb(52, 59, 67);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .main .trend .trend__container .trend__box__app .trend__box__model .model__slider .model__slider__container .model__slider__item .model__slider__text {
+    padding: 11px 7px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(153, 153, 153);
+  }
+  .container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom {
+    margin-left: 21px;
+    margin-top: 23px;
+    display: flex;
+    align-items: center;
+  }
+  .container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom .model__bottom__img {
+    width: 21px;
+    height: 21px;
+  }
+  .container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom .model__bottom__name {
+    margin-left: 21px;
+    width: 96px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(255, 255, 255);
+  }
+  .container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom .model__bottom__time {
+    margin-left: 10px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(120, 119, 146);
+  }
+  .container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom .model__bottom__downloads {
+    margin-left: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom .model__bottom__downloads .model__bottom__downloads-img {
+    width: 20px;
+    height: 20px;
+  }
+  .container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom .model__bottom__downloads .model__bottom__downloads-text {
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(120, 119, 146);
+  }
+  .container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom .model__bottom__likes {
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom .model__bottom__likes .model__bottom__likes-img {
+    width: 11px;
+    height: 10px;
+  }
+  .container .main .trend .trend__container .trend__box__app .trend__box__model .model__bottom .model__bottom__likes .model__bottom__likes-text {
+    margin-left: 4.5px;
+    font-family: Hauora;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(120, 119, 146);
+  }
+  .container .main .trend .trend__container .trend__box__app .trend__box__model:nth-child(n+4) {
+    display: none;
+  }
+  .container .main .trend .trend__container .trend__box__data {
+    flex-wrap: unset;
+    margin-top: 46px;
+    width: 100%;
+    min-width: 0;
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .main .trend .trend__container .trend__box__data .trend__box__model {
+    max-width: 330px;
+    width: 332px;
+    height: 132px;
+    background-color: rgb(6, 6, 6);
+    border-radius: 20px;
+    border: 1px solid rgb(73, 73, 73);
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 0.5s ease-out forwards;
+    overflow: hidden;
+  }
+  .container .main .trend .trend__container .trend__box__data .trend__box__model .model__top {
+    margin-top: 20.5px;
+    margin-left: 19px;
+    display: flex;
+    align-items: center;
+  }
+  .container .main .trend .trend__container .trend__box__data .trend__box__model .model__top .model__top__img {
+    width: 25px;
+    height: 25px;
+  }
+  .container .main .trend .trend__container .trend__box__data .trend__box__model .model__top .model__top__name {
+    margin-left: 19px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(255, 255, 255);
+  }
+  .container .main .trend .trend__container .trend__box__data .trend__box__model .model__slider {
+    margin-top: 11px;
+    margin-left: 60px;
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .container .main .trend .trend__container .trend__box__data .trend__box__model .model__slider .model__slider__container {
+    max-width: 294px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    scrollbar-width: none;
+    gap: 10px;
+  }
+  .container .main .trend .trend__container .trend__box__data .trend__box__model .model__slider .model__slider__container .model__slider__item {
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: 31px;
+    height: 21px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+    border: 1px solid rgb(52, 59, 67);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .main .trend .trend__container .trend__box__data .trend__box__model .model__slider .model__slider__container .model__slider__item .model__slider__text {
+    padding: 11px 7px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(153, 153, 153);
+  }
+  .container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom {
+    margin-left: 21px;
+    margin-top: 23px;
+    display: flex;
+    align-items: center;
+  }
+  .container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom .model__bottom__img {
+    width: 21px;
+    height: 21px;
+  }
+  .container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom .model__bottom__name {
+    margin-left: 21px;
+    width: 96px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(255, 255, 255);
+  }
+  .container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom .model__bottom__time {
+    margin-left: 10px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(120, 119, 146);
+  }
+  .container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom .model__bottom__downloads {
+    margin-left: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom .model__bottom__downloads .model__bottom__downloads-img {
+    width: 20px;
+    height: 20px;
+  }
+  .container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom .model__bottom__downloads .model__bottom__downloads-text {
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(120, 119, 146);
+  }
+  .container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom .model__bottom__likes {
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom .model__bottom__likes .model__bottom__likes-img {
+    width: 11px;
+    height: 10px;
+  }
+  .container .main .trend .trend__container .trend__box__data .trend__box__model .model__bottom .model__bottom__likes .model__bottom__likes-text {
+    margin-left: 4.5px;
+    font-family: Hauora;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(120, 119, 146);
+  }
+  .container .main .trend .trend__container .trend__box__data .trend__box__model:nth-child(n+4) {
+    display: none;
+  }
+  .container .main .trend .trend__container::after {
+    content: "";
+    top: 1700px;
+    margin-left: 0;
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-image: url("../../public/images/straightsecond.png");
+    background-repeat: no-repeat;
+    background-size: 3px 231px;
+    transition: all 1s ease 0s;
+    z-index: 1000;
+  }
+  .container .main .trend .trend__container.line.play::after {
+    height: 231px;
+  }
+  .container .main .development {
+    padding-top: 0;
+    padding-bottom: 172px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .development .development__container {
+    width: 94.87%;
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .main .development .development__container .development_title {
+    font-family: Hauora;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .container .main .development .development__container .development_title.appearance {
+    opacity: 1;
+  }
+  .container .main .development .development__container .development_discription {
+    margin-top: 40px;
+    font-family: "Hauora";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: rgb(120, 119, 146);
+    text-align: left;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .container .main .development .development__container .development_discription.appearance {
+    opacity: 1;
+  }
+  .container .main .development .development__container .development__buttons {
+    margin-top: 80px;
+    display: flex;
+  }
+  .container .main .development .development__container .development__buttons .develompent__button:nth-child(1) {
+    width: 155px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: rgba(23, 19, 147, 0.4);
+    border: 1px solid #110E68;
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .container .main .development .development__container .development__buttons .develompent__button:nth-child(1):hover {
+    box-shadow: 0px 0px 26.39px 0px #110E68;
+  }
+  .container .main .development .development__container .development__buttons .develompent__button:nth-child(1).appearance {
+    opacity: 1;
+  }
+  .container .main .development .development__container .development__buttons .develompent__button:nth-child(2) {
+    margin-left: 20px;
+    width: 155px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #110E68;
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .container .main .development .development__container .development__buttons .develompent__button:nth-child(2):hover {
+    box-shadow: 0px 0px 26.39px 0px #110E68;
+  }
+  .container .main .development .development__container .development__buttons .develompent__button:nth-child(2).appearance {
+    opacity: 1;
+  }
+  .container .footer {
+    background: rgb(0, 0, 0);
+    padding-bottom: 122.54px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .footer .footer__container {
+    max-width: 330px;
+    width: 94.87%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  .container .footer .footer__container .footer__top {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container .footer .footer__container .footer__top .footer__logo {
+    width: 155px;
+    height: 20px;
+  }
+  .container .footer .footer__container .footer__top .footer__newsletter {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(52, 59, 67);
+    background-color: transparent;
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+  }
+  .container .footer .footer__container .footer__top .footer__newsletter:hover {
+    box-shadow: 0px 0px 26.39px 0px rgb(17, 14, 104);
+  }
+  .container .footer .footer__container .footer__menu {
+    display: grid;
+    grid-template-columns: repeat(2, 155px);
     gap: 50px 20px;
     margin-top: 60px;
     margin-left: 0;

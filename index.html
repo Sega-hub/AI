@@ -8,6 +8,32 @@
     <title>AI</title>
 </head>
 <body>
+    <div class="popup">
+        <div class="popup__container">
+             <div class="header__container">
+                 <a href="index.html"> 
+                     <img src="./public/images/logo.svg" alt="logotip" class="header__logo"> 
+                 </a>          
+                 <div class="header__buttons" >
+                     <button class="header__buttons-menu" onclick="closePopup()">Закрыть</button>
+                 </div>
+             </div>
+             <div class="popup__menu">
+                 <a href="./src/html/productsandfunctions.html" class="popup__menu__item">Продукты</a>
+                 <a href="#money" onclick="closePopup()" class="popup__menu__item">Решения</a>
+                 <a href="https://docs.gitlife.ru/docs/UserGuide" class="popup__menu__item">Документация</a>
+                 <a href="#footer" onclick="closePopup()" class="popup__menu__item">Проекты</a>
+                 <a href="./src/html/productsandfunctions.html" class="popup__menu__item">Для компании</a> 
+                 <a href="./src/html/productsandfunctions.html" class="popup__menu__item">Тарифы</a>       
+                                               
+             </div>
+             <div class="popup__button">
+                <button class="header__buttons-menu">Войти</button>
+                <button class="header__buttons-search">Поиск</button>
+             </div>
+        </div>
+    </div>
+
     <div class="container">
         <header class="header">
             <div class="header__container">
@@ -25,7 +51,7 @@
                 <div class="header__buttons">
                     <a href="#" class="header__buttons-search">Поиск</a>
                     <button class="header__buttons-enter">Войти</button>
-                    <button class="header__buttons-menu">Меню</button>
+                    <button class="header__buttons-menu" onclick="openPopup()">Меню</button>
                 </div>
             </div>
         </header>
@@ -60,21 +86,23 @@
                         к большим языковым моделям
                     </h2>
                     <div class="API__buttons" id="text">
-                        <button class="API__buttons__button">
-                            Генерация текста
-                        </button>
-                        <button class="API__buttons__button">
-                            Визуальная модель
-                        </button>
-                        <button class="API__buttons__button">
-                            Генерация  изображений
-                        </button>
-                        <button class="API__buttons__button">
-                            Распознавание речи
-                        </button>
-                        <button class="API__buttons__button">
-                            Синтес речи
-                        </button>
+                        <div class="API__buttons__slider">
+                            <button class="API__buttons__button">
+                                Генерация текста
+                            </button>
+                            <button class="API__buttons__button">
+                                Визуальная модель
+                            </button>
+                            <button class="API__buttons__button">
+                                Генерация  изображений
+                            </button>
+                            <button class="API__buttons__button">
+                                Распознавание речи
+                            </button>
+                            <button class="API__buttons__button">
+                                Синтес речи
+                            </button>
+                        </div>
                     </div>
                     <div class="slider-container" id="text">                      
                         <div class="slider__slider">
@@ -195,9 +223,11 @@
             </section>
             <section class="project">
                 <div class="project__container line">
-                    <button class="project__button" id="text">
-                        Характеристики
-                    </button>
+                    <div class="project__characteristic">
+                        <button class="project__button" id="text">
+                            Характеристики
+                        </button>
+                    </div>
                     <h2 class="project__title" id="text">
                         Всё необходимое для вашего AI-проекта
                     </h2>

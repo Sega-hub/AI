@@ -102,6 +102,10 @@ $width: 77.7%;
     }
 }
 
+.popup {
+    display: none;
+}
+
 .container {
     
     display: flex;
@@ -258,6 +262,7 @@ $width: 77.7%;
                     margin: 133px 0 100px 0;
 
                     @include button(356px, rgb(7, 4, 51), #110E68);
+                    
 
                     animation: mainTitle 1s ease 0.7s;
                     animation-fill-mode: forwards;
@@ -1101,6 +1106,7 @@ $width: 77.7%;
                     display: flex;
                     margin-top: 71px;
                     gap: 14px;
+                    max-width: 100%;
                     .trend__buttons__models {
                         box-shadow: 0px 0px 26.39px 0px #110E68;
                         @include button(97px, rgba(7, 6, 45, 1), #110E68);
@@ -1580,6 +1586,9 @@ $width: 77.7%;
                 &.line.play::after{                   
                     height: 350px;
                 }
+
+            
+        
 
             }
         }
@@ -2092,6 +2101,126 @@ $width: 77.7%;
 
     $width: 91.93%;
 
+    .popup {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 10000;
+        overflow-y: scroll;
+        position: fixed;
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(rgb(10, 9, 67), rgb(0, 0, 0));
+        .popup__container {   
+            width:  84.6%;
+            display: flex;
+            flex-direction: column;
+            .header__container {
+                margin-top: 26px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                a {
+                    display: flex;
+                    align-items: end;
+                    img {
+                        width: 152px;
+                        height: 22.38px;
+                    }
+                }
+
+                .header__buttons {
+                    display: flex;
+                    align-items: end;
+                    button {
+                        @include button(88px, rgba(14, 12, 89, 1), rgb(23, 19, 147));
+                        height: 30px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        letter-spacing: 0.03em;
+                        line-height: 16px;
+                        text-align: center;
+                        font-family: "Hauora";
+                    }
+                }
+            }
+            .popup__menu {
+                margin-top: 103px;
+                display: flex;
+                flex-direction: column;
+                .popup__menu__item {
+                    margin-top: 40px;
+                    font-family: "Hauora";
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    line-height: 20.8px;
+                    color: $COLOR_WHITE;
+                }
+                .popup__menu__mail {
+                    margin-top: 20px;
+                    font-family: "Hauora";
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    line-height: 20.8px;
+                    color: rgb(112, 111, 146);
+                }
+                .popup__menu__phone {
+                    margin-top: 10px;
+                    font-family: "Hauora";
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    line-height: 20.8px;
+                    color: rgb(112, 111, 146);
+                }
+                .footer__xellon {
+                    margin-top: 10px;
+                    font-family: "Hauora";
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    line-height: 20.8px;
+                    color: $COLOR_WHITE;
+                }
+            }
+            .popup__button {
+                margin-top: 91px;
+                padding-bottom: 100px;
+                display: flex;
+                justify-content: space-between;
+                .header__buttons-menu {
+                    @include button(242px, rgba(4, 4, 28, 1), rgb(3, 16, 180));
+                    height: 43px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    line-height: 16px;
+                    text-align: center;
+                    font-family: "Hauora";
+                }
+                .header__buttons-search {
+                    margin-left: 20px;
+                    @include button(68px, rgba(4, 4, 28, 1), rgb(3, 16, 180));
+                    height: 43px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    line-height: 16px;
+                    text-align: center;
+                    font-family: "Hauora";
+
+                    color: rgba(112, 111, 146, 1);
+                    border: none;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
     .container {
     
         display: flex;
@@ -2289,25 +2418,34 @@ $width: 77.7%;
                         max-width: 684px;
                         flex-wrap: wrap;
                         gap: 20px;
-                        .API__buttons__button {                            
-                            &:nth-child(1) {
-                                @include button(165px, #04041a, #110E68);                            
-                            }
-                            &:nth-child(2) {
-                                @include button(177px, #04041a, #110E68);
-                            }
-                            &:nth-child(3) {
-                                @include button(214px, #04041a, #110E68);
-                            }
-                            &:nth-child(4) {
-                                @include button(184px, #04041a, #110E68);
-                            }
-                            &:nth-child(5) {
-                                @include button(129px, #04041a, #110E68);
-                            }
-    
-                            &.selected {
-                                box-shadow: 0px 0px 26.39px 0px #110E68;
+
+                        .API__buttons__slider {
+                            @include center();
+                            margin-top: 80px;
+                            max-width: 684px;
+                            flex-wrap: wrap;
+                            gap: 20px;
+
+                            .API__buttons__button {                            
+                                &:nth-child(1) {
+                                    @include button(165px, #04041a, #110E68);                            
+                                }
+                                &:nth-child(2) {
+                                    @include button(177px, #04041a, #110E68);
+                                }
+                                &:nth-child(3) {
+                                    @include button(214px, #04041a, #110E68);
+                                }
+                                &:nth-child(4) {
+                                    @include button(184px, #04041a, #110E68);
+                                }
+                                &:nth-child(5) {
+                                    @include button(129px, #04041a, #110E68);
+                                }
+        
+                                &.selected {
+                                    box-shadow: 0px 0px 26.39px 0px #110E68;
+                                }
                             }
                         }
     
@@ -3115,12 +3253,11 @@ $width: 77.7%;
                         }
                     }
                     .trend__box__models {
-                        flex-wrap: unset;
                         margin-top: 80px;
                         width: 100%;
                         min-width: 0;
                         max-width: 684px;
-                        display: grid;
+                        display: none;
                         grid-template-columns: repeat(2, 332px);
                         gap: 24px 20px;
                         .trend__box__model {
@@ -3728,5 +3865,1654 @@ $width: 77.7%;
             }
         }  
        
+    }
+}
+
+@media (max-width: 744px) {
+
+    $width: 94.87%;
+
+    .container {
+    
+        display: flex;
+        flex-direction: column;
+        .header {
+            width: 100vw;
+            max-width: 100%;
+            @include center();
+            background-color: transparent;
+            padding-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
+            position: fixed;
+            z-index: 1000;
+    
+            &.hidden {
+                transform: translateY(-100%);
+            }
+    
+            &.scrolled {
+                background: linear-gradient(180deg, #000000 20.98%, rgba(0, 0, 0, 0) 100%);
+            }
+    
+            .header__container {
+                max-width: 330px;
+                width: $width;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 26px;
+    
+                animation: mainTitle 1s ease 0s;
+                animation-fill-mode: forwards;
+                opacity: 0;
+    
+                a {
+                    img {
+                        width: 155px;
+                        height: 20px;
+                    }
+                }
+                .header__nav {
+                    display: flex;
+                    align-items: center;
+                    .header__nav-link {
+                        display: none;
+                    }
+                }
+                .header__buttons {
+                    @include center();
+                    .header__buttons-search {
+                       display: none;
+                    }
+                    .header__buttons-enter {
+                        display: none;
+                    }
+                    .header__buttons-menu {
+                        @include button(68px, rgba(23, 19, 147, 0.4), rgba(23, 19, 147, 1));
+                        height: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        .main {            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            max-width: 100%;
+    
+            .offer {
+                height: auto; 
+                width: 100%;
+                background: linear-gradient(#0b0945 20%, #04041a);
+                @include center();
+                flex-direction: column;
+                aspect-ratio: 16/9;
+               .offer__video__back {      
+                    margin-bottom: 500px;
+                    position: absolute;
+                    width: 100%;
+                    max-width: 400px;
+                    height: 42%;
+                    -o-object-fit: contain;
+                    object-fit: cover;
+                    z-index: 1;
+                    mix-blend-mode: screen;
+                    filter: brightness(35%);
+                }
+                
+               .offer__container {
+                    margin-top: 281px;
+                    width: $width;
+                    max-width: 330px;
+                    @include center();
+                    flex-direction: column;
+                    align-items: start;
+                    height: 100%;
+                    z-index: 100;
+                    .offer__container__title {
+                        max-width: 330px;
+                        font-family: "Hauora";
+                        font-weight: 500;
+                        font-size: 25px;
+                        line-height: 100%;
+                        letter-spacing: 0px;
+                        text-align: left;
+                        color: $COLOR_WHITE;   
+                        
+                        animation: mainTitle 1s ease 0.2s;
+                        animation-fill-mode: forwards;
+                        opacity: 0;
+                    }
+    
+                    .offer__discription {
+                        max-width: 330px;
+                        padding-top: 30px;
+                        @include center();
+                        flex-direction: column;
+    
+                        animation: mainTitle 1s ease 0.5s;
+                        animation-fill-mode: forwards;
+                        opacity: 0;
+    
+                        .offer__discription-bottom {
+                            width: 330px;
+                            font-family: "Hauora";
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 130%;
+                            letter-spacing: 0;
+                            text-align: left;
+                            color: rgba(120, 119, 146, 1);
+                        }
+                    }
+               
+                    .offer__button {
+    
+                        margin: 53px 0 199px 0;
+    
+                        @include button(330px, rgb(7, 4, 51), #110E68);
+                        max-width: 100%;
+                        animation: mainTitle 1s ease 0.7s;
+                        animation-fill-mode: forwards;
+                        opacity: 0;
+                    }
+                }            
+            }
+    
+            .API {
+                padding-bottom: 251px;
+                width: 100%;
+                @include center();
+                background: linear-gradient(rgb(4, 4, 26), rgb(0, 0, 0));
+                .API__container {
+                    width: $width;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    max-width: 370px;
+                    .API__unservice {
+                        width: 100%;
+                        max-width: 330px;
+                        margin-left: 0;
+                        @include center();
+                        justify-content: start;
+                        .API__unservice__button {
+                            @include button(173px, rgba(7, 6, 45, 1), #110E68);
+                            height: 30px;
+                            opacity: 0;
+                            transition: 0.5s;
+                            &.appearance {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    .API__title {
+                        max-width: 330px;
+                        margin-left: 0;
+                        margin-top: 20px;
+                        font-family: "Hauora";
+                        font-weight: 500;
+                        font-size: 25px;
+                        line-height: 110%;
+                        letter-spacing: 0%;
+                        text-align: left;
+                        color: $COLOR_WHITE;
+    
+                        opacity: 0;
+                        transition: 0.5s;
+                        &.appearance {
+                            opacity: 1;
+                        }
+                    }
+                    .API__buttons {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        max-width: 330px;
+                        margin-left: 0;
+                        overflow-x: auto;
+                        scroll-behavior: smooth;
+                        white-space: nowrap;
+                        margin-top: 0;
+                        .API__buttons__slider {
+                            flex-wrap: unset;
+                            display: flex;
+                            justify-content: left;
+                            max-width: 684px;
+                            height: 80px;
+                            overflow-x: auto;
+                            scroll-behavior: smooth;
+                            white-space: nowrap;
+                            scrollbar-width: none; // скрытие стандартного скролла
+                            gap: 0;
+                            .API__buttons__button {
+                                flex-shrink: 0; // предотвращает сжатие элементов
+                                &:nth-child(1) {
+                                    @include button(165px, #04041a, #110E68);
+                                    margin-left: 0;
+                                }
+                                &:nth-child(2) {
+                                    @include button(177px, #04041a, #110E68);
+                                }
+                                &:nth-child(3) {
+                                    @include button(214px, #04041a, #110E68);
+                                }
+                                &:nth-child(4) {
+                                    @include button(184px, #04041a, #110E68);
+                                }
+                                &:nth-child(5) {
+                                    @include button(129px, #04041a, #110E68);
+                                }
+                    
+                                &.selected {
+                                    box-shadow: 0px 0px 26.39px 0px #110E68;
+                                }
+                            }
+                        }
+                    
+                        opacity: 0;
+                        transition: 0.5s;
+                    
+                        &.appearance {
+                            opacity: 1;
+                        }
+                    }
+                    .slider-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        max-width: 330px;
+                        margin-left: 0;
+                        overflow-x: auto; 
+                        scroll-behavior: smooth;
+                        white-space: nowrap; 
+    
+                        .slider__slider {
+                            display: flex;
+                            justify-content: center;
+                            max-width: 684px;
+                            overflow-x: auto; 
+                            scroll-behavior: smooth;
+                            white-space: nowrap;
+                            .API__slider {
+                                max-width: 1120px;
+                                display: flex;
+                                gap: 20px;
+                                overflow-x: auto;
+                                scroll-behavior: smooth;
+                                white-space: nowrap;
+                                scrollbar-width: none; /* Скрытие стандартного скролла */
+                                margin-top: 40px;
+                                gap: 20px;
+                                .API__slider__item {
+                                    display: flex;
+                                    min-width: 261px;
+                                    height: 86px;
+                                    border-radius: 20px;
+                                    background-color: rgba(0, 0, 0, 1);
+                                    border: 1px solid rgba(73, 73, 73, 1);
+            
+                                    .slider__img {
+                                        img {
+                                            width: 40px;
+                                            height: 40px;
+                                            border-radius: 20px;
+                                            margin: 17px 0 0 12px;
+                                        }
+                                    }
+                                    .slider__data {
+                                        display: flex;
+                                        flex-direction: column;
+                                        margin: 20px 0 0 25px;
+            
+                                        .slider__data__title {
+                                            font-family: "Hauora";
+                                            font-weight: 500;
+                                            font-size: 14px;
+                                            line-height: 120%;
+                                            letter-spacing: 0%;    
+                                            color: $COLOR_WHITE;                            
+                                        }
+            
+                                        .slider__data__discription {
+                                            margin-top: 8px;
+                                            font-family: "Hauora";
+                                            font-weight: 500;
+                                            font-size: 12px;
+                                            line-height: 120%;
+                                            letter-spacing: 0%;                                    
+                                            color: rgba(120, 119, 146, 1);
+                                        }
+                                    }
+            
+                                    &.selected {
+                                        border: 1px solid #110E68;
+                                    }
+                                }
+                            }
+                        }
+    
+                        opacity: 0;
+                        transition: 0.5s;
+                        &.appearance {
+                            opacity: 1;
+                        }
+                    }
+                    .API__example {
+                        width: 100%;
+                        @include center();
+                        .API__example__container {
+                            display: flex;
+                            flex-direction: column;
+                            margin-top: 40px;
+                            width: 100%;
+                            height: 641px;
+                            border-radius: 20px;
+                            background-color: transparent;
+                            border: none;
+                            gap: 17px;
+
+                            .API__example__move {
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                                height: 207px;
+                                border-radius: 10px;
+                                margin: 0;
+                                background-color: rgba(6, 6, 6, 1);
+                                border: 1px solid rgba(73, 73, 73, 1);
+                                .move__title {   
+                                    text-align: left;                             
+                                    margin-top: 30px;
+                                    margin-left: 20px;
+                                    font-family: "Hauora";
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    // leading-trim: Cap height;
+                                    line-height: 120%;
+                                    letter-spacing: 0%;
+                                    color: $COLOR_WHITE;
+                                    
+                                }
+                                .move__input__container {
+                                    display: flex;
+                                    max-width: 330px;
+                                    margin: 49px 20px 0 20px;
+                                    .move__input__input {
+                                        width: 340px;
+                                        max-height: 42px;
+                                        background-color: transparent;   
+                                        border-top-left-radius: 10px;
+                                        border-bottom-left-radius: 10px;   
+                                        border: 1px solid #110E68;
+                                        
+                                        font-family: "Hauora";
+                                        font-weight: 100;
+                                        font-size: 14px;                                    
+                                        line-height: 140%;
+                                        letter-spacing: 0%;                                    
+                                        color: white;                                    
+                                        padding-left: 15px;
+    
+                                        outline: none;
+    
+                                        &::placeholder {
+                                            font-family: "Hauora";
+                                            font-weight: 100;
+                                            font-size: 14px;                                    
+                                            line-height: 140%;
+                                            letter-spacing: 0%;                                    
+                                            color: white;     
+                                        }
+                                    }
+                                    .move__input__button {
+                                        width: 137px;
+                                        height: 42px;
+                                        border-top-right-radius: 10px;
+                                        border-bottom-right-radius: 10px;
+                                        background-color: rgba(23, 19, 147, 0.4);
+                                        border: 1px solid #110E68;
+                                       
+                                        font-family: "Hauora";
+                                        font-weight: 100;
+                                        font-size: 14px;                                    
+                                        line-height: 140%;
+                                        letter-spacing: 0%;                                    
+                                        color: white;
+                                    }
+                                }
+                                .move__languages {
+                                    display: none;
+                                }
+                                .move__code {
+                                   display: none;                                   
+                                }
+                                .move__link {
+                                    margin: 29px 85px 25px 86px;
+                                    display: flex;
+                                    align-items: center;
+                                    .move__link__text {
+                                        font-family: "Hauora";
+                                        font-weight: 500;
+                                        font-size: 12px;
+                                        line-height: 120%;
+                                        letter-spacing: 0%;
+                                        text-decoration: underline;
+                                        text-decoration-style: solid;
+                                        text-decoration-thickness: 5.5%;
+                                        text-decoration-skip-ink: auto;
+                                        color: $COLOR_WHITE;                                    
+                                    }
+                                    .move__link__img {
+                                        margin-left: 10px;
+                                        width: 20px;
+                                        height: 20px;
+                                    }
+                                }
+    
+                                opacity: 0;
+                                transition: 0.5s 0.2s;
+                                &.appearance {
+                                    opacity: 1;
+                                }
+                            }
+    
+                            .API__example__result {
+                                width: 100%;
+                                height: 417px;
+                                min-height: 417px;
+                                border-radius: 10px;
+                                margin: 0;
+                                background-color: rgba(6, 6, 6, 1);
+                                border: 1px solid rgba(73, 73, 73, 1);
+                                .result__title {
+                                    margin-left: 20px;
+                                    text-align: left;
+                                    margin-top: 30px;
+                                    font-family: "Hauora";
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    // leading-trim: Cap height;
+                                    line-height: 120%;
+                                    letter-spacing: 0%;
+                                    color: $COLOR_WHITE;
+                                }
+    
+                                opacity: 0;
+                                transition: 0.5s 0.4s;
+                                &.appearance {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+    
+                        opacity: 0;
+                        transition: 0.5s;
+                        &.appearance {
+                            opacity: 1;
+                        }
+                    }
+    
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        margin: 0;
+                        left: 49px;
+                        top: 1125px;
+                        width: 3px;
+                        height: 0;
+                        background-image: url("../../public/images/straightLine.png");
+                        background-repeat: no-repeat;
+                        background-size: 6px 231px;
+                        transition: all 1s ease 0s;
+                        z-index: 1000;
+                    }
+    
+                    &.line.play::after{                   
+                        height: 231px;
+                    }
+                    
+                }
+            }
+    
+            .project {
+                background-color: rgb(0, 0, 0);
+                width: 100%;
+                @include center();
+                .project__container {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: $width;
+                    max-width: 370px;
+                    .project__characteristic {
+                        width: 100%;
+                        max-width: 330px;
+                        display: flex;
+                        justify-content: start;
+
+                        .project__button {
+                            @include button(161px, rgba(7, 6, 45, 1), #110E68);
+                            height: 30px;
+                            max-width: 330px;
+                            margin-left: 0;
+                            opacity: 0;
+                            transition: 0.5s;
+                            &.appearance {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    
+                    .project__title {
+                        max-width: 330px;
+                        margin-left: 0;
+                        margin-top: 20px;
+                        font-family: "Hauora";
+                        font-weight: 500;
+                        font-size: 25px;
+                        line-height: 110%;
+                        letter-spacing: 0%;
+                        text-align: left;
+                        color: $COLOR_WHITE;     
+                        
+                        opacity: 0;
+                        transition: 0.5s;
+                        &.appearance {
+                            opacity: 1;
+                        }
+                    }
+                    .project__box {
+                        margin-top: 80px;
+                        
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+    
+                        .project__box__top {
+                            gap: 20px;
+    
+                            display: flex;    
+                            flex-direction: column;                   
+                            width: 100%;
+    
+                            .project__box__freelance {
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                                height: 510px;
+                                border-radius: 20px;
+                                border: 1px solid $COLOR_DARK_GRAY;
+                                overflow: hidden; /* Чтобы видео не выходило за границы блока */
+                                background-color: $COLOR_BLACK; /* Фон на случай, если видео не загрузится */
+    
+    
+                                .video-background {
+                                    mix-blend-mode: screen;
+                                    margin:  0px 35px 210px 35px;
+                                    width: 300px;
+                                    height: 300px;
+                                }
+    
+                                .freelance__info
+                                {
+                                    position: relative; /* Чтобы текст был поверх видео */
+                                    z-index: 1; /* Чтобы текст был поверх видео */
+                                    max-width: 420px;
+                                    padding: 60px 0 0 20px;
+    
+                                    .freelance__title {
+                                        font-family: "Hauora";
+                                        font-weight: 500;
+                                        font-size: 16px;
+                                        line-height: 130%;
+                                        letter-spacing: 0;
+                                        color: $COLOR_WHITE;
+                                        opacity: 0;
+                                        transition: 0.5s;
+                                        transition-delay: 0s;
+                                    }
+                                    
+                                    .freelance__title.appearance {
+                                        opacity: 1;
+                                    }
+                                    
+                                    .freelance__discription {
+                                        margin-top: 15px;
+                                        font-family: "Hauora";
+                                        font-weight: 500;
+                                        font-size: 16px;
+                                        line-height: 130%;
+                                        letter-spacing: 0;
+                                        color: $COLOR_GRAY;
+                                        opacity: 0;
+                                        transition: 0.5s;
+                                        transition-delay: 0.1s;
+                                        max-width: 330px;
+                                        br {
+                                            display: none;
+                                        }
+                                    }
+                                    
+                                    .freelance__discription.appearance {
+                                        opacity: 1;
+                                    }
+    
+                                }
+    
+                               
+                            }
+    
+                            .project__box__plans {
+                                position: relative;
+                                width: 100%;
+                                height: 510px;
+                                border-radius: 20px;
+                                border: 1px solid $COLOR_DARK_GRAY;
+                                overflow: hidden; /* Чтобы видео не выходило за границы блока */
+                                background-color: $COLOR_BLACK; /* Фон на случай, если видео не загрузится */
+    
+                                .video-background {
+                                    mix-blend-mode: screen;
+                                    margin: 16px 40px 0px 30px;
+                                    width: 300px;
+                                    height: 300px;
+                                }
+    
+                                .plans__info {
+                                    position: relative; /* Чтобы текст был поверх видео */
+                                    z-index: 1; /* Чтобы текст был поверх видео */
+                                    max-width: 330px;
+                                    padding: 60px 0 0 20px;
+    
+                                    
+                                    .plans__title {
+                                        font-family: "Hauora";
+                                        font-weight: 500;
+                                        font-size: 16px;
+                                        line-height: 130%;
+                                        letter-spacing: 0;
+                                        color: $COLOR_WHITE;
+                                        opacity: 0;
+                                        transition: 0.5s;
+                                        transition-delay: .2s;
+                                    }
+                                    
+                                   
+                                    .plans__title.appearance {
+                                        opacity: 1;
+                                    }
+                                    
+                                    
+                                    .plans__discription-top {
+                                        margin-top: 23px;
+                                        font-family: "Hauora";
+                                        font-weight: 500;
+                                        font-size: 16px;
+                                        line-height: 130%;
+                                        letter-spacing: 0;
+                                        color: $COLOR_GRAY;
+                                        opacity: 0;
+                                        transition: 0.5s;
+                                        transition-delay: 0.3s;
+                                        max-width: 330px;
+                                        br {
+                                            display: none;
+                                        }
+                                        &.appearance {
+                                            opacity: 1;
+                                        }
+                                    }
+    
+                                    .plans__discription-bottom {
+                                        margin-top: 14px;
+                                        font-family: "Hauora";
+                                        font-weight: 500;
+                                        font-size: 16px;
+                                        line-height: 130%;
+                                        letter-spacing: 0;
+                                        color: $COLOR_GRAY;
+                                        opacity: 0;
+                                        transition: 0.5s;
+                                        transition-delay: 0.3s;
+                                        max-width: 330px;
+                                        br {
+                                            display: none;
+                                        }
+                                        &.appearance {
+                                            opacity: 1;
+                                        }
+                                    }
+                                    
+                                    
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
+                                }
+    
+                                
+                            }
+                        }
+                        .project__box__bottom {
+                            margin-top: 20px;
+                            gap: 20px;
+    
+                            display: flex;  
+                            flex-direction: column;                     
+                            width: 100%;
+    
+                            .project__box__freelance {
+                                position: relative;
+                                width: 100%;
+                                height: 510px;
+                                border-radius: 20px;
+                                border: 1px solid $COLOR_DARK_GRAY;
+                                overflow: hidden; /* Чтобы видео не выходило за границы блока */
+                                background-color: $COLOR_BLACK; /* Фон на случай, если видео не загрузится */
+                                
+                                transition: 0.5s;
+    
+                                .video-background {
+                                    mix-blend-mode: screen;
+                                    margin: 16px 35px 0px 35px ;
+                                    width: 300px;
+                                    height: 300px;
+                                }
+    
+                                .freelance__info {
+                                    position: relative; /* Чтобы текст был поверх видео */
+                                    z-index: 1; /* Чтобы текст был поверх видео */
+                                    max-width: 420px;
+                                    padding: 60px 0 0 20px;
+    
+                                    .freelance__title {
+                                        font-family: "Hauora";
+                                        font-weight: 500;
+                                        font-size: 16px;
+                                        line-height: 130%;
+                                        letter-spacing: 0;
+                                        color: $COLOR_WHITE;
+                                        opacity: 0;
+                                        transition: 0.5s;
+                                        transition-delay: 0s;
+                                    }
+                                    
+                                    .freelance__title.appearance {
+                                        opacity: 1;
+                                    }
+                                    
+                                    .plans__discription-top {
+                                        margin-top: 23px;
+                                        font-family: "Hauora";
+                                        font-weight: 500;
+                                        font-size: 16px;
+                                        line-height: 130%;
+                                        letter-spacing: 0;
+                                        color: $COLOR_GRAY;
+                                        opacity: 0;
+                                        transition: 0.5s;
+                                        transition-delay: 0.1s;
+                                        max-width: 330px;
+                                        br {
+                                            display: none;
+                                        }
+    
+                                        &.appearance {
+                                            opacity: 1;
+                                        }
+                                    }
+    
+                                    .plans__discription-bottom {
+                                        margin-top: 14px;
+                                        font-family: "Hauora";
+                                        font-weight: 500;
+                                        font-size: 16px;
+                                        line-height: 130%;
+                                        letter-spacing: 0;
+                                        color: $COLOR_GRAY;
+                                        opacity: 0;
+                                        transition: 0.5s;
+                                        transition-delay: 0.1s;
+    
+                                        max-width: 330px;
+                                        br {
+                                            display: none;
+                                        }
+
+                                        &.appearance {
+                                            opacity: 1;
+                                        }
+                                    }
+                                    
+    
+                                }
+    
+                               
+                            }
+    
+                            .project__box__plans {
+                                position: relative;
+                                width: 100%;
+                                height: 510px;
+                                border-radius: 20px;
+                                border: 1px solid $COLOR_DARK_GRAY;
+                                overflow: hidden; /* Чтобы видео не выходило за границы блока */
+                                background-color: $COLOR_BLACK; /* Фон на случай, если видео не загрузится */
+                                
+    
+                                .video-background {
+                                    mix-blend-mode: screen;
+                                    margin:  0 35px 0px 35px;
+                                    width: 300px;
+                                    height: 300px;
+                                }
+    
+                                .plans__info {
+                                  
+                                    z-index: 1; /* Чтобы текст был поверх видео */
+                                    max-width: 330px;
+                                    padding: 60px 0 0 20px;
+    
+                                    
+                                    .plans__title {
+                                        font-family: "Hauora";
+                                        font-weight: 500;
+                                        font-size: 16px;
+                                        line-height: 130%;
+                                        letter-spacing: 0;
+                                        color: $COLOR_WHITE;
+                                        opacity: 0;
+                                        transition: 0.5s;
+                                        transition-delay: 0.2s;
+                                    }
+                                    
+                                   
+                                    .plans__title.appearance {
+                                        opacity: 1;
+                                    }
+                                    
+                                    
+                                    .plans__discription-top {
+                                        margin-top: 23px;
+                                        font-family: "Hauora";
+                                        font-weight: 500;
+                                        font-size: 16px;
+                                        line-height: 130%;
+                                        letter-spacing: 0;
+                                        color: $COLOR_GRAY;
+                                        opacity: 0;
+                                        transition: 0.5s;
+                                        transition-delay: 0.3s;
+    
+                                        max-width: 330px;
+                                        br {
+                                            display: none;
+                                        }
+
+                                        &.appearance {
+                                            opacity: 1;
+                                        }
+                                    }
+    
+                                    .plans__discription-bottom {
+                                        margin-top: 14px;
+                                        font-family: "Hauora";
+                                        font-weight: 500;
+                                        font-size: 16px;
+                                        line-height: 130%;
+                                        letter-spacing: 0;
+                                        color: $COLOR_GRAY;
+                                        opacity: 0;
+                                        transition: 0.5s;
+                                        transition-delay: 0.3s;
+    
+                                        max-width: 330px;
+                                        br {
+                                            display: none;
+                                        }
+
+                                        &.appearance {
+                                            opacity: 1;
+                                        }
+                                    }
+                                    
+                                    
+                                    &.appearance {
+                                        opacity: 1;
+                                    }
+                                }
+    
+                                
+                            }
+                        }
+                    }
+    
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        margin: 0;
+                        top: 2298px;
+                        left: 49px;
+                        width: 3px;
+                        height: 0;
+                        background-image: url("../../public/images/straightLine.png");
+                        background-repeat: no-repeat;
+                        background-size: 3px 220px;
+                        transition: all 1s ease 0s;
+                        z-index: 1000;
+                    }
+    
+                    &.line.play::after{                   
+                        height: 220px;
+                    }
+                }
+            }
+    
+            .trend {
+                padding-top: 227px;
+                padding-bottom: 265px;
+                background-color: rgb(0, 0, 0);
+                width: 100%;
+                @include center();
+                .trend__container {
+                    position: relative;
+                    width: $width;
+                    max-width: 330px;
+                    @include center();
+                    flex-direction: column;
+                    align-items: start;
+                    .trend__button {
+                        @include button(111px, rgba(7, 6, 45, 1), #110E68);
+                        height: 30px;
+                        opacity: 0;
+                        transition: 0.5s;
+                        
+                        &.appearance {
+                            opacity: 1;
+                        }
+                    }
+                    .trend__title {
+                        margin-top: 30px;
+                        font-family: "Hauora";
+                        font-weight: 500;
+                        font-size: 25px;
+                        line-height: 110%;
+                        letter-spacing: 0%;
+                        text-align: "center";
+                        color: $COLOR_WHITE;
+                        opacity: 0;
+                        transition: 0.5s;
+    
+                        &.appearance {
+                            opacity: 1;
+                        }
+                    }
+                    .trend__buttons {
+                        display: flex;
+                        margin-top: 60px;
+                        gap: 14.5px;
+                        .trend__buttons__models {
+                            box-shadow: 0px 0px 26.39px 0px #110E68;
+                            @include button(76px, rgba(7, 6, 45, 1), #110E68);
+                            opacity: 0;
+                            transition: 0.5s;
+    
+                            &.appearance {
+                                opacity: 1;
+                            }
+                        }
+                        .trend__buttons__data {
+                            @include button(121px, rgba(7, 6, 45, 1), #110E68);
+                            opacity: 0;
+                            transition: 0.5s 0.2s;
+        
+                            &.appearance {
+                                opacity: 1;
+                            }
+                        }
+                        .trend__buttons__app {
+                            @include button(104px, rgba(7, 6, 45, 1), #110E68);
+                            opacity: 0;
+                            transition: 0.5s 0.2s;
+        
+                            &.appearance {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    .trend__box__models {
+                        flex-wrap: unset;
+                        margin-top: 46px;
+                        width: 100%;
+                        min-width: 0;
+                        max-width: 330px;
+                        display: flex;
+                        flex-direction: column;
+                        .trend__box__model {
+                            max-width: 330px;
+                            width: 330px;
+                            height: 132px;
+                            background-color: rgba(6, 6, 6, 1);
+                            border-radius: 20px;
+                            border: 1px solid rgba(73, 73, 73, 1);
+                            opacity: 0;
+                            transform: translateX(-50px);
+                            animation: slideIn 0.5s ease-out forwards;
+                            .model__top {
+                                overflow: hidden;
+                                margin-top: 20.5px;
+                                margin-left: 19px;
+                                display: flex;
+                                align-items: center;
+                                .model__top__img {
+                                    width: 25px;
+                                    height: 25px;
+                                }
+                                .model__top__name {
+                                    margin-left: 19px;
+                                    font-family: "Hauora";
+                                    font-weight: 500;
+                                    font-size: 18px;
+                                    line-height: 120%;
+                                    letter-spacing: 0%;
+                                    color: $COLOR_WHITE;
+                                }
+                            }
+                            .model__slider {
+                                margin-top: 11px;
+                                margin-left: 60px;
+                                display: flex;
+                                max-width: 100%;
+                                position: relative;
+                                overflow: hidden;
+                                .model__slider__container {
+                                    max-width: 294px;
+                                    display: flex;
+                                    overflow-x: auto;
+                                    overflow-y: hidden;
+                                    scroll-behavior: smooth;
+                                    white-space: nowrap;
+                                    scrollbar-width: none;                                
+                                    gap: 10px;
+                                    .model__slider__item {
+                                        width: 109px;
+                                        height: 21px;
+                                        background-color: rgba(20, 20, 20, 1);
+                                        border-radius: 10px;
+                                        border: 1px solid rgba(52, 59, 67, 1);
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+    
+                                        .model__slider__text {
+                                            padding: 11px 7px;
+                                            font-family: "Hauora";
+                                            font-weight: 500;
+                                            font-size: 10px;
+                                            line-height: 16px;
+                                            letter-spacing: 0%;
+                                            text-align: center;
+                                            vertical-align: middle;
+                                            color: rgba(153, 153, 153, 1);
+                                        }
+                                    }
+                                }
+                            }
+                            .model__bottom {
+                                margin-left: 21px;
+                                margin-top: 23px;
+                                display: flex;
+                                align-items: center;
+                                .model__bottom__img {
+                                    width: 21px;
+                                    height: 21px;
+                                }
+                                .model__bottom__name {
+                                    margin-left: 21px;
+                                    font-family: "Hauora";
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 120%;
+                                    letter-spacing: 0%;
+                                    color: $COLOR_WHITE;
+                                }
+                                .model__bottom__time {
+                                    margin-left: 10px;
+                                    font-family: "Hauora";
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 120%;
+                                    letter-spacing: 0%;
+                                    color: rgba(120, 119, 146, 1);
+                                }
+                                .model__bottom__downloads {
+                                    margin-left: 19px;
+                                    @include center();
+                                    .model__bottom__downloads-img {
+                                        width: 20px;
+                                        height: 20px;
+                                    }
+                                    .model__bottom__downloads-text {
+                                        font-family: "Hauora";
+                                        font-weight: 500;
+                                        font-size: 12px;
+                                        line-height: 120%;
+                                        letter-spacing: 0%;
+                                        color: rgba(120, 119, 146, 1);
+                                    }
+                                }
+                                .model__bottom__likes {
+                                    margin-left: 5px;
+                                    @include center();
+                                    .model__bottom__likes-img {
+                                        width: 11px;
+                                        height: 10px;
+                                    }
+                                    .model__bottom__likes-text {
+                                        margin-left: 4.5px;
+                                        font-family: Hauora;
+                                        font-weight: 500;
+                                        font-size: 12px;
+                                        line-height: 120%;
+                                        letter-spacing: 0%;
+                                        color: rgba(120, 119, 146, 1);
+                                    }
+                                }
+                            }
+    
+                            opacity: 0;
+                            transition: 0.5s;
+    
+                            &.appearance {
+                                opacity: 1;
+                            }
+
+                            &:nth-child(n+4) {
+                                display: none;
+                            }
+                        }
+                    }
+                    .trend__box__app {                        
+                        flex-wrap: unset;
+                        margin-top: 46px;
+                        width: 100%;
+                        min-width: 0;
+                        max-width: 330px;
+                        display: flex;
+                        flex-direction: column;
+                        .trend__box__model {
+                            max-width: 330px;
+                            width: 332px;
+                            height: 132px;
+                            background-color: rgba(6, 6, 6, 1);
+                            border-radius: 20px;
+                            border: 1px solid rgba(73, 73, 73, 1);
+                            opacity: 0;
+                            transform: translateX(-50px);
+                            animation: slideIn 0.5s ease-out forwards;
+    
+                            .model__top {
+                                margin-top: 20.5px;
+                                margin-left: 19px;
+                                display: flex;
+                                align-items: center;
+                                overflow: hidden;
+                                .model__top__img {
+                                    width: 25px;
+                                    height: 25px;
+                                }
+                                .model__top__name {
+                                    margin-left: 19px;
+                                    font-family: "Hauora";
+                                    font-weight: 500;
+                                    font-size: 18px;
+                                    line-height: 120%;
+                                    letter-spacing: 0%;
+                                    color: $COLOR_WHITE;
+                                }
+                            }
+                            .model__slider {
+                                margin-top: 11px;
+                                margin-left: 60px;
+                                display: flex;
+                                max-width: 100%;
+                                position: relative;
+                                overflow: hidden;
+                                .model__slider__container {
+                                    max-width: 294px;
+                                    display: flex;
+                                    overflow-x: auto;
+                                    overflow-y: hidden;
+                                    scroll-behavior: smooth;
+                                    white-space: nowrap;
+                                    scrollbar-width: none;                                
+                                    gap: 10px;
+                                    .model__slider__item {
+                                        width: fit-content;
+                                        min-width: 35px;
+                                        height: 21px;
+                                        background-color: rgba(20, 20, 20, 1);
+                                        border-radius: 10px;
+                                        border: 1px solid rgba(52, 59, 67, 1);
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+    
+                                        .model__slider__text {
+                                            padding: 11px 7px;
+                                            font-family: "Hauora";
+                                            font-weight: 500;
+                                            font-size: 10px;
+                                            line-height: 16px;
+                                            letter-spacing: 0%;
+                                            text-align: center;
+                                            vertical-align: middle;
+                                            color: rgba(153, 153, 153, 1);
+                                        }
+                                    }
+                                }
+                            }
+                            .model__bottom {
+                                margin-left: 21px;
+                                margin-top: 23px;
+                                display: flex;
+                                align-items: center;
+                                .model__bottom__img {
+                                    width: 21px;
+                                    height: 21px;
+                                }
+                                .model__bottom__name {
+                                    margin-left: 21px;
+                                    width: 96px;
+                                    font-family: "Hauora";
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 120%;
+                                    letter-spacing: 0%;
+                                    color: $COLOR_WHITE;
+                                }
+                                .model__bottom__time {
+                                    margin-left: 10px;
+                                    font-family: "Hauora";
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 120%;
+                                    letter-spacing: 0%;
+                                    color: rgba(120, 119, 146, 1);
+                                }
+                                .model__bottom__downloads {
+                                    margin-left: 19px;
+                                    @include center();
+                                    .model__bottom__downloads-img {
+                                        width: 20px;
+                                        height: 20px;
+                                    }
+                                    .model__bottom__downloads-text {
+                                        font-family: "Hauora";
+                                        font-weight: 500;
+                                        font-size: 12px;
+                                        line-height: 120%;
+                                        letter-spacing: 0%;
+                                        color: rgba(120, 119, 146, 1);
+                                    }
+                                }
+                                .model__bottom__likes {
+                                    margin-left: 5px;
+                                    @include center();
+                                    .model__bottom__likes-img {
+                                        width: 11px;
+                                        height: 10px;
+                                    }
+                                    .model__bottom__likes-text {
+                                        margin-left: 4.5px;
+                                        font-family: Hauora;
+                                        font-weight: 500;
+                                        font-size: 12px;
+                                        line-height: 120%;
+                                        letter-spacing: 0%;
+                                        color: rgba(120, 119, 146, 1);
+                                    }
+                                }
+                            }
+
+                            &:nth-child(n+4) {
+                               display: none;
+                            }
+                        }
+                    }
+                    .trend__box__data {
+                        flex-wrap: unset;
+                        margin-top: 46px;
+                        width: 100%;
+                        min-width: 0;
+                        max-width: 330px;
+                        display: flex;
+                        flex-direction: column;
+                        .trend__box__model {
+                            max-width: 330px;
+                            width: 332px;
+                            height: 132px;
+                            background-color: rgba(6, 6, 6, 1);
+                            border-radius: 20px;
+                            border: 1px solid rgba(73, 73, 73, 1);
+                            opacity: 0;
+                            transform: translateX(-50px);
+                            animation: slideIn 0.5s ease-out forwards;
+                            overflow: hidden;
+                            .model__top {
+                                margin-top: 20.5px;
+                                margin-left: 19px;
+                                display: flex;
+                                align-items: center;
+                                .model__top__img {
+                                    width: 25px;
+                                    height: 25px;
+                                }
+                                .model__top__name {
+                                    margin-left: 19px;
+                                    font-family: "Hauora";
+                                    font-weight: 500;
+                                    font-size: 18px;
+                                    line-height: 120%;
+                                    letter-spacing: 0%;
+                                    color: $COLOR_WHITE;
+                                }
+                            }
+                            .model__slider {
+                                margin-top: 11px;
+                                margin-left: 60px;
+                                display: flex;
+                                max-width: 100%;
+                                position: relative;
+                                overflow: hidden;
+                                .model__slider__container {
+                                    max-width: 294px;
+                                    display: flex;
+                                    overflow-x: auto;
+                                    overflow-y: hidden;
+                                    scroll-behavior: smooth;
+                                    white-space: nowrap;
+                                    scrollbar-width: none;                                
+                                    gap: 10px;
+                                    .model__slider__item {
+                                        width: fit-content;
+                                        min-width: 31px;
+                                        height: 21px;
+                                        background-color: rgba(20, 20, 20, 1);
+                                        border-radius: 10px;
+                                        border: 1px solid rgba(52, 59, 67, 1);
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+    
+                                        .model__slider__text {
+                                            padding: 11px 7px;
+                                            font-family: "Hauora";
+                                            font-weight: 500;
+                                            font-size: 10px;
+                                            line-height: 16px;
+                                            letter-spacing: 0%;
+                                            text-align: center;
+                                            vertical-align: middle;
+                                            color: rgba(153, 153, 153, 1);
+                                        }
+                                    }
+                                }
+                            }
+                            .model__bottom {
+                                margin-left: 21px;
+                                margin-top: 23px;
+                                display: flex;
+                                align-items: center;
+                                .model__bottom__img {
+                                    width: 21px;
+                                    height: 21px;
+                                }
+                                .model__bottom__name {
+                                    margin-left: 21px;
+                                    width: 96px;
+                                    font-family: "Hauora";
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 120%;
+                                    letter-spacing: 0%;
+                                    color: $COLOR_WHITE;
+                                }
+                                .model__bottom__time {
+                                    margin-left: 10px;
+                                    font-family: "Hauora";
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 120%;
+                                    letter-spacing: 0%;
+                                    color: rgba(120, 119, 146, 1);
+                                }
+                                .model__bottom__downloads {
+                                    margin-left: 19px;
+                                    @include center();
+                                    .model__bottom__downloads-img {
+                                        width: 20px;
+                                        height: 20px;
+                                    }
+                                    .model__bottom__downloads-text {
+                                        font-family: "Hauora";
+                                        font-weight: 500;
+                                        font-size: 12px;
+                                        line-height: 120%;
+                                        letter-spacing: 0%;
+                                        color: rgba(120, 119, 146, 1);
+                                    }
+                                }
+                                .model__bottom__likes {
+                                    margin-left: 5px;
+                                    @include center();
+                                    .model__bottom__likes-img {
+                                        width: 11px;
+                                        height: 10px;
+                                    }
+                                    .model__bottom__likes-text {
+                                        margin-left: 4.5px;
+                                        font-family: Hauora;
+                                        font-weight: 500;
+                                        font-size: 12px;
+                                        line-height: 120%;
+                                        letter-spacing: 0%;
+                                        color: rgba(120, 119, 146, 1);
+                                    }
+                                }
+                            }
+
+                            &:nth-child(n+4) {
+                                display: none;
+                            }
+                        }
+                    }
+    
+                    &::after {
+                        content: "";
+                        top: 1700px;
+                        margin-left: 0;
+                        position: absolute;
+                        width: 3px;
+                        height: 0;
+                        background-image: url("../../public/images/straightsecond.png");
+                        background-repeat: no-repeat;
+                        background-size: 3px 231px;
+                        transition: all 1s ease 0s;
+                        z-index: 1000;
+                    }
+    
+                    &.line.play::after{                   
+                        height: 231px;
+                    }
+    
+                }
+            }
+    
+            .development {
+                padding-top: 0;
+                padding-bottom: 172px;
+                background-color: rgb(0, 0, 0);
+                width: 100%;
+                @include center();
+                
+                .development__container {
+                    width: $width;
+                    max-width: 330px;
+                    display: flex;
+                    flex-direction: column;
+    
+                    .development_title {
+                        font-family: Hauora;
+                        font-weight: 500;
+                        font-size: 25px;
+                        line-height: 40px;
+                        letter-spacing: 0px;
+                        vertical-align: middle;
+                        color: rgba(255, 255, 255, 1);
+    
+                        opacity: 0;
+                        transition: 0.5s;
+    
+                        &.appearance {
+                            opacity: 1;
+                        }
+                    }
+    
+                    .development_discription {
+                        margin-top: 40px;
+                        font-family: "Hauora";
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 130%;
+                        letter-spacing: 0%;
+                        color: rgba(120, 119, 146, 1);  
+                        text-align: left;
+                        opacity: 0;
+                        transition: 0.5s;
+    
+                        &.appearance {
+                            opacity: 1;
+                        }
+                    }
+
+                    .development__buttons {
+                        margin-top: 80px;
+                        display: flex;
+                        .develompent__button {
+                            &:nth-child(1) {
+                                @include button(155px, rgba(23, 19, 147, 0.4), #110E68);
+    
+                                opacity: 0;
+                                transition: 0.5s;
+            
+                                &.appearance {
+                                    opacity: 1;
+                                }
+                            }
+                            &:nth-child(2) {
+                                margin-left: 20px;
+                                @include button(155px, transparent, #110E68);
+    
+                                opacity: 0;
+                                transition: 0.5s;
+            
+                                &.appearance {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }  
+        .footer {
+            background: rgb(0, 0, 0);
+            padding-bottom: 122.54px;
+            width: 100%;
+            @include center();
+
+            .footer__container {
+                max-width: 330px;
+                width: $width;
+                display: flex;
+                flex-direction: column;
+                color: white;
+                .footer__top {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .footer__logo {
+                        width: 155px;
+                        height: 20px;               
+                    }
+                    .footer__newsletter {
+                        margin-top: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 97px;
+                        height: 30px;
+                        border-radius: 10px;
+                        border: 1px solid rgba(52, 59, 67, 1);
+                        background-color: transparent;
+                        cursor: pointer;
+    
+                        font-family: "Hauora";
+                        font-size: $FONT_SIZE_14;
+                        font-weight: 500;
+                        letter-spacing: 0.03em;
+                        line-height: 16.8px;
+                        text-align: left;
+                        color: $COLOR_WHITE;
+    
+                        &:hover {
+                            box-shadow: 0px 0px 26.39px 0px rgba(17, 14, 104, 1);
+                        }
+                    }
+                }
+                .footer__menu {
+                    display: grid;
+                    grid-template-columns: repeat(2, 155px);
+                    gap: 50px 20px;
+                    margin-top: 60px;
+                    margin-left: 0;
+                    .footer__column {
+                        display: flex;
+                        flex-direction: column;
+                
+                        .footer__column__title {
+                            font-family: "Hauora";
+                            font-size: $FONT_SIZE_12;
+                            font-weight: 400;
+                            line-height: 15.6px;
+                            text-align: left;
+                            color: $COLOR_WHITE;
+                            padding-bottom: 42.54px;
+                        }
+                    
+                        .footer__column__item {                        
+                            margin-top: 8px;
+                            font-family: "Hauora";
+                            font-size: $FONT_SIZE_12;
+                            font-weight: 400;
+                            line-height: 15.6px;
+                            text-align: left;
+                            color: $COLOR_GRAY;                
+                        }
+                    }
+                }
+            }
+        }  
     }
 }
