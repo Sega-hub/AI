@@ -4004,7 +4004,7 @@ body {
   }
   .container .main .trend .trend__container::after {
     content: "";
-    top: 1070px;
+    top: 230px;
     margin-left: 0;
     position: absolute;
     width: 3px;
