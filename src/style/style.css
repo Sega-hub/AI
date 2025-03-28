@@ -57,7 +57,7 @@ body {
   padding-bottom: 10px;
   transition: transform 0.3s ease-in-out;
   position: fixed;
-  z-index: 1000;
+  z-index: 100000;
 }
 .container .header.hidden {
   transform: translateY(-100%);
@@ -226,6 +226,7 @@ body {
   text-align: center;
   color: rgb(255, 255, 255);
   transition: 0.5s;
+  min-height: 42px;
   animation: mainTitle 1s ease 0.7s;
   animation-fill-mode: forwards;
   opacity: 0;
@@ -496,6 +497,7 @@ body {
   transition: 0.5s;
 }
 .container .main .API .API__container .API__example .API__example__container {
+  z-index: 1000;
   display: flex;
   margin-top: 30px;
   width: 1120px;
@@ -743,17 +745,17 @@ body {
   opacity: 1;
 }
 .container .main .API .API__container::after {
+  z-index: 100;
   content: "";
   position: absolute;
   margin: 0 49.75%;
-  top: 1030px;
+  top: 1050px;
   width: 3px;
   height: 0;
   background-image: url("../../public/images/straightLine.png");
   background-repeat: no-repeat;
   background-size: 6px 357px;
   transition: all 1s ease 0s;
-  z-index: 1000;
 }
 .container .main .API .API__container.line.play::after {
   height: 357px;
@@ -1085,7 +1087,7 @@ body {
 .container .main .project .project__container::after {
   content: "";
   position: absolute;
-  margin: 1520px 50% 0 50%;
+  margin: 1555px 50% 0 50%;
   width: 540px;
   height: 0;
   background-image: url("../../public/images/secondLine.png");
@@ -1676,7 +1678,7 @@ body {
 }
 .container .main .trend .trend__container::after {
   content: "";
-  top: 750px;
+  top: 780px;
   left: 36px;
   position: absolute;
   width: 739px;
@@ -2405,7 +2407,7 @@ body {
     padding-bottom: 10px;
     transition: transform 0.3s ease-in-out;
     position: fixed;
-    z-index: 1000;
+    z-index: 10000;
   }
   .container .header.hidden {
     transform: translateY(-100%);
@@ -2418,7 +2420,7 @@ body {
     width: 91.93%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: self-end;
     padding-top: 41px;
     animation: mainTitle 1s ease 0s;
     animation-fill-mode: forwards;
@@ -2542,6 +2544,9 @@ body {
     letter-spacing: 0;
     text-align: center;
     color: rgb(120, 119, 146);
+  }
+  .container .main .offer .offer__container .offer__discription .offer__discription-bottom .mob {
+    display: none !important;
   }
   .container .main .offer .offer__container .offer__button {
     margin: 106px 0 223px 0;
@@ -3092,14 +3097,14 @@ body {
     position: absolute;
     margin: 0;
     left: 30px;
-    top: 1125px;
+    top: 1286px;
     width: 3px;
     height: 0;
     background-image: url("../../public/images/straightLine.png");
     background-repeat: no-repeat;
     background-size: 6px 321px;
     transition: all 1s ease 0s;
-    z-index: 1000;
+    z-index: 100;
   }
   .container .main .API .API__container.line.play::after {
     height: 321px;
@@ -3269,6 +3274,9 @@ body {
     transition: 0.5s;
     transition-delay: 0.3s;
   }
+  .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__discription-top br {
+    display: none !important;
+  }
   .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__discription-top.appearance {
     opacity: 1;
   }
@@ -3434,7 +3442,7 @@ body {
     content: "";
     position: absolute;
     margin: 0;
-    top: 2860px;
+    top: 2862px;
     left: 50%;
     width: 3px;
     height: 0;
@@ -3515,7 +3523,7 @@ body {
     width: 97px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
+    background-color: #04041A;
     border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
@@ -3539,7 +3547,7 @@ body {
     width: 150px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
+    background-color: #04041A;
     border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
@@ -3563,7 +3571,7 @@ body {
     width: 150px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
+    background-color: #04041A;
     border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
@@ -4028,7 +4036,7 @@ body {
   }
   .container .main .trend .trend__container::after {
     content: "";
-    top: 1070px;
+    top: 921px;
     margin-left: 0;
     position: absolute;
     width: 3px;
@@ -4081,6 +4089,9 @@ body {
     color: rgb(120, 119, 146);
     opacity: 0;
     transition: 0.5s;
+  }
+  .container .main .development .development__container .development_discription br {
+    display: none;
   }
   .container .main .development .development__container .development_discription.appearance {
     opacity: 1;
@@ -4233,7 +4244,7 @@ body {
     padding-bottom: 10px;
     transition: transform 0.3s ease-in-out;
     position: fixed;
-    z-index: 1000;
+    z-index: 100000;
   }
   .container .header.hidden {
     transform: translateY(-100%);
@@ -4246,14 +4257,14 @@ body {
     width: 94.87%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: self-end;
     padding-top: 26px;
     animation: mainTitle 1s ease 0s;
     animation-fill-mode: forwards;
     opacity: 0;
   }
   .container .header .header__container a img {
-    width: 155px;
+    width: 150px;
     height: 20px;
   }
   .container .header .header__container .header__nav {
@@ -4373,6 +4384,12 @@ body {
     text-align: left;
     color: rgb(120, 119, 146);
   }
+  .container .main .offer .offer__container .offer__discription .offer__discription-bottom br {
+    display: none;
+  }
+  .container .main .offer .offer__container .offer__discription .offer__discription-bottom .mob {
+    display: flex;
+  }
   .container .main .offer .offer__container .offer__button {
     margin: 53px 0 0 0;
     width: 330px;
@@ -4471,7 +4488,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    max-width: 330px;
+    max-width: 100vw;
     margin-left: 0;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -4481,11 +4498,12 @@ body {
     transition: 0.5s;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider {
+    padding-left: 30px;
     flex-wrap: unset;
     display: flex;
     justify-content: left;
     max-width: 684px;
-    height: 80px;
+    height: 75px;
     overflow-x: auto;
     scroll-behavior: smooth;
     white-space: nowrap;
@@ -4510,7 +4528,7 @@ body {
     text-align: center;
     color: rgb(255, 255, 255);
     transition: 0.5s;
-    margin-left: 20px;
+    margin-left: 0;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(1):hover {
     box-shadow: 0px 0px 26.39px 0px #110E68;
@@ -4599,35 +4617,42 @@ body {
     opacity: 1;
   }
   .container .main .API .API__container .slider-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: -15px;
     position: relative;
-    max-width: 330px;
-    margin-left: 0;
+    width: 100vw;
     overflow-x: auto;
     scroll-behavior: smooth;
     white-space: nowrap;
+    padding: 0 0;
+    margin-left: 0;
     opacity: 0;
     transition: 0.5s;
   }
+  .container .main .API .API__container .slider-container::-webkit-scrollbar {
+    display: none;
+  }
   .container .main .API .API__container .slider-container .slider__slider {
+    max-width: -moz-max-content;
+    max-width: max-content;
     display: flex;
-    justify-content: center;
-    max-width: 684px;
     overflow-x: auto;
     scroll-behavior: smooth;
     white-space: nowrap;
+    scrollbar-width: none; /* Скрытие стандартного скролла */
+    margin-top: 20px;
+    gap: 20px;
   }
   .container .main .API .API__container .slider-container .slider__slider .API__slider {
     max-width: 1120px;
+    height: -moz-fit-content;
+    height: fit-content;
     display: flex;
     gap: 20px;
     overflow-x: auto;
     scroll-behavior: smooth;
     white-space: nowrap;
     scrollbar-width: none; /* Скрытие стандартного скролла */
-    margin-top: 40px;
+    margin-top: 0;
     gap: 20px;
   }
   .container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item {
@@ -4666,11 +4691,11 @@ body {
     letter-spacing: 0%;
     color: rgb(120, 119, 146);
   }
+  .container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item:nth-child(1) {
+    margin-left: 30px;
+  }
   .container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item.selected {
     border: 1px solid #110E68;
-  }
-  .container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item:nth-child(1) {
-    margin-left: 65px;
   }
   .container .main .API .API__container .slider-container.appearance {
     opacity: 1;
@@ -4836,14 +4861,14 @@ body {
     position: absolute;
     margin: 0;
     left: 49px;
-    top: 1125px;
+    top: 1085px;
     width: 3px;
     height: 0;
     background-image: url("../../public/images/straightLine.png");
     background-repeat: no-repeat;
     background-size: 6px 231px;
     transition: all 1s ease 0s;
-    z-index: 1000;
+    z-index: 100;
   }
   .container .main .API .API__container.line.play::after {
     height: 231px;
@@ -4918,6 +4943,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    z-index: 1000;
   }
   .container .main .project .project__container .project__box .project__box__top {
     gap: 20px;
@@ -4944,8 +4970,8 @@ body {
   .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info {
     position: relative; /* Чтобы текст был поверх видео */
     z-index: 1; /* Чтобы текст был поверх видео */
-    max-width: 420px;
-    padding: 60px 0 0 20px;
+    max-width: 330px;
+    padding: 60px 20px 0 20px;
   }
   .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info .freelance__title {
     font-family: "Hauora";
@@ -4999,7 +5025,7 @@ body {
     position: relative; /* Чтобы текст был поверх видео */
     z-index: 1; /* Чтобы текст был поверх видео */
     max-width: 330px;
-    padding: 60px 0 0 20px;
+    padding: 60px 20px 0 20px;
   }
   .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__title {
     font-family: "Hauora";
@@ -5048,7 +5074,7 @@ body {
     max-width: 330px;
   }
   .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__discription-bottom br {
-    display: none;
+    display: flex;
   }
   .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info .plans__discription-bottom.appearance {
     opacity: 1;
@@ -5082,8 +5108,8 @@ body {
   .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info {
     position: relative; /* Чтобы текст был поверх видео */
     z-index: 1; /* Чтобы текст был поверх видео */
-    max-width: 420px;
-    padding: 60px 0 0 20px;
+    max-width: 330px;
+    padding: 60px 20px 0 20px;
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .freelance__title {
     font-family: "Hauora";
@@ -5132,7 +5158,7 @@ body {
     max-width: 330px;
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-bottom br {
-    display: none;
+    display: flex !important;
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-bottom.appearance {
     opacity: 1;
@@ -5155,7 +5181,7 @@ body {
   .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info {
     z-index: 1; /* Чтобы текст был поверх видео */
     max-width: 330px;
-    padding: 60px 0 0 20px;
+    padding: 60px 20px 0 20px;
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__title {
     font-family: "Hauora";
@@ -5204,7 +5230,7 @@ body {
     max-width: 330px;
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-bottom br {
-    display: none;
+    display: flex !important;
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-bottom.appearance {
     opacity: 1;
@@ -5216,7 +5242,7 @@ body {
     content: "";
     position: absolute;
     margin: 0;
-    top: 2298px;
+    top: 2278px;
     left: 49px;
     width: 3px;
     height: 0;
@@ -5224,7 +5250,7 @@ body {
     background-repeat: no-repeat;
     background-size: 3px 220px;
     transition: all 1s ease 0s;
-    z-index: 1000;
+    z-index: 100;
   }
   .container .main .project .project__container.line.play::after {
     height: 220px;
@@ -5820,7 +5846,7 @@ body {
   }
   .container .main .trend .trend__container::after {
     content: "";
-    top: 750px;
+    top: 740px;
     left: 20px;
     position: absolute;
     width: 3px;
@@ -5874,6 +5900,12 @@ body {
     text-align: left;
     opacity: 0;
     transition: 0.5s;
+  }
+  .container .main .development .development__container .development_discription br {
+    display: none;
+  }
+  .container .main .development .development__container .development_discription .mob {
+    display: flex !important;
   }
   .container .main .development .development__container .development_discription.appearance {
     opacity: 1;
