@@ -4106,7 +4106,7 @@ $width: 77.7%;
                                 flex-shrink: 0; // предотвращает сжатие элементов
                                 &:nth-child(1) {
                                     @include button(165px, #04041a, #110E68);
-                                    margin-left: 0;
+                                    margin-left: 20px;
                                 }
                                 &:nth-child(2) {
                                     @include button(177px, #04041a, #110E68);
@@ -4119,6 +4119,7 @@ $width: 77.7%;
                                 }
                                 &:nth-child(5) {
                                     @include button(129px, #04041a, #110E68);
+                                    margin-right: 20px;
                                 }
                     
                                 &.selected {
@@ -4306,10 +4307,15 @@ $width: 77.7%;
                                    display: none;                                   
                                 }
                                 .move__link {
-                                    margin: 29px 85px 25px 86px;
+                                    
+                                    white-space: nowrap;
+                                    margin-top: 29px;
+                                    margin-left: auto;
                                     display: flex;
                                     align-items: center;
                                     .move__link__text {
+                                        
+                                        white-space: nowrap;
                                         font-family: "Hauora";
                                         font-weight: 500;
                                         font-size: 12px;

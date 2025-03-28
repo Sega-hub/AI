@@ -4491,7 +4491,7 @@ body {
     text-align: center;
     color: rgb(255, 255, 255);
     transition: 0.5s;
-    margin-left: 0;
+    margin-left: 20px;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(1):hover {
     box-shadow: 0px 0px 26.39px 0px #110E68;
@@ -4568,6 +4568,7 @@ body {
     text-align: center;
     color: rgb(255, 255, 255);
     transition: 0.5s;
+    margin-right: 20px;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(5):hover {
     box-shadow: 0px 0px 26.39px 0px #110E68;
@@ -4752,11 +4753,14 @@ body {
     display: none;
   }
   .container .main .API .API__container .API__example .API__example__container .API__example__move .move__link {
-    margin: 29px 85px 25px 86px;
+    white-space: nowrap;
+    margin-top: 29px;
+    margin-left: auto;
     display: flex;
     align-items: center;
   }
   .container .main .API .API__container .API__example .API__example__container .API__example__move .move__link .move__link__text {
+    white-space: nowrap;
     font-family: "Hauora";
     font-weight: 500;
     font-size: 12px;
