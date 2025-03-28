@@ -2556,6 +2556,8 @@ body {
     box-shadow: 0px 0px 26.39px 0px #110E68;
   }
   .container .main .API {
+    overflow: hidden;
+    position: relative;
     padding-bottom: 377px;
     width: 100%;
     display: flex;
@@ -2740,27 +2742,32 @@ body {
     opacity: 1;
   }
   .container .main .API .API__container .slider-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
-    max-width: 100%;
+    width: 100vw;
     overflow-x: auto;
     scroll-behavior: smooth;
     white-space: nowrap;
+    padding: 0 0;
+    margin-left: 0;
     opacity: 0;
     transition: 0.5s;
   }
+  .container .main .API .API__container .slider-container::-webkit-scrollbar {
+    display: none;
+  }
   .container .main .API .API__container .slider-container .slider__slider {
     display: flex;
-    justify-content: center;
-    max-width: 684px;
+    gap: 20px;
     overflow-x: auto;
     scroll-behavior: smooth;
     white-space: nowrap;
+    scrollbar-width: none;
+    min-width: 100vw;
+    margin-left: 0;
   }
   .container .main .API .API__container .slider-container .slider__slider .API__slider {
-    max-width: 1120px;
+    max-width: -moz-max-content;
+    max-width: max-content;
     display: flex;
     gap: 20px;
     overflow-x: auto;

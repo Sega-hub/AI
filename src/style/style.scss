@@ -2377,6 +2377,8 @@ $width: 77.7%;
     
             .API {
                 ///sdfsdfsdf
+                overflow: hidden; // Скрываем все, что выходит за границы
+                position: relative;
                 padding-bottom: 377px;
                 width: 100%;
                 @include center();
@@ -2462,24 +2464,44 @@ $width: 77.7%;
                         }
                     }
                     .slider-container {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        // display: flex;
+                        // justify-content: center;
+                        // align-items: center;
+                        // position: relative;
+                        // max-width: 100%;
+                        // overflow-x: auto; 
+                        // scroll-behavior: smooth;
+                        // white-space: nowrap; 
                         position: relative;
-                        max-width: 100%;
-                        overflow-x: auto; 
+                        width: 100vw; // Растягиваем на весь экран
+                        overflow-x: auto;
                         scroll-behavior: smooth;
-                        white-space: nowrap; 
+                        white-space: nowrap;
+                        padding: 0 0; // Добавляем отступы, чтобы элементы не обрезались
+                        margin-left: 0; // Сдвигаем влево, имитируя выход за экран
+                    
+                        &::-webkit-scrollbar {
+                            display: none; // Скрываем стандартный скроллбар
+                        }
     
                         .slider__slider {
+                            // display: flex;
+                            // justify-content: center;
+                            // max-width: 684px;
+                            // overflow-x: auto; 
+                            // scroll-behavior: smooth;
+                            // white-space: nowrap;
+
                             display: flex;
-                            justify-content: center;
-                            max-width: 684px;
-                            overflow-x: auto; 
+                            gap: 20px;
+                            overflow-x: auto;
                             scroll-behavior: smooth;
                             white-space: nowrap;
+                            scrollbar-width: none;
+                            min-width: 100vw; // Позволяет слайдеру быть шире экрана                            
+                            margin-left: 0; // Сдвигаем влево, имитируя выход за экран
                             .API__slider {
-                                max-width: 1120px;
+                                max-width: max-content;
                                 display: flex;
                                 gap: 20px;
                                 overflow-x: auto;
