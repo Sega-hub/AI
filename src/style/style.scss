@@ -3963,12 +3963,12 @@ $width: 77.7%;
                 flex-direction: column;
                 aspect-ratio: 16/9;
                .offer__video__back {      
-                    margin-bottom: 500px;
                     position: absolute;
+                    top: 0;
+                    left: 0;
                     width: 100%;
-                    max-width: 400px;
-                    height: 42%;
-                    -o-object-fit: contain;
+                    height: 38%;
+                    -o-object-fit: cover;
                     object-fit: cover;
                     z-index: 1;
                     mix-blend-mode: screen;
@@ -3976,7 +3976,7 @@ $width: 77.7%;
                 }
                 
                .offer__container {
-                    margin-top: 281px;
+                    margin-top: 290px;
                     width: $width;
                     max-width: 330px;
                     @include center();
