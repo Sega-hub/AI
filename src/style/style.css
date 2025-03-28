@@ -4356,7 +4356,7 @@ body {
     color: rgb(120, 119, 146);
   }
   .container .main .offer .offer__container .offer__button {
-    margin: 53px 0 199px 0;
+    margin: 53px 0 0 0;
     width: 330px;
     height: 42px;
     border-radius: 10px;
@@ -4381,6 +4381,7 @@ body {
     box-shadow: 0px 0px 26.39px 0px #110E68;
   }
   .container .main .API {
+    padding-top: 199px;
     padding-bottom: 251px;
     width: 100%;
     display: flex;
