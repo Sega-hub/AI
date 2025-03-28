@@ -35,6 +35,10 @@ body {
     transform: translateX(0);
   }
 }
+.mob {
+  display: none !important;
+}
+
 .popup {
   display: none;
 }
@@ -4194,6 +4198,9 @@ body {
   }
 }
 @media (max-width: 744px) {
+  .mob {
+    display: flex !important;
+  }
   .container {
     display: flex;
     flex-direction: column;
@@ -4365,6 +4372,7 @@ body {
     color: rgb(255, 255, 255);
     transition: 0.5s;
     max-width: 100%;
+    min-height: 42px;
     animation: mainTitle 1s ease 0.7s;
     animation-fill-mode: forwards;
     opacity: 0;
