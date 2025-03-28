@@ -2226,7 +2226,9 @@ $width: 77.7%;
     }
 
     .container {
-    
+        .mob {
+            display: flex !important;
+        }
         display: flex;
         flex-direction: column;
         .header {
@@ -2981,7 +2983,7 @@ $width: 77.7%;
                                         opacity: 0;
                                         transition: 0.5s;
                                         transition-delay: 0.3s;
-    
+
                                         &.appearance {
                                             opacity: 1;
                                         }
@@ -3285,7 +3287,7 @@ $width: 77.7%;
                         width: 100%;
                         min-width: 0;
                         max-width: 684px;
-                        display: none;
+                        display: flex;
                         grid-template-columns: repeat(2, 332px);
                         gap: 24px 20px;
                         .trend__box__model {
@@ -3718,7 +3720,7 @@ $width: 77.7%;
     
                     &::after {
                         content: "";
-                        top: 230px;
+                        top: 1070px;
                         margin-left: 0;
                         position: absolute;
                         width: 3px;

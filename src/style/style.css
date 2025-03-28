@@ -2384,6 +2384,9 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .container .mob {
+    display: flex !important;
+  }
   .container .header {
     width: 100vw;
     max-width: 100%;
@@ -3577,7 +3580,7 @@ body {
     width: 100%;
     min-width: 0;
     max-width: 684px;
-    display: none;
+    display: flex;
     grid-template-columns: repeat(2, 332px);
     gap: 24px 20px;
   }
@@ -4017,7 +4020,7 @@ body {
   }
   .container .main .trend .trend__container::after {
     content: "";
-    top: 230px;
+    top: 1070px;
     margin-left: 0;
     position: absolute;
     width: 3px;
