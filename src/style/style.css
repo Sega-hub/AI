@@ -4756,7 +4756,7 @@ body {
   .container .main .API .API__container .API__example .API__example__container .API__example__move .move__link {
     white-space: nowrap;
     margin-top: 29px;
-    margin-left: auto;
+    margin-left: 86px;
     display: flex;
     align-items: center;
   }
