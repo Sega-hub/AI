@@ -4658,6 +4658,9 @@ body {
   .container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item.selected {
     border: 1px solid #110E68;
   }
+  .container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item:nth-child(1) {
+    margin-left: 65px;
+  }
   .container .main .API .API__container .slider-container.appearance {
     opacity: 1;
   }
