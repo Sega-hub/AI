@@ -407,34 +407,36 @@ body {
   opacity: 1;
 }
 .container .main .API .API__container .slider-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
-  max-width: 1686px;
+  width: 100vw;
   overflow-x: auto;
   scroll-behavior: smooth;
   white-space: nowrap;
+  padding: 0 0;
+  margin-left: 0;
   opacity: 0;
   transition: 0.5s;
 }
 .container .main .API .API__container .slider-container .slider__slider {
+  max-width: -moz-max-content;
+  max-width: max-content;
   display: flex;
-  justify-content: center;
-  max-width: 1120px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  white-space: nowrap;
-}
-.container .main .API .API__container .slider-container .slider__slider .API__slider {
-  max-width: 1120px;
-  display: flex;
-  gap: 20px;
   overflow-x: auto;
   scroll-behavior: smooth;
   white-space: nowrap;
   scrollbar-width: none; /* Скрытие стандартного скролла */
-  margin-top: 60px;
+  margin-top: 40px;
+  gap: 20px;
+}
+.container .main .API .API__container .slider-container .slider__slider .API__slider {
+  max-width: -moz-max-content;
+  max-width: max-content;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  scrollbar-width: none; /* Скрытие стандартного скролла */
+  margin-top: 40px;
   gap: 20px;
 }
 .container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item {
@@ -472,6 +474,12 @@ body {
   line-height: 120%;
   letter-spacing: 0%;
   color: rgb(120, 119, 146);
+}
+.container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item:nth-child(1) {
+  margin-left: 20px;
+}
+.container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item:nth-child(6) {
+  margin-right: 20px;
 }
 .container .main .API .API__container .slider-container .slider__slider .API__slider .API__slider__item.selected {
   border: 1px solid #110E68;
@@ -2759,20 +2767,20 @@ body {
     display: none;
   }
   .container .main .API .API__container .slider-container .slider__slider {
+    max-width: -moz-max-content;
+    max-width: max-content;
     display: flex;
-    gap: 20px;
     overflow-x: auto;
     scroll-behavior: smooth;
     white-space: nowrap;
-    scrollbar-width: none;
-    min-width: 100vw;
-    margin-left: 0;
+    scrollbar-width: none; /* Скрытие стандартного скролла */
+    margin-top: 40px;
+    gap: 20px;
   }
   .container .main .API .API__container .slider-container .slider__slider .API__slider {
     max-width: -moz-max-content;
     max-width: max-content;
     display: flex;
-    gap: 20px;
     overflow-x: auto;
     scroll-behavior: smooth;
     white-space: nowrap;
