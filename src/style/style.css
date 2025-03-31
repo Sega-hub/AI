@@ -3267,12 +3267,13 @@ body {
   .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info .freelance__discription.appearance {
     opacity: 1;
   }
-  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__pic {
+  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .plans__pic {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__pic .video-background {
+  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .plans__pic .video-background {
     mix-blend-mode: screen;
     margin: 0;
     width: 410px;
@@ -3344,6 +3345,7 @@ body {
     opacity: 1;
   }
   .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__pic {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3424,12 +3426,13 @@ body {
   .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-bottom.appearance {
     opacity: 1;
   }
-  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__pic {
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .plans__pic {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__pic .video-background {
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .plans__pic .video-background {
     mix-blend-mode: screen;
     margin: 0;
     width: 410px;
@@ -3503,6 +3506,7 @@ body {
     opacity: 1;
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__pic {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -5250,12 +5254,13 @@ body {
   .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info .freelance__discription.appearance {
     opacity: 1;
   }
-  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__pic {
+  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .plans__pic {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__pic .video-background {
+  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .plans__pic .video-background {
     mix-blend-mode: screen;
     margin: 0;
     width: 300px;
@@ -5332,6 +5337,7 @@ body {
     opacity: 1;
   }
   .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__pic {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -5417,12 +5423,14 @@ body {
   .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-bottom.appearance {
     opacity: 1;
   }
-  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__pic {
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .plans__pic {
+    height: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__pic .video-background {
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .plans__pic .video-background {
     mix-blend-mode: screen;
     margin: 0;
     width: 300px;
@@ -5501,6 +5509,7 @@ body {
     opacity: 1;
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__pic {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
