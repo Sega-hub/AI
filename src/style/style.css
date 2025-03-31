@@ -3225,6 +3225,7 @@ body {
   .container .main .project .project__container .project__box .project__box__top .project__box__freelance {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 684px;
     height: 600px;
     border-radius: 20px;
@@ -3234,7 +3235,7 @@ body {
   }
   .container .main .project .project__container .project__box .project__box__top .project__box__freelance .video-background {
     mix-blend-mode: screen;
-    margin: 0px 132px 0px 142px;
+    margin: 0 auto;
     width: 410px;
     height: 410px;
   }
@@ -3274,6 +3275,9 @@ body {
     opacity: 1;
   }
   .container .main .project .project__container .project__box .project__box__top .project__box__plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     width: 684px;
     height: 666px;
@@ -3284,7 +3288,7 @@ body {
   }
   .container .main .project .project__container .project__box .project__box__top .project__box__plans .video-background {
     mix-blend-mode: screen;
-    margin: 20px 137px 0px 137px;
+    margin: 0 auto;
     width: 410px;
     height: 420px;
   }
@@ -3352,6 +3356,9 @@ body {
     width: 100%;
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     width: 684px;
     height: 666px;
@@ -3363,11 +3370,14 @@ body {
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .video-background {
     mix-blend-mode: screen;
-    margin: 22px 137px 0px 137px;
+    margin: 0 auto;
     width: 410px;
     height: 410px;
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative; /* Чтобы текст был поверх видео */
     z-index: 1; /* Чтобы текст был поверх видео */
     max-width: 420px;
@@ -3421,6 +3431,9 @@ body {
     opacity: 1;
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     width: 684px;
     height: 666px;
@@ -3431,7 +3444,7 @@ body {
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .video-background {
     mix-blend-mode: screen;
-    margin: 22px 137px 0px 137px;
+    margin: 0 auto;
     width: 410px;
     height: 410px;
   }
@@ -5184,6 +5197,7 @@ body {
   .container .main .project .project__container .project__box .project__box__top .project__box__freelance {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 100%;
     height: 510px;
     border-radius: 20px;
@@ -5193,7 +5207,7 @@ body {
   }
   .container .main .project .project__container .project__box .project__box__top .project__box__freelance .video-background {
     mix-blend-mode: screen;
-    margin: 70px 35px 0px 35px;
+    margin: 0 auto;
     width: 300px;
     height: 300px;
   }
@@ -5237,6 +5251,9 @@ body {
     opacity: 1;
   }
   .container .main .project .project__container .project__box .project__box__top .project__box__plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     width: 100%;
     height: 510px;
@@ -5247,7 +5264,7 @@ body {
   }
   .container .main .project .project__container .project__box .project__box__top .project__box__plans .video-background {
     mix-blend-mode: screen;
-    margin: 40px 40px 0px 30px;
+    margin: 0 auto;
     width: 300px;
     height: 300px;
   }
@@ -5320,6 +5337,9 @@ body {
     width: 100%;
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     width: 100%;
     height: 510px;
@@ -5331,7 +5351,7 @@ body {
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .video-background {
     mix-blend-mode: screen;
-    margin: 20px 35px 0px 35px;
+    margin: 0 auto;
     width: 300px;
     height: 300px;
   }
@@ -5394,6 +5414,9 @@ body {
     opacity: 1;
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     width: 100%;
     height: 510px;
@@ -5404,7 +5427,7 @@ body {
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .video-background {
     mix-blend-mode: screen;
-    margin: 0px 35px 0px 35px;
+    margin: 0 auto;
     width: 300px;
     height: 300px;
   }
