@@ -1809,7 +1809,7 @@ body {
   opacity: 1;
 }
 .container .footer {
-  background: rgb(0, 0, 0);
+  background: linear-gradient(rgb(0, 0, 0), #0E0C5A);
   padding-bottom: 109.46px;
   width: 100%;
   display: flex;
@@ -3768,6 +3768,9 @@ body {
     letter-spacing: 0%;
     color: rgb(120, 119, 146);
   }
+  .container .main .trend .trend__container .trend__box__models .trend__box__model:nth-last-child(1) {
+    display: none;
+  }
   .container .main .trend .trend__container .trend__box__models .trend__box__model.appearance {
     opacity: 1;
   }
@@ -3918,6 +3921,9 @@ body {
     letter-spacing: 0%;
     color: rgb(120, 119, 146);
   }
+  .container .main .trend .trend__container .trend__box__app .trend__box__model:nth-last-child(1) {
+    display: none;
+  }
   .container .main .trend .trend__container .trend__box__data {
     margin-top: 80px;
     width: 100%;
@@ -4064,6 +4070,9 @@ body {
     line-height: 120%;
     letter-spacing: 0%;
     color: rgb(120, 119, 146);
+  }
+  .container .main .trend .trend__container .trend__box__data .trend__box__model:nth-last-child(1) {
+    display: none;
   }
   .container .main .trend .trend__container::after {
     content: "";
@@ -5160,7 +5169,7 @@ body {
   }
   .container .main .project .project__container .project__box .project__box__top .project__box__freelance .video-background {
     mix-blend-mode: screen;
-    margin: 24px 35px 0px 35px;
+    margin: 70px 35px 0px 35px;
     width: 300px;
     height: 300px;
   }
@@ -5214,7 +5223,7 @@ body {
   }
   .container .main .project .project__container .project__box .project__box__top .project__box__plans .video-background {
     mix-blend-mode: screen;
-    margin: 16px 40px 0px 30px;
+    margin: 40px 40px 0px 30px;
     width: 300px;
     height: 300px;
   }
@@ -5298,7 +5307,7 @@ body {
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .video-background {
     mix-blend-mode: screen;
-    margin: 16px 35px 0px 35px;
+    margin: 20px 35px 0px 35px;
     width: 300px;
     height: 300px;
   }
@@ -5371,7 +5380,7 @@ body {
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .video-background {
     mix-blend-mode: screen;
-    margin: 0 35px 0px 35px;
+    margin: 0px 35px 0px 35px;
     width: 300px;
     height: 300px;
   }
@@ -6185,7 +6194,7 @@ body {
     justify-content: space-between;
   }
   .container .footer .footer__container .footer__top .footer__logo {
-    width: 155px;
+    width: 150px;
     height: 20px;
   }
   .container .footer .footer__container .footer__top .footer__newsletter {
