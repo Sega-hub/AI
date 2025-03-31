@@ -1151,8 +1151,7 @@ $width: 77.7%;
                     margin-top: 71px;
                     gap: 14px;
                     max-width: 100%;
-                    .trend__buttons__models {
-                        box-shadow: 0px 0px 26.39px 0px #110E68;
+                    .trend__buttons__models {                        
                         @include button(97px, rgba(4, 4, 26, 1), #110E68);
                         opacity: 0;
                         transition: 0.5s;
@@ -1160,12 +1159,28 @@ $width: 77.7%;
                         &.appearance {
                             opacity: 1;
                         }
+
+                        &:hover {
+                            box-shadow: 0px 0px 26.39px 0px #110E68;
+                        }
+                        
+                        &:active {
+                            box-shadow: 0px 0px 26.39px 0px #110E68 !important;
+                        }
                     }
                     .trend__buttons__data {
                         @include button(150px, rgba(4, 4, 26, 1), #110E68);
                         opacity: 0;
                         transition: 0.5s 0.2s;
-    
+                        
+                        &:hover {
+                            box-shadow: 0px 0px 26.39px 0px #110E68;
+                        }
+                        
+                        &:active {
+                            box-shadow: 0px 0px 26.39px 0px #110E68 !important;
+                        }
+
                         &.appearance {
                             opacity: 1;
                         }
@@ -1174,9 +1189,25 @@ $width: 77.7%;
                         @include button(150px, rgba(4, 4, 26, 1), #110E68);
                         opacity: 0;
                         transition: 0.5s 0.2s;
+
+                        &:hover {
+                            box-shadow: 0px 0px 26.39px 0px #110E68;
+                        }
+                        
+                        &:active {
+                            box-shadow: 0px 0px 26.39px 0px #110E68 !important;
+                        }
     
                         &.appearance {
                             opacity: 1;
+                        }
+                    }
+                    .trend__buttons__models,
+                    .trend__buttons__data,
+                    .trend__buttons__app {
+                        &:hover,
+                        &.active {
+                            box-shadow: 0px 0px 26.39px 0px #110E68;
                         }
                     }
                 }
@@ -2908,14 +2939,6 @@ $width: 77.7%;
                                 overflow: hidden; /* Чтобы видео не выходило за границы блока */
                                 background-color: $COLOR_BLACK; /* Фон на случай, если видео не загрузится */
     
-    
-                                .video-background {
-                                    mix-blend-mode: screen;
-                                    margin:  0px 132px 0px 142px;
-                                    width: 410px;
-                                    height: 410px;
-                                }
-    
                                 .freelance__info
                                 {
                                     position: relative; /* Чтобы текст был поверх видео */
@@ -2957,8 +2980,17 @@ $width: 77.7%;
                                     }
     
                                 }
-    
-                               
+
+                                .freelance__pic {
+                                    @include center();
+                                    .video-background {
+                                        mix-blend-mode: screen;
+                                        margin:  0;
+                                        width: 410px;
+                                        height: 410px;
+                                    }
+                                }
+                                
                             }
     
                             .project__box__plans {
@@ -2969,13 +3001,6 @@ $width: 77.7%;
                                 border: 1px solid $COLOR_DARK_GRAY;
                                 overflow: hidden; /* Чтобы видео не выходило за границы блока */
                                 background-color: $COLOR_BLACK; /* Фон на случай, если видео не загрузится */
-    
-                                .video-background {
-                                    mix-blend-mode: screen;
-                                    margin: 20px 137px 0px 137px;
-                                    width: 410px;
-                                    height: 420px;
-                                }
     
                                 .plans__info {
                                     position: relative; /* Чтобы текст был поверх видео */
@@ -3046,6 +3071,15 @@ $width: 77.7%;
                                     }
                                 }
     
+                                .plans__pic {
+                                    @include center();
+                                    .video-background {
+                                        mix-blend-mode: screen;
+                                        margin: 0;
+                                        width: 410px;
+                                        height: 420px;
+                                    }
+                                }
                                 
                             }
                         }
@@ -3066,14 +3100,7 @@ $width: 77.7%;
                                 overflow: hidden; /* Чтобы видео не выходило за границы блока */
                                 background-color: $COLOR_BLACK; /* Фон на случай, если видео не загрузится */
                                 
-                                transition: 0.5s;
-    
-                                .video-background {
-                                    mix-blend-mode: screen;
-                                    margin: 22px 137px 0px 137px ;
-                                    width: 410px;
-                                    height: 410px;
-                                }
+                                transition: 0.5s;   
     
                                 .freelance__info {
                                     position: relative; /* Чтобы текст был поверх видео */
@@ -3137,6 +3164,16 @@ $width: 77.7%;
                                     
     
                                 }
+
+                                .freelance__pic {
+                                    @include center();
+                                    .video-background {
+                                        mix-blend-mode: screen;
+                                        margin: 0;
+                                        width: 410px;
+                                        height: 410px;
+                                    }
+                                }
     
                                
                             }
@@ -3148,16 +3185,9 @@ $width: 77.7%;
                                 border-radius: 20px;
                                 border: 1px solid $COLOR_DARK_GRAY;
                                 overflow: hidden; /* Чтобы видео не выходило за границы блока */
-                                background-color: $COLOR_BLACK; /* Фон на случай, если видео не загрузится */
+                                background-color: $COLOR_BLACK; /* Фон на случай, если видео не загрузится */                                
+    
                                 
-    
-                                .video-background {
-                                    mix-blend-mode: screen;
-                                    margin:  22px 137px 0px 137px;
-                                    width: 410px;
-                                    height: 410px;
-                                }
-    
                                 .plans__info {
                                   
                                     z-index: 1; /* Чтобы текст был поверх видео */
@@ -3231,7 +3261,17 @@ $width: 77.7%;
                                     }
                                 }
     
-                                
+                                .plans__pic {
+                                    @include center();
+                                    .video-background {
+                                        mix-blend-mode: screen;
+                                        margin:  0;
+                                        width: 410px;
+                                        height: 410px;
+                                    }
+                                }
+    
+
                             }
                         }
                     }
@@ -4697,14 +4737,6 @@ $width: 77.7%;
                                 overflow: hidden; /* Чтобы видео не выходило за границы блока */
                                 background-color: $COLOR_BLACK; /* Фон на случай, если видео не загрузится */
     
-    
-                                .video-background {
-                                    mix-blend-mode: screen;
-                                    margin:  70px 35px 0px 35px;
-                                    width: 300px;
-                                    height: 300px;
-                                }
-    
                                 .freelance__info
                                 {
                                     position: relative; /* Чтобы текст был поверх видео */
@@ -4751,6 +4783,16 @@ $width: 77.7%;
     
                                 }
     
+                                .freelance__pic {
+                                    @include center();
+                                    .video-background {
+                                        mix-blend-mode: screen;
+                                        margin:  0;
+                                        width: 300px;
+                                        height: 300px;
+                                    }
+                                        
+                                }
                                
                             }
     
@@ -4761,14 +4803,8 @@ $width: 77.7%;
                                 border-radius: 20px;
                                 border: 1px solid $COLOR_DARK_GRAY;
                                 overflow: hidden; /* Чтобы видео не выходило за границы блока */
-                                background-color: $COLOR_BLACK; /* Фон на случай, если видео не загрузится */
-    
-                                .video-background {
-                                    mix-blend-mode: screen;
-                                    margin: 40px 40px 0px 30px;
-                                    width: 300px;
-                                    height: 300px;
-                                }
+                                background-color: $COLOR_BLACK; /* Фон на случай, если видео не загрузится */   
+                                
     
                                 .plans__info {
                                     position: relative; /* Чтобы текст был поверх видео */
@@ -4840,7 +4876,16 @@ $width: 77.7%;
                                         opacity: 1;
                                     }
                                 }
-    
+
+                                .plans__pic {
+                                    @include center();
+                                    .video-background {
+                                        mix-blend-mode: screen;
+                                        margin: 0;
+                                        width: 300px;
+                                        height: 300px;
+                                    }
+                                }    
                                 
                             }
                         }
@@ -4861,15 +4906,8 @@ $width: 77.7%;
                                 overflow: hidden; /* Чтобы видео не выходило за границы блока */
                                 background-color: $COLOR_BLACK; /* Фон на случай, если видео не загрузится */
                                 
-                                transition: 0.5s;
-    
-                                .video-background {
-                                    mix-blend-mode: screen;
-                                    margin: 20px 35px 0px 35px ;
-                                    width: 300px;
-                                    height: 300px;
-                                }
-    
+                                transition: 0.5s;    
+                               
                                 .freelance__info {
                                     position: relative; /* Чтобы текст был поверх видео */
                                     z-index: 1; /* Чтобы текст был поверх видео */
@@ -4938,7 +4976,17 @@ $width: 77.7%;
     
                                 }
     
-                               
+                                .freelance__pic {
+                                    @include center();
+                                    .video-background {
+                                        mix-blend-mode: screen;
+                                        margin: 0;
+                                        width: 300px;
+                                        height: 300px;
+                                    }
+        
+                                }    
+
                             }
     
                             .project__box__plans {
@@ -4949,14 +4997,6 @@ $width: 77.7%;
                                 border: 1px solid $COLOR_DARK_GRAY;
                                 overflow: hidden; /* Чтобы видео не выходило за границы блока */
                                 background-color: $COLOR_BLACK; /* Фон на случай, если видео не загрузится */
-                                
-    
-                                .video-background {
-                                    mix-blend-mode: screen;
-                                    margin:  0px 35px 0px 35px;
-                                    width: 300px;
-                                    height: 300px;
-                                }
     
                                 .plans__info {
                                   
@@ -5037,7 +5077,16 @@ $width: 77.7%;
                                         opacity: 1;
                                     }
                                 }
-    
+                                
+                                .plans__pic {
+                                    @include center();
+                                    .video-background {
+                                        mix-blend-mode: screen;
+                                        margin:  0;
+                                        width: 300px;
+                                        height: 300px;
+                                    }
+                                }    
                                 
                             }
                         }

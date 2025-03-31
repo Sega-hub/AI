@@ -293,39 +293,25 @@ slider.addEventListener("mouseleave", () => {
 
 
 if (window.innerWidth > 1150) {
-    const button1 = document.querySelector(".trend__buttons__models");
-    const button2 = document.querySelector(".trend__buttons__data");
-    const button3 = document.querySelector(".trend__buttons__app");
+    
+    const buttons = document.querySelectorAll(".trend__buttons__models, .trend__buttons__data, .trend__buttons__app");
+    const boxes = document.querySelectorAll(".trend__box__models, .trend__box__data, .trend__box__app");
+    
+    buttons.forEach((button, index) => {
+        button.addEventListener("click", () => {
+            // Показываем нужный блок, скрываем остальные
+            boxes.forEach((box, i) => {
+                box.style.display = i === index ? "flex" : "none";
+            });
+    
+            // Удаляем класс active у всех кнопок, добавляем только на активную
+            buttons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+        });
+    });
+    
 
-    const box1 = document.querySelector(".trend__box__models");
-    const box2 = document.querySelector(".trend__box__data");
-    const box3 = document.querySelector(".trend__box__app");
-
-    // Назначаем обработчики кликов
-    button1.addEventListener("click", () => {
-        box1.style.display = "flex";
-        box2.style.display = "none";
-        box3.style.display = "none";
-        button1.style.boxShadow = "0px 0px 26.39px 0px #110E68";
-        button2.style.boxShadow = "none";
-        button3.style.boxShadow = "none";
-    });
-    button2.addEventListener("click", () => {
-        box1.style.display = "none";
-        box2.style.display = "flex";
-        box3.style.display = "none";
-        button1.style.boxShadow = "none";
-        button2.style.boxShadow = "0px 0px 26.39px 0px #110E68";
-        button3.style.boxShadow = "none";
-    });
-    button3.addEventListener("click", () => {
-        box1.style.display = "none";
-        box2.style.display = "none";
-        box3.style.display = "flex";
-        button1.style.boxShadow = "none";
-        button2.style.boxShadow = "none";
-        button3.style.boxShadow = "0px 0px 26.39px 0px #110E68";
-    });
+    
 }
 
 if (window.innerWidth < 1150) {

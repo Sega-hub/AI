@@ -1184,7 +1184,6 @@ body {
   max-width: 100%;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__models {
-  box-shadow: 0px 0px 26.39px 0px #110E68;
   width: 97px;
   height: 42px;
   border-radius: 10px;
@@ -1208,6 +1207,12 @@ body {
 .container .main .trend .trend__container .trend__buttons .trend__buttons__models.appearance {
   opacity: 1;
 }
+.container .main .trend .trend__container .trend__buttons .trend__buttons__models:hover {
+  box-shadow: 0px 0px 26.39px 0px #110E68;
+}
+.container .main .trend .trend__container .trend__buttons .trend__buttons__models:active {
+  box-shadow: 0px 0px 26.39px 0px #110E68 !important;
+}
 .container .main .trend .trend__container .trend__buttons .trend__buttons__data {
   width: 150px;
   height: 42px;
@@ -1228,6 +1233,12 @@ body {
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__data:hover {
   box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
+}
+.container .main .trend .trend__container .trend__buttons .trend__buttons__data:hover {
+  box-shadow: 0px 0px 26.39px 0px #110E68;
+}
+.container .main .trend .trend__container .trend__buttons .trend__buttons__data:active {
+  box-shadow: 0px 0px 26.39px 0px #110E68 !important;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__data.appearance {
   opacity: 1;
@@ -1253,8 +1264,21 @@ body {
 .container .main .trend .trend__container .trend__buttons .trend__buttons__app:hover {
   box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
+.container .main .trend .trend__container .trend__buttons .trend__buttons__app:hover {
+  box-shadow: 0px 0px 26.39px 0px #110E68;
+}
+.container .main .trend .trend__container .trend__buttons .trend__buttons__app:active {
+  box-shadow: 0px 0px 26.39px 0px #110E68 !important;
+}
 .container .main .trend .trend__container .trend__buttons .trend__buttons__app.appearance {
   opacity: 1;
+}
+.container .main .trend .trend__container .trend__buttons .trend__buttons__models:hover, .container .main .trend .trend__container .trend__buttons .trend__buttons__models.active,
+.container .main .trend .trend__container .trend__buttons .trend__buttons__data:hover,
+.container .main .trend .trend__container .trend__buttons .trend__buttons__data.active,
+.container .main .trend .trend__container .trend__buttons .trend__buttons__app:hover,
+.container .main .trend .trend__container .trend__buttons .trend__buttons__app.active {
+  box-shadow: 0px 0px 26.39px 0px #110E68;
 }
 .container .main .trend .trend__container .trend__box__models {
   margin-top: 80px;
@@ -3208,12 +3232,6 @@ body {
     overflow: hidden; /* Чтобы видео не выходило за границы блока */
     background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
   }
-  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .video-background {
-    mix-blend-mode: screen;
-    margin: 0px 132px 0px 142px;
-    width: 410px;
-    height: 410px;
-  }
   .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info {
     position: relative; /* Чтобы текст был поверх видео */
     z-index: 1; /* Чтобы текст был поверх видео */
@@ -3249,6 +3267,17 @@ body {
   .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info .freelance__discription.appearance {
     opacity: 1;
   }
+  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__pic .video-background {
+    mix-blend-mode: screen;
+    margin: 0;
+    width: 410px;
+    height: 410px;
+  }
   .container .main .project .project__container .project__box .project__box__top .project__box__plans {
     position: relative;
     width: 684px;
@@ -3257,12 +3286,6 @@ body {
     border: 1px solid rgb(73, 73, 73);
     overflow: hidden; /* Чтобы видео не выходило за границы блока */
     background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
-  }
-  .container .main .project .project__container .project__box .project__box__top .project__box__plans .video-background {
-    mix-blend-mode: screen;
-    margin: 20px 137px 0px 137px;
-    width: 410px;
-    height: 420px;
   }
   .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info {
     position: relative; /* Чтобы текст был поверх видео */
@@ -3320,6 +3343,17 @@ body {
   .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info.appearance {
     opacity: 1;
   }
+  .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__pic .video-background {
+    mix-blend-mode: screen;
+    margin: 0;
+    width: 410px;
+    height: 420px;
+  }
   .container .main .project .project__container .project__box .project__box__bottom {
     margin-top: 24px;
     gap: 24px;
@@ -3336,12 +3370,6 @@ body {
     overflow: hidden; /* Чтобы видео не выходило за границы блока */
     background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
     transition: 0.5s;
-  }
-  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .video-background {
-    mix-blend-mode: screen;
-    margin: 22px 137px 0px 137px;
-    width: 410px;
-    height: 410px;
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info {
     position: relative; /* Чтобы текст был поверх видео */
@@ -3396,6 +3424,17 @@ body {
   .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-bottom.appearance {
     opacity: 1;
   }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__pic .video-background {
+    mix-blend-mode: screen;
+    margin: 0;
+    width: 410px;
+    height: 410px;
+  }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__plans {
     position: relative;
     width: 684px;
@@ -3404,12 +3443,6 @@ body {
     border: 1px solid rgb(73, 73, 73);
     overflow: hidden; /* Чтобы видео не выходило за границы блока */
     background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
-  }
-  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .video-background {
-    mix-blend-mode: screen;
-    margin: 22px 137px 0px 137px;
-    width: 410px;
-    height: 410px;
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info {
     z-index: 1; /* Чтобы текст был поверх видео */
@@ -3468,6 +3501,17 @@ body {
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info.appearance {
     opacity: 1;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__pic .video-background {
+    mix-blend-mode: screen;
+    margin: 0;
+    width: 410px;
+    height: 410px;
   }
   .container .main .project .project__container::after {
     content: "";
@@ -5167,12 +5211,6 @@ body {
     overflow: hidden; /* Чтобы видео не выходило за границы блока */
     background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
   }
-  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .video-background {
-    mix-blend-mode: screen;
-    margin: 70px 35px 0px 35px;
-    width: 300px;
-    height: 300px;
-  }
   .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info {
     position: relative; /* Чтобы текст был поверх видео */
     z-index: 1; /* Чтобы текст был поверх видео */
@@ -5212,6 +5250,17 @@ body {
   .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__info .freelance__discription.appearance {
     opacity: 1;
   }
+  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__freelance .freelance__pic .video-background {
+    mix-blend-mode: screen;
+    margin: 0;
+    width: 300px;
+    height: 300px;
+  }
   .container .main .project .project__container .project__box .project__box__top .project__box__plans {
     position: relative;
     width: 100%;
@@ -5220,12 +5269,6 @@ body {
     border: 1px solid rgb(73, 73, 73);
     overflow: hidden; /* Чтобы видео не выходило за границы блока */
     background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
-  }
-  .container .main .project .project__container .project__box .project__box__top .project__box__plans .video-background {
-    mix-blend-mode: screen;
-    margin: 40px 40px 0px 30px;
-    width: 300px;
-    height: 300px;
   }
   .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info {
     position: relative; /* Чтобы текст был поверх видео */
@@ -5288,6 +5331,17 @@ body {
   .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__info.appearance {
     opacity: 1;
   }
+  .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .project .project__container .project__box .project__box__top .project__box__plans .plans__pic .video-background {
+    mix-blend-mode: screen;
+    margin: 0;
+    width: 300px;
+    height: 300px;
+  }
   .container .main .project .project__container .project__box .project__box__bottom {
     margin-top: 20px;
     gap: 20px;
@@ -5304,12 +5358,6 @@ body {
     overflow: hidden; /* Чтобы видео не выходило за границы блока */
     background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
     transition: 0.5s;
-  }
-  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .video-background {
-    mix-blend-mode: screen;
-    margin: 20px 35px 0px 35px;
-    width: 300px;
-    height: 300px;
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info {
     position: relative; /* Чтобы текст был поверх видео */
@@ -5369,6 +5417,17 @@ body {
   .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-bottom.appearance {
     opacity: 1;
   }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__pic .video-background {
+    mix-blend-mode: screen;
+    margin: 0;
+    width: 300px;
+    height: 300px;
+  }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__plans {
     position: relative;
     width: 100%;
@@ -5377,12 +5436,6 @@ body {
     border: 1px solid rgb(73, 73, 73);
     overflow: hidden; /* Чтобы видео не выходило за границы блока */
     background-color: rgb(6, 6, 6); /* Фон на случай, если видео не загрузится */
-  }
-  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .video-background {
-    mix-blend-mode: screen;
-    margin: 0px 35px 0px 35px;
-    width: 300px;
-    height: 300px;
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info {
     z-index: 1; /* Чтобы текст был поверх видео */
@@ -5446,6 +5499,17 @@ body {
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info.appearance {
     opacity: 1;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__pic .video-background {
+    mix-blend-mode: screen;
+    margin: 0;
+    width: 300px;
+    height: 300px;
   }
   .container .main .project .project__container::after {
     content: "";
