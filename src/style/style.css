@@ -39,6 +39,20 @@ body {
   display: none !important;
 }
 
+.effect {
+  scale: 0;
+  opacity: 1;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(4, 0, 110, 0.1);
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  filter: blur(50px);
+  transition: 0.1s ease;
+  pointer-events: none;
+}
+
 .popup {
   display: none;
 }
@@ -134,7 +148,7 @@ body {
   height: 30px;
 }
 .container .header .header__container .header__buttons .header__buttons-enter:hover {
-  box-shadow: 0px 0px 26.39px 0px #110E68;
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .header .header__container .header__buttons .header__buttons-menu {
   display: none;
@@ -232,7 +246,7 @@ body {
   opacity: 0;
 }
 .container .main .offer .offer__container .offer__button:hover {
-  box-shadow: 0px 0px 26.39px 0px #110E68;
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .API {
   padding-bottom: 377px;
@@ -259,7 +273,7 @@ body {
   width: 173px;
   height: 42px;
   border-radius: 10px;
-  background-color: rgb(7, 6, 45);
+  background-color: rgb(4, 4, 26);
   border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
@@ -275,7 +289,7 @@ body {
   transition: 0.5s;
 }
 .container .main .API .API__container .API__unservice .API__unservice__button:hover {
-  box-shadow: 0px 0px 26.39px 0px #110E68;
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .API .API__container .API__unservice .API__unservice__button.appearance {
   opacity: 1;
@@ -323,7 +337,7 @@ body {
   transition: 0.5s;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(1):hover {
-  box-shadow: 0px 0px 26.39px 0px #110E68;
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(2) {
   width: 177px;
@@ -342,7 +356,7 @@ body {
   transition: 0.5s;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(2):hover {
-  box-shadow: 0px 0px 26.39px 0px #110E68;
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(3) {
   width: 214px;
@@ -361,7 +375,7 @@ body {
   transition: 0.5s;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(3):hover {
-  box-shadow: 0px 0px 26.39px 0px #110E68;
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(4) {
   width: 184px;
@@ -380,7 +394,7 @@ body {
   transition: 0.5s;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(4):hover {
-  box-shadow: 0px 0px 26.39px 0px #110E68;
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(5) {
   width: 129px;
@@ -399,7 +413,7 @@ body {
   transition: 0.5s;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button:nth-child(5):hover {
-  box-shadow: 0px 0px 26.39px 0px #110E68;
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .API .API__container .API__buttons .API__buttons__button.selected {
   box-shadow: 0px 0px 26.39px 0px #110E68;
@@ -430,6 +444,9 @@ body {
   gap: 20px;
 }
 .container .main .API .API__container .slider-container .slider__slider .API__slider {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   max-width: -moz-max-content;
   max-width: max-content;
   display: flex;
@@ -779,7 +796,7 @@ body {
   width: 161px;
   height: 42px;
   border-radius: 10px;
-  background-color: rgb(7, 6, 45);
+  background-color: rgb(4, 4, 26);
   border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
@@ -795,7 +812,7 @@ body {
   transition: 0.5s;
 }
 .container .main .project .project__container .project__button:hover {
-  box-shadow: 0px 0px 26.39px 0px #110E68;
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .project .project__container .project__button.appearance {
   opacity: 1;
@@ -1078,6 +1095,9 @@ body {
   transition: 0.5s;
   transition-delay: 0.3s;
 }
+.container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-bottom .mob {
+  display: none !important;
+}
 .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-bottom.appearance {
   opacity: 1;
 }
@@ -1121,7 +1141,7 @@ body {
   width: 111px;
   height: 42px;
   border-radius: 10px;
-  background-color: rgb(7, 6, 45);
+  background-color: rgb(4, 4, 26);
   border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
@@ -1137,7 +1157,7 @@ body {
   transition: 0.5s;
 }
 .container .main .trend .trend__container .trend__button:hover {
-  box-shadow: 0px 0px 26.39px 0px #110E68;
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .trend .trend__container .trend__button.appearance {
   opacity: 1;
@@ -1168,7 +1188,7 @@ body {
   width: 97px;
   height: 42px;
   border-radius: 10px;
-  background-color: rgb(7, 6, 45);
+  background-color: rgb(4, 4, 26);
   border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
@@ -1183,7 +1203,7 @@ body {
   transition: 0.5s;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__models:hover {
-  box-shadow: 0px 0px 26.39px 0px #110E68;
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__models.appearance {
   opacity: 1;
@@ -1192,7 +1212,7 @@ body {
   width: 150px;
   height: 42px;
   border-radius: 10px;
-  background-color: rgb(7, 6, 45);
+  background-color: rgb(4, 4, 26);
   border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
@@ -1207,7 +1227,7 @@ body {
   transition: 0.5s 0.2s;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__data:hover {
-  box-shadow: 0px 0px 26.39px 0px #110E68;
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__data.appearance {
   opacity: 1;
@@ -1216,7 +1236,7 @@ body {
   width: 150px;
   height: 42px;
   border-radius: 10px;
-  background-color: rgb(7, 6, 45);
+  background-color: rgb(4, 4, 26);
   border: 1px solid #110E68;
   cursor: pointer;
   font-family: "Hauora";
@@ -1231,7 +1251,7 @@ body {
   transition: 0.5s 0.2s;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__app:hover {
-  box-shadow: 0px 0px 26.39px 0px #110E68;
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .trend .trend__container .trend__buttons .trend__buttons__app.appearance {
   opacity: 1;
@@ -1758,7 +1778,7 @@ body {
   transition: 0.5s;
 }
 .container .main .development .development__container .development__buttons .develompent__button:nth-child(1):hover {
-  box-shadow: 0px 0px 26.39px 0px #110E68;
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .development .development__container .development__buttons .develompent__button:nth-child(1).appearance {
   opacity: 1;
@@ -1783,7 +1803,7 @@ body {
   transition: 0.5s;
 }
 .container .main .development .development__container .development__buttons .develompent__button:nth-child(2):hover {
-  box-shadow: 0px 0px 26.39px 0px #110E68;
+  box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
 }
 .container .main .development .development__container .development__buttons .develompent__button:nth-child(2).appearance {
   opacity: 1;
@@ -2239,12 +2259,13 @@ body {
     background: linear-gradient(rgb(10, 9, 67), rgb(0, 0, 0));
   }
   .popup .popup__container {
-    width: 84.6%;
+    width: 91.93%;
+    max-width: 684px;
     display: flex;
     flex-direction: column;
   }
   .popup .popup__container .header__container {
-    margin-top: 26px;
+    margin-top: 41px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2254,8 +2275,8 @@ body {
     align-items: end;
   }
   .popup .popup__container .header__container a img {
-    width: 152px;
-    height: 22.38px;
+    width: 165px;
+    height: 22px;
   }
   .popup .popup__container .header__container .header__buttons {
     display: flex;
@@ -2265,7 +2286,7 @@ body {
     width: 88px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(14, 12, 89);
+    background-color: rgba(23, 19, 147, 0.4);
     border: 1px solid rgb(23, 19, 147);
     cursor: pointer;
     font-family: "Hauora";
@@ -2285,7 +2306,7 @@ body {
     font-family: "Hauora";
   }
   .popup .popup__container .header__container .header__buttons button:hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .popup .popup__container .popup__menu {
     margin-top: 103px;
@@ -2338,8 +2359,8 @@ body {
     width: 242px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(4, 4, 28);
-    border: 1px solid rgb(3, 16, 180);
+    background-color: rgb(7, 4, 51);
+    border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
     font-size: 14px;
@@ -2358,7 +2379,7 @@ body {
     font-family: "Hauora";
   }
   .popup .popup__container .popup__button .header__buttons-menu:hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .popup .popup__container .popup__button .header__buttons-search {
     margin-left: 20px;
@@ -2388,7 +2409,7 @@ body {
     background-color: transparent;
   }
   .popup .popup__container .popup__button .header__buttons-search:hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container {
     display: flex;
@@ -2469,7 +2490,7 @@ body {
     align-items: center;
   }
   .container .header .header__container .header__buttons .header__buttons-menu:hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main {
     display: flex;
@@ -2488,6 +2509,7 @@ body {
     align-items: center;
     flex-direction: column;
     aspect-ratio: 16/9;
+    position: relative;
   }
   .container .main .offer .offer__video__back {
     margin-top: 75px;
@@ -2496,13 +2518,13 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 60%;
+    height: 48%;
     -o-object-fit: cover;
     object-fit: cover;
     filter: brightness(35%);
   }
   .container .main .offer .offer__container {
-    margin-top: 527px;
+    margin-top: 720px;
     width: 91.93%;
     display: flex;
     justify-content: center;
@@ -2569,12 +2591,12 @@ body {
     opacity: 0;
   }
   .container .main .offer .offer__container .offer__button:hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .API {
     overflow: hidden;
     position: relative;
-    padding-bottom: 377px;
+    padding-bottom: 227px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -2599,7 +2621,7 @@ body {
     width: 173px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
+    background-color: rgb(4, 4, 26);
     border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
@@ -2616,7 +2638,7 @@ body {
     box-shadow: none !important;
   }
   .container .main .API .API__container .API__unservice .API__unservice__button:hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .API .API__container .API__unservice .API__unservice__button.appearance {
     opacity: 1;
@@ -2673,7 +2695,7 @@ body {
     transition: 0.5s;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(1):hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(2) {
     width: 177px;
@@ -2692,7 +2714,7 @@ body {
     transition: 0.5s;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(2):hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(3) {
     width: 214px;
@@ -2711,7 +2733,7 @@ body {
     transition: 0.5s;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(3):hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(4) {
     width: 184px;
@@ -2730,7 +2752,7 @@ body {
     transition: 0.5s;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(4):hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(5) {
     width: 129px;
@@ -2749,7 +2771,7 @@ body {
     transition: 0.5s;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(5):hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button.selected {
     box-shadow: 0px 0px 26.39px 0px #110E68;
@@ -3097,17 +3119,17 @@ body {
     position: absolute;
     margin: 0;
     left: 30px;
-    top: 1286px;
+    top: 1166px;
     width: 3px;
     height: 0;
     background-image: url("../../public/images/straightLine.png");
     background-repeat: no-repeat;
-    background-size: 6px 321px;
+    background-size: 6px 290px;
     transition: all 1s ease 0s;
     z-index: 100;
   }
   .container .main .API .API__container.line.play::after {
-    height: 321px;
+    height: 290px;
   }
   .container .main .project {
     background-color: rgb(0, 0, 0);
@@ -3128,7 +3150,7 @@ body {
     width: 161px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
+    background-color: rgb(4, 4, 26);
     border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
@@ -3144,7 +3166,7 @@ body {
     transition: 0.5s;
   }
   .container .main .project .project__container .project__button:hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .project .project__container .project__button.appearance {
     opacity: 1;
@@ -3353,6 +3375,9 @@ body {
     transition: 0.5s;
     transition-delay: 0.1s;
   }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-top .pc {
+    display: none;
+  }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__freelance .freelance__info .plans__discription-top.appearance {
     opacity: 1;
   }
@@ -3432,6 +3457,12 @@ body {
     transition: 0.5s;
     transition-delay: 0.3s;
   }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-bottom .pc {
+    display: none;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-bottom .mob {
+    display: none !important;
+  }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-bottom.appearance {
     opacity: 1;
   }
@@ -3477,7 +3508,7 @@ body {
     width: 111px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
+    background-color: rgb(4, 4, 26);
     border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
@@ -3493,7 +3524,7 @@ body {
     transition: 0.5s;
   }
   .container .main .trend .trend__container .trend__button:hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .trend .trend__container .trend__button.appearance {
     opacity: 1;
@@ -3538,7 +3569,7 @@ body {
     transition: 0.5s;
   }
   .container .main .trend .trend__container .trend__buttons .trend__buttons__models:hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .trend .trend__container .trend__buttons .trend__buttons__models.appearance {
     opacity: 1;
@@ -3562,7 +3593,7 @@ body {
     transition: 0.5s 0.2s;
   }
   .container .main .trend .trend__container .trend__buttons .trend__buttons__data:hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .trend .trend__container .trend__buttons .trend__buttons__data.appearance {
     opacity: 1;
@@ -3586,7 +3617,7 @@ body {
     transition: 0.5s 0.2s;
   }
   .container .main .trend .trend__container .trend__buttons .trend__buttons__app:hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .trend .trend__container .trend__buttons .trend__buttons__app.appearance {
     opacity: 1;
@@ -4119,7 +4150,7 @@ body {
     transition: 0.5s;
   }
   .container .main .development .development__container .development__buttons .develompent__button:nth-child(1):hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .development .development__container .development__buttons .develompent__button:nth-child(1).appearance {
     opacity: 1;
@@ -4144,7 +4175,7 @@ body {
     transition: 0.5s;
   }
   .container .main .development .development__container .development__buttons .develompent__button:nth-child(2):hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .development .development__container .development__buttons .develompent__button:nth-child(2).appearance {
     opacity: 1;
@@ -4230,6 +4261,172 @@ body {
   .mob {
     display: flex !important;
   }
+  .popup {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10000000;
+    overflow-y: scroll;
+    position: fixed;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgb(10, 9, 67), rgb(0, 0, 0));
+  }
+  .popup .popup__container {
+    width: 94.87%;
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+  }
+  .popup .popup__container .header__container {
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .popup .popup__container .header__container a {
+    display: flex;
+    align-items: end;
+  }
+  .popup .popup__container .header__container a img {
+    width: 150px;
+    height: 20px;
+  }
+  .popup .popup__container .header__container .header__buttons {
+    display: flex;
+    align-items: end;
+  }
+  .popup .popup__container .header__container .header__buttons button {
+    width: 88px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: rgba(23, 19, 147, 0.4);
+    border: 1px solid rgb(23, 19, 147);
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 16px;
+    text-align: center;
+    font-family: "Hauora";
+  }
+  .popup .popup__container .header__container .header__buttons button:hover {
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
+  }
+  .popup .popup__container .popup__menu {
+    margin-top: 103px;
+    display: flex;
+    flex-direction: column;
+  }
+  .popup .popup__container .popup__menu .popup__menu__item {
+    margin-top: 40px;
+    font-family: "Hauora";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 20.8px;
+    color: rgb(255, 255, 255);
+  }
+  .popup .popup__container .popup__menu .popup__menu__mail {
+    margin-top: 20px;
+    font-family: "Hauora";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 20.8px;
+    color: rgb(112, 111, 146);
+  }
+  .popup .popup__container .popup__menu .popup__menu__phone {
+    margin-top: 10px;
+    font-family: "Hauora";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 20.8px;
+    color: rgb(112, 111, 146);
+  }
+  .popup .popup__container .popup__menu .footer__xellon {
+    margin-top: 10px;
+    font-family: "Hauora";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 20.8px;
+    color: rgb(255, 255, 255);
+  }
+  .popup .popup__container .popup__button {
+    margin-top: 91px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .popup .popup__container .popup__button .header__buttons-menu {
+    width: 242px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: rgb(7, 4, 51);
+    border: 1px solid #110E68;
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    height: 43px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 16px;
+    text-align: center;
+    font-family: "Hauora";
+  }
+  .popup .popup__container .popup__button .header__buttons-menu:hover {
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
+  }
+  .popup .popup__container .popup__button .header__buttons-search {
+    margin-left: 20px;
+    width: 68px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: rgb(4, 4, 28);
+    border: 1px solid rgb(3, 16, 180);
+    cursor: pointer;
+    font-family: "Hauora";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    height: 43px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 16px;
+    text-align: center;
+    font-family: "Hauora";
+    color: rgb(112, 111, 146);
+    border: none;
+    background-color: transparent;
+  }
+  .popup .popup__container .popup__button .header__buttons-search:hover {
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
+  }
   .container {
     display: flex;
     flex-direction: column;
@@ -4306,7 +4503,7 @@ body {
     align-items: center;
   }
   .container .header .header__container .header__buttons .header__buttons-menu:hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main {
     display: flex;
@@ -4413,7 +4610,7 @@ body {
     opacity: 0;
   }
   .container .main .offer .offer__container .offer__button:hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .API {
     padding-top: 199px;
@@ -4445,7 +4642,7 @@ body {
     width: 173px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
+    background-color: rgb(4, 4, 26);
     border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
@@ -4461,7 +4658,7 @@ body {
     transition: 0.5s;
   }
   .container .main .API .API__container .API__unservice .API__unservice__button:hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .API .API__container .API__unservice .API__unservice__button.appearance {
     opacity: 1;
@@ -4531,7 +4728,7 @@ body {
     margin-left: 0;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(1):hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(2) {
     width: 177px;
@@ -4550,7 +4747,7 @@ body {
     transition: 0.5s;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(2):hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(3) {
     width: 214px;
@@ -4569,7 +4766,7 @@ body {
     transition: 0.5s;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(3):hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(4) {
     width: 184px;
@@ -4588,7 +4785,7 @@ body {
     transition: 0.5s;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(4):hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(5) {
     width: 129px;
@@ -4608,7 +4805,7 @@ body {
     margin-right: 20px;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button:nth-child(5):hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .API .API__container .API__buttons .API__buttons__slider .API__buttons__button.selected {
     box-shadow: 0px 0px 26.39px 0px #110E68;
@@ -4898,7 +5095,7 @@ body {
     width: 161px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
+    background-color: rgb(4, 4, 26);
     border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
@@ -4916,7 +5113,7 @@ body {
     transition: 0.5s;
   }
   .container .main .project .project__container .project__characteristic .project__button:hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .project .project__container .project__characteristic .project__button.appearance {
     opacity: 1;
@@ -4963,7 +5160,7 @@ body {
   }
   .container .main .project .project__container .project__box .project__box__top .project__box__freelance .video-background {
     mix-blend-mode: screen;
-    margin: 0px 35px 210px 35px;
+    margin: 24px 35px 0px 35px;
     width: 300px;
     height: 300px;
   }
@@ -5229,7 +5426,10 @@ body {
     transition-delay: 0.3s;
     max-width: 330px;
   }
-  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-bottom br {
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-bottom .pc {
+    display: none !important;
+  }
+  .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-bottom .mob {
     display: flex !important;
   }
   .container .main .project .project__container .project__box .project__box__bottom .project__box__plans .plans__info .plans__discription-bottom.appearance {
@@ -5278,7 +5478,7 @@ body {
     width: 111px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
+    background-color: rgb(4, 4, 26);
     border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
@@ -5294,7 +5494,7 @@ body {
     transition: 0.5s;
   }
   .container .main .trend .trend__container .trend__button:hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .trend .trend__container .trend__button.appearance {
     opacity: 1;
@@ -5324,7 +5524,7 @@ body {
     width: 76px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
+    background-color: rgb(4, 4, 26);
     border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
@@ -5339,7 +5539,7 @@ body {
     transition: 0.5s;
   }
   .container .main .trend .trend__container .trend__buttons .trend__buttons__models:hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .trend .trend__container .trend__buttons .trend__buttons__models.appearance {
     opacity: 1;
@@ -5348,7 +5548,7 @@ body {
     width: 121px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
+    background-color: rgb(4, 4, 26);
     border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
@@ -5363,7 +5563,7 @@ body {
     transition: 0.5s 0.2s;
   }
   .container .main .trend .trend__container .trend__buttons .trend__buttons__data:hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .trend .trend__container .trend__buttons .trend__buttons__data.appearance {
     opacity: 1;
@@ -5372,7 +5572,7 @@ body {
     width: 104px;
     height: 42px;
     border-radius: 10px;
-    background-color: rgb(7, 6, 45);
+    background-color: rgb(4, 4, 26);
     border: 1px solid #110E68;
     cursor: pointer;
     font-family: "Hauora";
@@ -5387,7 +5587,7 @@ body {
     transition: 0.5s 0.2s;
   }
   .container .main .trend .trend__container .trend__buttons .trend__buttons__app:hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .trend .trend__container .trend__buttons .trend__buttons__app.appearance {
     opacity: 1;
@@ -5933,7 +6133,7 @@ body {
     transition: 0.5s;
   }
   .container .main .development .development__container .development__buttons .develompent__button:nth-child(1):hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .development .development__container .development__buttons .develompent__button:nth-child(1).appearance {
     opacity: 1;
@@ -5958,7 +6158,7 @@ body {
     transition: 0.5s;
   }
   .container .main .development .development__container .development__buttons .develompent__button:nth-child(2):hover {
-    box-shadow: 0px 0px 26.39px 0px #110E68;
+    box-shadow: 0px 0px 1.1px 0px #110E68, 0px 0px 2.2px 0px #110E68, 0px 0px 7.7px 0px #110E68, 0px 0px 15.39px 0px #110E68, 0px 0px 26.39px 0px #110E68, 0px 0px 46.18px 0px #110E68;
   }
   .container .main .development .development__container .development__buttons .develompent__button:nth-child(2).appearance {
     opacity: 1;

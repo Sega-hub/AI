@@ -8,6 +8,9 @@
     <title>AI</title>
 </head>
 <body>
+
+    <div class="effect"></div>
+
     <div class="popup">
         <div class="popup__container">
              <div class="header__container">
@@ -178,14 +181,14 @@
                     </div>
                     <div class="API__example" id="text">
                         <div class="API__example__container">
-                            <div class="API__example__move" id="text">
+                            <div class="API__example__move card" id="text">
                                 <p class="move__title">Испытать в действии</p>
                                 <form class="move__input__container" action="">
                                     <input type="text" class="move__input__input" placeholder="you@example.ru">
                                     <button class="move__input__button">Запуск</button>
                                 </form>
                                 <div class="move__languages">
-                                    <button class="move__languages__python">
+                                    <button class="move__languages__python selected">
                                         <img src="./public/images/python.svg" class="python__img">
                                         <p class="python__title">Python</p>
                                     </button>
@@ -213,7 +216,7 @@
                                     <img src="./public/images/linkIcon.svg" class="move__link__img">
                                 </a>
                             </div>
-                            <div class="API__example__result" id="text">
+                            <div class="API__example__result card" id="text">
                                 <p class="result__title">Результат генерации</p>
                                 
                             </div>
@@ -233,7 +236,7 @@
                     </h2>
                     <div class="project__box">                        
                         <div class="project__box__top">
-                            <div class="project__box__freelance" id="text">
+                            <div class="project__box__freelance card" id="text">
                                 <div class="freelance__info">
                                     <p class="freelance__title" id="text">Обширная библиотека моделей</p>
                                     <p class="freelance__discription" id="text">Доступ к лучшим моделям для любых задач <br> и отраслей. Постоянно обновляемая  <br> коллекция из проверенных источников.</p>
@@ -241,7 +244,7 @@
                                 <img src="./public/images/libr.jpg"  class="video-background">   
                             </div>
                             
-                            <div class="project__box__plans" id="text">                                 
+                            <div class="project__box__plans card" id="text">                                 
                                 <div class="plans__info">
                                     <p class="plans__title" id="text">Интуитивно понятный интерфейс</p>
                                     <p class="plans__discription-top" id="text">
@@ -256,11 +259,11 @@
                             </div>
                         </div>
                         <div class="project__box__bottom">
-                            <div class="project__box__freelance" id="text">
+                            <div class="project__box__freelance card" id="text">
                                 <div class="freelance__info">
                                     <p class="freelance__title" id="text">Мощная вычислительная инфраструктура</p>
                                     <p class="plans__discription-top" id="text">
-                                        Высокопроизводительные ресурсы <br class="mob"> для самых сложных задач.
+                                        Высокопроизводительные ресурсы <br class="pc"> <br class="mob"> для самых сложных задач.
                                     </p>
                                     <p class="plans__discription-bottom" id="text">
                                         Поддержка различных провайдеров графических мощностей в одном месте.
@@ -269,14 +272,14 @@
                                 <img src="./public/images/infrastructure.jpg"  class="video-background">   
                             </div>
                             
-                            <div class="project__box__plans" id="text">                                 
+                            <div class="project__box__plans card" id="text">                                 
                                 <div class="plans__info">
                                     <p class="plans__title" id="text">Активное профессиональное сообщество</p>
                                     <p class="plans__discription-top" id="text">
                                         Обмен опытом с экспертами <br class="mob"> и единомышленниками в области AI.
                                     </p>
                                     <p class="plans__discription-bottom" id="text">
-                                        Исчерпывающая документация,  обучающие материалы  и поддержка <br class="mob"> на каждом этапе.
+                                        Исчерпывающая документация,  обучающие <br class="pc"> материалы   и поддержка <br class="mob"> на каждом этапе.
                                     </p>
                                 </div>    
                                 <img src="./public/images/neiro.jpg"  class="video-background">
@@ -305,6 +308,39 @@
                         </button>
                     </div>
                     <div class="trend__box__models">
+                        <div class="trend__box__model" id="text">
+                            <div class="model__top">
+                                <img src="./public/images/cube.svg" alt="cube icon" class="model__top__img">
+                                <p class="model__top__name">iflytekopensource/iFlytekSp...</p>
+                            </div>
+                            <div class="model__slider">
+                                <div class="model__slider__container">
+                                    <div class="model__slider__item">
+                                        <p class="model__slider__text">Генерация текста</p>
+                                    </div>
+                                    <div class="model__slider__item">
+                                        <p class="model__slider__text">Генерация диалогов</p>
+                                    </div>
+                                    <div class="model__slider__item">
+                                        <p class="model__slider__text">Текст в изображение</p>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="model__bottom">
+                                <img src="./public/images/iconMan.svg" alt="user icon" class="model__bottom__img">
+                                <p class="model__bottom__name">Runwayml</p>
+                                <p class="model__bottom__time">1 г. назад</p>
+                                <div class="model__bottom__downloads">
+                                    <img src="./public/images/downlaod.svg" alt="" class="model__bottom__downloads-img">
+                                    <div class="model__bottom__downloads-text">1.5 тыс.</div>
+                                </div>
+                                <div class="model__bottom__likes">
+                                    <img src="./public/images/heart.svg" alt="" class="model__bottom__likes-img">
+                                    <div class="model__bottom__likes-text">825</div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="trend__box__model" id="text">
                             <div class="model__top">
                                 <img src="./public/images/cube.svg" alt="cube icon" class="model__top__img">
@@ -572,6 +608,37 @@
                         </div>
                     </div>
                     <div class="trend__box__data">
+
+                        <div class="trend__box__model" id="text">
+                            <div class="model__top">
+                                <img src="./public/images/data.svg" alt="cube icon" class="model__top__img">
+                                <p class="model__top__name">iflytekopensource/iFlytekSp...</p>
+                            </div>
+                            <div class="model__slider">
+                                <div class="model__slider__container">
+                                    <div class="model__slider__item">
+                                        <p class="model__slider__text">Генерация текста</p>
+                                    </div>
+                                    <div class="model__slider__item">
+                                        <p class="model__slider__text">AI</p>
+                                    </div>
+                                   
+                                </div>  
+                            </div>
+                            <div class="model__bottom">
+                                
+                                <p class="model__bottom__name">Runwayml</p>
+                                <p class="model__bottom__time">1 г. назад</p>
+                                <div class="model__bottom__downloads">
+                                    <img src="./public/images/downlaod.svg" alt="" class="model__bottom__downloads-img">
+                                    <div class="model__bottom__downloads-text">1.5 тыс.</div>
+                                </div>
+                                <div class="model__bottom__likes">
+                                    <img src="./public/images/heart.svg" alt="" class="model__bottom__likes-img">
+                                    <div class="model__bottom__likes-text">825</div>
+                                </div>
+                            </div>
+                        </div>
                        
                         <div class="trend__box__model" id="text">
                             <div class="model__top">
@@ -825,6 +892,33 @@
 
                     </div>
                     <div class="trend__box__app">  
+
+                        <div class="trend__box__model" id="text">
+                            <div class="model__top">
+                                <img src="./public/images/microsft.svg" alt="cube icon" class="model__top__img">
+                                <p class="model__top__name">iflytekopensource/iFlytekSp...</p>
+                            </div>
+                            <div class="model__slider">
+                                <div class="model__slider__container">
+                                    <div class="model__slider__item">
+                                        <p class="model__slider__text">Paused</p>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="model__bottom">
+                               
+                                <p class="model__bottom__name">O3Sky</p>
+                                <p class="model__bottom__time">1 г. назад</p>
+                                <div class="model__bottom__downloads">
+                                    <img src="./public/images/downlaod.svg" alt="" class="model__bottom__downloads-img">
+                                    <div class="model__bottom__downloads-text">1.5 тыс.</div>
+                                </div>
+                                <div class="model__bottom__likes">
+                                    <img src="./public/images/heart.svg" alt="" class="model__bottom__likes-img">
+                                    <div class="model__bottom__likes-text">825</div>
+                                </div>
+                            </div>
+                        </div>
                         
                         <div class="trend__box__model" id="text">
                             <div class="model__top">
